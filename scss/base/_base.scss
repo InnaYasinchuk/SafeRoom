@@ -1,0 +1,63 @@
+@import "../base/vars";
+@import "../base/mixin";
+
+body {
+  background-color: $background-color;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  color: $main-blue-color;
+  line-height: normal;
+  scroll-behavior: smooth;
+  max-width: 1440px;
+  margin: 0 auto;
+  
+}
+
+.header{
+  overflow: hidden;
+
+  padding: 0px 15px;
+  border: 1px solid blue;
+
+  @include tablet {
+    padding: 0px 50px;
+  }
+  @include leptop {
+    padding: 0px 80px;
+  }
+  @include desktop {
+    padding: 0px 40px;
+  }
+}
+
+// font-family: 'Amatic SC', sans-serif;
+
+// li:not(:last-child){
+
+// }
+
+.main {
+  
+  padding: 0px 15px;
+  border: 1px solid blue;
+
+  @include tablet {
+    padding: 0px 50px;
+  }
+  @include leptop {
+    padding: 0px 80px;
+  }
+  @include desktop {
+    padding: 0px 90px;
+  }
+}
+
+
+
+
+
+
+
+// change hovers in nav
+// review the settings of img in hero
+// change # in a

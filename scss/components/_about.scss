@@ -1,0 +1,21 @@
+@import "../base/vars";
+@import "../base/mixin";
+
+.about {
+}
+.about-header {
+  @include flex;
+  justify-content: flex-start;
+  gap: 63px;
+}
+.about-title {
+ 
+font-family: 'Amatic SC', sans-serif;
+font-size: 96px;
+font-weight: 700;
+
+}
+.about-content {
+}
+.about-button {
+}

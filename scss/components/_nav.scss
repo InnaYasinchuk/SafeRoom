@@ -1,0 +1,89 @@
+@import "../base/vars";
+@import "../base/mixin";
+
+.nav {
+  @include flex;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 44px;
+  margin: 3px auto;
+
+  &-block {
+    @include flex(50px);
+  }
+}
+
+.menu {
+  @include flex(100px);
+  max-width: 668px;
+
+  &-item {
+    transition: $transition;
+    position: relative;
+   
+    &:hover,
+    &:active {
+      color: $accent-color;
+      outline: none;
+    }
+
+    &::before {
+      content: "";
+      width: 0%;
+      height: 2px;
+      left: -5%;
+      bottom: 0;
+      position: absolute;
+      background-color: $accent-color;
+      transition: width 0.3s ease-in-out;
+      transform-origin: left;
+    }
+
+    &:hover::before,
+    &:active::before {
+      width: 110%;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      bottom: -8px;
+      left: 106%;
+      background: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="26" fill="none"%3E%3Cpath fill="%23F0BB75" d="m15 0 3.712 9.783L30 13l-11.288 3.217L15 26l-3.712-9.783L0 13l11.288-3.217L15 0Z"%3E%3C/path%3E%3C/svg%3E')
+        no-repeat;
+      background-size: contain;
+      transition: 0.5s ease-in-out;
+    }
+
+    &:nth-child(3)::after {
+      bottom: -8px;
+      left: 111%;
+    }
+
+    &:hover::after,
+    &:active::after {
+      width: 25px;
+      height: 20px;
+    }
+  }
+}
+
+.button-join {
+  background-color: $accent-color;
+  color: $white-color;
+  padding: 10px 22px;
+  border-radius: $border-radius;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: $transition;
+
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: 0px 4px 4px 0px $hover-button-blue-color;
+    outline: none;
+  }
+}
+
