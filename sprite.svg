@@ -37,4 +37,11 @@
      </symbol>
 
      <!-- header -->
+
+     <!-- about section -->
+    <symbol>
+        <path id='middleStar' d="m23 0 5.692 16.179L46 21.5l-17.308 5.321L23 43l-5.692-16.179L0 21.5l17.308-5.321L23 0Z"/>
+    </symbol>
+
+     <!-- about section -->
 </svg>

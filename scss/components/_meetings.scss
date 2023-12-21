@@ -1,0 +1,42 @@
+@import "../base/vars";
+@import "../base/mixin";
+
+.meetings {
+  margin: 100px auto;
+}
+
+.meetings-title {
+  @include section-title($accent-color, 64px);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.meetings-content {
+  @include flex(145px);
+  position: relative;
+}
+
+.meetings-item {
+ @include flex;
+ flex-direction: column;
+
+ & p{
+  text-align: center;
+ }
+}
+
+.article-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.middle-blue-star2{
+  @include star(75px, 35px, $dark-blue-color, 1);
+}
+
+.middle-blue-star3{
+  @include star(1170px, 210px, $dark-blue-color, 1);
+}

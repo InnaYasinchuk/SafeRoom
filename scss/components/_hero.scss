@@ -73,35 +73,35 @@ margin-bottom: 20px;
 }
 
 .little-blue-star1{
-  @include blueStar(35px, -10px);
+  @include star(35px, -10px);
 }
 
 .little-blue-star2{
-   @include blueStar(315px, 55px);
+   @include star(315px, 55px);
  }
 
  .little-blue-star3{
-   @include blueStar(780px, -25px);
+   @include star(780px, -25px);
  }
 
  .little-blue-star4{
-   @include blueStar(715px, 240px);
+   @include star(715px, 240px);
  }
 
   .little-blue-star5{
-   @include blueStar(480px, 440px);
+   @include star(480px, 440px);
  }
 
   .little-blue-star6{
-   @include blueStar(530px, 590px);
+   @include star(530px, 590px);
  }
 
  .little-blue-star7{
-   @include blueStar(830px, 605px);
+   @include star(830px, 605px);
  }
 
  .big-blue-star{
-  @include blueStar(1270px, 595px);
+  @include star(1260px, 595px);
   
  }
 

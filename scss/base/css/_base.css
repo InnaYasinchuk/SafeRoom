@@ -1,0 +1,52 @@
+body {
+  background-color: #fbf6f6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  color: #007AFF;
+  line-height: normal;
+  scroll-behavior: smooth;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+main {
+  padding: 0px 15px;
+  border: 1px solid #d0d0d0;
+}
+@media (min-width: 768px) {
+  main {
+    padding: 0px 50px;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    padding: 0px 80px;
+  }
+}
+@media (min-width: 1400px) {
+  main {
+    padding: 0px 90px;
+  }
+}
+
+.header {
+  overflow: hidden;
+  padding: 0px 15px;
+  border: 1px solid #d1d0d0;
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 0px 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    padding: 0px 80px;
+  }
+}
+@media (min-width: 1400px) {
+  .header {
+    padding: 0px 40px;
+  }
+}

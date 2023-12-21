@@ -23,11 +23,19 @@
   gap: $gap;
 }
 
+@mixin section-title($color: $main-blue-color, $fsize: 96px){
+font-family: 'Amatic SC', sans-serif;
+font-size: $fsize;
+font-weight: 700;
+color: $color;
+}
 
-@mixin blueStar ($left, $top){
+
+
+@mixin star ($left, $top, $fill: $main-blue-color, $fill-opasity: .6){
   position: absolute;
-  fill: #007AFF;
-  fill-opacity: .6;
+  fill: $fill;
+  fill-opacity: $fill-opasity;
   left: $left;
   top: $top;
   transition: $transition;

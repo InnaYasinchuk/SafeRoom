@@ -1,0 +1,105 @@
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 63px;
+  justify-content: flex-start;
+  margin-left: -10px;
+}
+
+.about-title {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  color: #007AFF;
+}
+
+.about-content {
+  position: relative;
+  padding: 51px 40px 6px;
+  border-radius: 14px;
+  background: #3A98FF;
+  box-shadow: 0px 4px 9.3px 0px #007AFF;
+}
+.about-content p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about-button {
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  justify-content: center;
+  width: 365px;
+  height: 65px;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 14px;
+  background: #fff;
+}
+.about-button:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.little-white-star1 {
+  position: absolute;
+  fill: #fff;
+  fill-opacity: 1;
+  left: 10px;
+  top: 245px;
+  transition: 0.3s ease-in;
+}
+.little-white-star1:hover {
+  transform: scale(1.4);
+}
+
+.little-white-star2 {
+  position: absolute;
+  fill: #fff;
+  fill-opacity: 1;
+  left: 95px;
+  top: 250px;
+  transition: 0.3s ease-in;
+}
+.little-white-star2:hover {
+  transform: scale(1.4);
+}
+
+.little-white-star3 {
+  position: absolute;
+  fill: #fff;
+  fill-opacity: 1;
+  left: 1140px;
+  top: 200px;
+  transition: 0.3s ease-in;
+}
+.little-white-star3:hover {
+  transform: scale(1.4);
+}
+
+.little-white-star4 {
+  position: absolute;
+  fill: #fff;
+  fill-opacity: 1;
+  left: 1070px;
+  top: 310px;
+  transition: 0.3s ease-in;
+}
+.little-white-star4:hover {
+  transform: scale(1.4);
+}
+
+.middle-blue-star1 {
+  position: absolute;
+  fill: #0C6CD5;
+  fill-opacity: 1;
+  left: 220px;
+  top: 290px;
+  transition: 0.3s ease-in;
+}
+.middle-blue-star1:hover {
+  transform: scale(1.4);
+}

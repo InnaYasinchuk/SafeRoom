@@ -1,21 +1,59 @@
 @import "../base/vars";
 @import "../base/mixin";
 
-.about {
-}
 .about-header {
-  @include flex;
+  @include flex(63px);
   justify-content: flex-start;
-  gap: 63px;
+  margin-left: -10px;
 }
 .about-title {
- 
-font-family: 'Amatic SC', sans-serif;
-font-size: 96px;
-font-weight: 700;
+  @include section-title;
+}
 
-}
 .about-content {
+  position: relative;
+  padding: 51px 40px 6px;
+  border-radius: 14px;
+  background: $blue-color;
+  box-shadow: 0px 4px 9.3px 0px $main-blue-color;
+  & p {
+    color: $white-color;
+    margin-bottom: 20px;
+  }
 }
+
 .about-button {
+  margin: 50px auto;
+  @include flex;
+  justify-content: center;
+  width: 365px;
+  height: 65px;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 14px;
+  background: $white-color;
+
+  &:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.little-white-star1 {
+  @include star(10px, 245px, $white-color, 1);
+}
+
+.little-white-star2 {
+  @include star(95px, 250px, $white-color, 1);
+}
+
+.little-white-star3 {
+  @include star(1140px, 200px, $white-color, 1);
+}
+
+.little-white-star4 {
+  @include star(1070px, 310px, $white-color, 1);
+}
+
+.middle-blue-star1{
+  @include star(220px, 290px, $dark-blue-color, 1);
 }
