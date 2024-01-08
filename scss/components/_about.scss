@@ -1,6 +1,13 @@
 @import "../base/vars";
 @import "../base/mixin";
 
+.about{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 90px;
+  border: 1px solid rgb(209, 208, 208);
+}
+
 .about-header {
   @include flex(63px);
   justify-content: flex-start;

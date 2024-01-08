@@ -1,7 +1,15 @@
 @import "../base/vars";
 @import "../base/mixin";
 
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 50px;
+  border: 1px solid rgb(209, 208, 208);
+}
+
 .nav {
+  max-width: 1320px;
   @include flex;
   font-family: "Amatic SC", sans-serif;
   font-size: 44px;
@@ -13,13 +21,13 @@
 }
 
 .menu {
-  @include flex(100px);
+  @include flex(70px);
   max-width: 668px;
 
   &-item {
     transition: $transition;
     position: relative;
-   
+
     &:hover,
     &:active {
       color: $accent-color;
@@ -73,7 +81,7 @@
 .button-join {
   background-color: $accent-color;
   color: $white-color;
-  padding: 10px 22px;
+  padding: 5px 22px;
   border-radius: $border-radius;
   font-weight: 700;
   text-transform: uppercase;
@@ -86,4 +94,3 @@
     outline: none;
   }
 }
-

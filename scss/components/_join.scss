@@ -2,12 +2,46 @@
 @import "../base/mixin";
 
 .join {
+  max-width: 1440px;
   margin: 100px auto;
+  padding: 0px 90px;
+  border: 1px solid rgb(209, 208, 208);
+}
+
+.join-title-wrapper{
+  position: relative;
 }
 
 .join-title {
   @include section-title;
   margin-bottom: 50px;
+  
+}
+
+.middle-blue-star4{
+ @include star(395px, 54px, $dark-blue-color, 1);
+}
+
+.decor{
+  position: absolute;
+  top: 75px;
+  right: -30px;
+  width: 850px;
+  height: 60px;
+  border-top: 1px solid $main-blue-color;
+  border-right: 1px solid $main-blue-color;
+  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.dot-decor{
+  position: absolute;
+  top: 130px;
+  right: -33px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $main-blue-color;
 }
 
 .swiper {
@@ -15,15 +49,17 @@
   height: 500px;
   display: flex;
   justify-content: center;
+  user-select: none;
 }
 
 .swiper-wrapper {
-  display: flex;
   align-items: center;
-  margin: 0 auto;
 }
 
 .swiper-slide {
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
   width: 381px;
   height: 378px;
   border-radius: $border-radius;
@@ -32,9 +68,7 @@
   padding: 50px 16px 30px;
   text-align: center;
   color: $white-color;
-  @include flex;
-  flex-direction: column;
-  justify-content: center;
+   
 }
 
 .swiper-slide-next,
@@ -56,7 +90,7 @@
   border-radius: $border-radius;
   background: $accent-color;
   box-shadow: 0px 4px 4px 0px rgba(240, 187, 117, 0.3);
-  transition: all 1s ease;
+  // transition: all .8s ease;
 }
 
 .swiper-pagination {
@@ -81,6 +115,11 @@
 .swiper-slide-next .title1,
 .swiper-slide-prev .title1 {
   font-size: 30px;
+}
+
+
+.swiper-slide-next .slide-title {
+  margin-left: -20px;
 }
 
 .slide-title::after {
@@ -117,10 +156,6 @@
   margin: 10px 0 10px 0;
 }
 
-.swiper-slide-next .slide-title {
-  margin-left: -20px;
-}
-
 .slide-button {
   @include flex;
   justify-content: center;
@@ -140,6 +175,6 @@
   fill: $white-color;
   &:hover {
     fill: $hover-button-blue-color;
-    
   }
 }
+

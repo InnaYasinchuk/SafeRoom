@@ -2,7 +2,10 @@
 @import "../base/mixin";
 
 .meetings {
+  max-width: 1440px;
   margin: 100px auto;
+  padding: 0px 90px;
+  border: 1px solid rgb(209, 208, 208);
 }
 
 .meetings-title {
@@ -13,7 +16,7 @@
 
 .meetings-content {
   @include flex(145px);
-  position: relative;
+  
 }
 
 .meetings-item {
@@ -25,6 +28,10 @@
  }
 }
 
+.meetings-img-wrapper1, .meetings-img-wrapper2{
+  position: relative;
+}
+
 .article-title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -34,9 +41,9 @@
 }
 
 .middle-blue-star2{
-  @include star(75px, 35px, $dark-blue-color, 1);
+  @include star(20px, 28px, $dark-blue-color, 1);
 }
 
 .middle-blue-star3{
-  @include star(1170px, 210px, $dark-blue-color, 1);
+  @include star(400px, 210px, $dark-blue-color, 1);
 }

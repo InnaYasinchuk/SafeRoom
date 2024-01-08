@@ -1,5 +1,8 @@
 .meetings {
+  max-width: 1440px;
   margin: 100px auto;
+  padding: 0px 90px;
+  border: 1px solid #d1d0d0;
 }
 
 .meetings-title {
@@ -16,7 +19,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 145px;
-  position: relative;
 }
 
 .meetings-item {
@@ -28,6 +30,10 @@
 }
 .meetings-item p {
   text-align: center;
+}
+
+.meetings-img-wrapper1, .meetings-img-wrapper2 {
+  position: relative;
 }
 
 .article-title {
@@ -42,8 +48,8 @@
   position: absolute;
   fill: #0C6CD5;
   fill-opacity: 1;
-  left: 75px;
-  top: 35px;
+  left: 20px;
+  top: 28px;
   transition: 0.3s ease-in;
 }
 .middle-blue-star2:hover {
@@ -54,7 +60,7 @@
   position: absolute;
   fill: #0C6CD5;
   fill-opacity: 1;
-  left: 1170px;
+  left: 400px;
   top: 210px;
   transition: 0.3s ease-in;
 }

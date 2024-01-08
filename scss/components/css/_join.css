@@ -1,5 +1,12 @@
 .join {
+  max-width: 1440px;
   margin: 100px auto;
+  padding: 0px 90px;
+  border: 1px solid #d1d0d0;
+}
+
+.join-title-wrapper {
+  position: relative;
 }
 
 .join-title {
@@ -10,20 +17,59 @@
   margin-bottom: 50px;
 }
 
+.middle-blue-star4 {
+  position: absolute;
+  fill: #0C6CD5;
+  fill-opacity: 1;
+  left: 395px;
+  top: 54px;
+  transition: 0.3s ease-in;
+}
+.middle-blue-star4:hover {
+  transform: scale(1.4);
+}
+
+.decor {
+  position: absolute;
+  top: 75px;
+  right: -30px;
+  width: 850px;
+  height: 60px;
+  border-top: 1px solid #007AFF;
+  border-right: 1px solid #007AFF;
+  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.dot-decor {
+  position: absolute;
+  top: 130px;
+  right: -33px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #007AFF;
+}
+
 .swiper {
   width: 1209px;
   height: 500px;
   display: flex;
   justify-content: center;
+  user-select: none;
 }
 
 .swiper-wrapper {
-  display: flex;
   align-items: center;
-  margin: 0 auto;
 }
 
 .swiper-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  justify-content: center;
   width: 381px;
   height: 378px;
   border-radius: 14px;
@@ -32,12 +78,6 @@
   padding: 50px 16px 30px;
   text-align: center;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .swiper-slide-next,
@@ -59,7 +99,6 @@
   border-radius: 14px;
   background: #F0BB75;
   box-shadow: 0px 4px 4px 0px rgba(240, 187, 117, 0.3);
-  transition: all 1s ease;
 }
 
 .swiper-pagination {
@@ -84,6 +123,10 @@
 .swiper-slide-next .title1,
 .swiper-slide-prev .title1 {
   font-size: 30px;
+}
+
+.swiper-slide-next .slide-title {
+  margin-left: -20px;
 }
 
 .slide-title::after {
@@ -118,10 +161,6 @@
 .swiper-slide-next .slide-text-email,
 .swiper-slide-prev .slide-text-email {
   margin: 10px 0 10px 0;
-}
-
-.swiper-slide-next .slide-title {
-  margin-left: -20px;
 }
 
 .slide-button {

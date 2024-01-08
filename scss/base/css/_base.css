@@ -1,3 +1,12 @@
+*,
+svg,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,48 +17,24 @@ body {
   font-size: 26px;
   color: #007AFF;
   line-height: normal;
-  max-width: 1440px;
+  overflow-x: hidden;
+}
+
+main,
+header,
+footer {
   margin: 0 auto;
-  margin-bottom: 100px;
+  max-width: 1440px;
+  overflow-x: hidden;
 }
 
-main {
-  padding: 0px 15px;
-  border: 1px solid #d0d0d0;
-}
-@media (min-width: 768px) {
-  main {
-    padding: 0px 50px;
-  }
-}
-@media (min-width: 1024px) {
-  main {
-    padding: 0px 80px;
-  }
-}
-@media (min-width: 1400px) {
-  main {
-    padding: 0px 90px;
-  }
+ul,
+li {
+  list-style: none;
 }
 
-.header {
-  overflow: hidden;
-  padding: 0px 15px;
-  border: 1px solid #d1d0d0;
-}
-@media (min-width: 768px) {
-  .header {
-    padding: 0px 50px;
-  }
-}
-@media (min-width: 1024px) {
-  .header {
-    padding: 0px 80px;
-  }
-}
-@media (min-width: 1400px) {
-  .header {
-    padding: 0px 40px;
-  }
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 }

@@ -1,8 +1,17 @@
 @import "../base/vars";
 @import "../base/mixin";
 
-html{
- scroll-behavior: smooth;
+*,
+svg,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,56 +21,50 @@ body {
   font-size: 26px;
   color: $main-blue-color;
   line-height: normal;
-  max-width: 1440px;
+  overflow-x: hidden;
+}
+
+main,
+header,
+footer {
   margin: 0 auto;
-  margin-bottom: 100px;
-  
+  max-width: 1440px;
+  overflow-x: hidden;
 }
 
-main {
-  padding: 0px 15px;
-  border: 1px solid rgb(208, 208, 208);
-
-  @include tablet {
-    padding: 0px 50px;
-  }
-  @include leptop {
-    padding: 0px 80px;
-  }
-  @include desktop {
-    padding: 0px 90px;
-  }
+ul,
+li {
+  list-style: none;
 }
 
-.header{
-  overflow: hidden;
-
-  padding: 0px 15px;
-  border: 1px solid rgb(209, 208, 208);
-
-  @include tablet {
-    padding: 0px 50px;
-  }
-  @include leptop {
-    padding: 0px 80px;
-  }
-  @include desktop {
-    padding: 0px 40px;
-  }
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 }
 
 
 
+// main {
+//   max-width: 1440px;
+//   margin: 0 auto;
 
+//   border: 1px solid rgb(208, 208, 208);
 
+// @include tablet {
+//   padding: 0px 50px;
+// }
+// @include leptop {
+//   padding: 0px 80px;
+// }
+// @include desktop {
+//   padding: 0px 90px;
+// }
+// }
 
-
-
-
-// change hovers in nav
-// review the settings of img in hero
-// change # in a
-
+// footer{
+//    margin-bottom: 100px;
+// }
 
 
 // width: 100%
