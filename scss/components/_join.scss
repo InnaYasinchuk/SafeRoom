@@ -1,20 +1,21 @@
 @import "../base/vars";
 @import "../base/mixin";
 
-.join-title-wrapper {
+.join-title-wrapper{
   position: relative;
 }
 
 .join-title {
   @include section-title;
   margin-bottom: 50px;
+  
 }
 
-.middle-blue-star4 {
-  @include star(395px, 54px, $dark-blue-color, 1);
+.middle-blue-star4{
+ @include star(395px, 54px, $dark-blue-color, 1);
 }
 
-.decor {
+.decor{
   position: absolute;
   top: 75px;
   right: -20px;
@@ -24,7 +25,7 @@
   border-right: 1px solid $main-blue-color;
 }
 
-.dot-decor {
+.dot-decor{
   position: absolute;
   top: 130px;
   right: -22px;
@@ -43,6 +44,7 @@
 }
 
 .swiper-wrapper {
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +62,7 @@
   border-radius: $border-radius;
   background: rgb(242, 193, 129);
   box-shadow: 0px 4px 4px 0px rgba(242, 197, 139, 0.3);
-}
+ }
 
 .swiper-slide-active {
   width: 465px !important;
@@ -72,8 +74,7 @@
   box-shadow: 0px 4px 4px 0px rgba(240, 187, 117, 0.3);
 }
 
-.swiper-slide-prev,
-.swiper-slide-next {
+.swiper-slide-prev, .swiper-slide-next{
   font-size: 30px;
 }
 
@@ -88,6 +89,7 @@
 }
 
 .slide-title {
+ 
   font-size: 32px;
   font-weight: 500;
   position: relative;
@@ -106,19 +108,18 @@
   background-color: $white-color;
 }
 
-.swiper-slide-prev .slide-title,
-.swiper-slide-next .slide-title {
+.swiper-slide-prev .slide-title, .swiper-slide-next .slide-title{
   font-size: 30px;
-  width: 385px;
+   width: 385px;
 }
 
-.swiper-slide-active .slide-title {
+.swiper-slide-active .slide-title{
   font-size: 32px;
-  width: 420px;
+   width: 420px;
 }
 
 .slide-text {
-  font-size: 26px;
+   font-size: 26px;
   max-width: 350px;
 }
 
@@ -143,7 +144,7 @@
 }
 
 .swiper-slide-active .slide-text-email {
-  max-width: 420px;
+   max-width: 420px;
 }
 
 .slide-button {
@@ -167,3 +168,4 @@
     fill: $hover-button-blue-color;
   }
 }
+

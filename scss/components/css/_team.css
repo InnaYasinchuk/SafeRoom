@@ -1,14 +1,76 @@
-.team {
-  height: 1185px;
-}
-
 .team-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 0;
   max-width: 1170px;
   align-items: end;
+  position: relative;
+}
+.team-header .team-header-decor {
+  position: absolute;
+  top: 27px;
+  left: -45px;
+  width: 562px;
+  height: 151px;
+  border: 1px solid rgba(0, 122, 255, 0.5);
+  border-radius: 50%;
+  transform: rotate(-15deg);
+}
+.team-header .middle-blue-star10 {
+  position: absolute;
+  fill: #0C6CD5;
+  fill-opacity: 1;
+  left: 485px;
+  top: 10px;
+  transition: 0.3s ease-in;
+}
+.team-header .middle-blue-star10:hover {
+  transform: scale(1.4);
+}
+.team-header .micro-blue-star1 {
+  position: absolute;
+  fill: #0C6CD5;
+  fill-opacity: 1;
+  left: 530px;
+  top: 0px;
+  transition: 0.3s ease-in;
+}
+.team-header .micro-blue-star1:hover {
+  transform: scale(1.4);
+}
+.team-header .micro-blue-star2 {
+  position: absolute;
+  fill: #0C6CD5;
+  fill-opacity: 1;
+  left: 520px;
+  top: 235px;
+  transition: 0.3s ease-in;
+}
+.team-header .micro-blue-star2:hover {
+  transform: scale(1.4);
+}
+.team-header .micro-blue-star3 {
+  position: absolute;
+  fill: #0C6CD5;
+  fill-opacity: 1;
+  left: 805px;
+  top: 95px;
+  transition: 0.3s ease-in;
+}
+.team-header .micro-blue-star3:hover {
+  transform: scale(1.4);
+}
+.team-header .micro-blue-star4 {
+  position: absolute;
+  fill: #0C6CD5;
+  fill-opacity: 1;
+  left: 985px;
+  top: 65px;
+  transition: 0.3s ease-in;
+}
+.team-header .micro-blue-star4:hover {
+  transform: scale(1.4);
 }
 .team-header .team-title {
   font-family: "Amatic SC", sans-serif;
@@ -16,56 +78,124 @@
   font-weight: 700;
   color: #007AFF;
   max-width: 262px;
+  line-height: 90px;
 }
 .team-header .team-text {
   font-size: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .team-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 63px;
+  gap: 5%;
 }
 
-.team-description1, .team-description2 {
-  flex: 1;
+.team-description1 {
+  flex-basis: 46%;
+}
+
+.team-description2 {
+  flex-basis: 49%;
+  margin-top: 30px;
+  margin-right: -50px;
 }
 
 .team-description1 p:nth-child(1) {
-  margin: 50px 28px 20px 0;
+  margin: -280px auto 20px;
 }
 
 .team-description1 p:nth-child(2) {
-  margin: 20px 28px 110px 0;
+  margin: 20px auto 105px;
 }
 
 .team-images {
   position: relative;
 }
-.team-images img:nth-child(1) {
+.team-images::after {
+  content: "";
+  background-image: url("../../img/SafeRoom.png");
+  top: -145px;
+  left: 475px;
+  z-index: 3;
+  position: absolute;
+  width: 250px;
+  height: 120px;
+}
+.team-images .img-deroc-circle {
+  width: 72px;
+  height: 72px;
+  border: 1px solid rgba(0, 122, 255, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  z-index: -1;
+  background-color: transparent;
+}
+.team-images .team-img1 {
   position: absolute;
   top: 0px;
   left: 0px;
 }
-.team-images img:nth-child(2) {
+.team-images .team-img2 {
+  width: 174px;
   position: absolute;
-  top: 255px;
+  top: 250px;
   left: 6px;
   z-index: 2;
 }
-.team-images img:nth-child(3) {
+.team-images .team-img2::after {
+  content: "";
+  background-image: url("../../img/plaster.png");
+  top: -33%;
+  left: -15%;
+  z-index: 3;
   position: absolute;
-  top: 175px;
-  left: 400px;
+  width: 80px;
+  height: 72px;
+}
+.team-images .team-img3 {
+  width: 162px;
+  position: absolute;
+  top: 180px;
+  left: 410px;
   z-index: 2;
 }
-
-.team-description2 {
-  padding-left: 100px;
+.team-images .team-img3::after {
+  content: "";
+  background-image: url("../../img/plaster.png");
+  top: -14%;
+  left: 9%;
+  z-index: 3;
+  position: absolute;
+  width: 80px;
+  height: 72px;
 }
+
 .team-description2 img {
   border-radius: 20px;
   box-shadow: -35px -27px 0px #3A98FF;
+  margin-bottom: 75px;
+}
+
+.text-border {
+  margin: 20px -100px 40px 15px;
+  border: 1px solid #007AFF;
+  border-radius: 20px;
+  padding: 10px 29px;
+}
+.text-border p {
+  max-width: 670px;
+}
+
+.button-team-section {
+  display: block;
+  max-width: 365px;
+  text-transform: none;
+  padding: 14px 78px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: 400;
 }

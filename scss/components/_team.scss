@@ -1,69 +1,181 @@
 @import "../base/vars";
 @import "../base/mixin";
 
-
-.team{
-  height: 1185px
-}
 .team-header {
-  @include flex(20px);
+  @include flex;
   max-width: 1170px;
   align-items: end;
+  position: relative;
+
+  .team-header-decor {
+    position: absolute;
+    top: 27px;
+    left: -45px;
+    width: 562px;
+    height: 151px;
+    border: 1px solid rgba($main-blue-color, 0.5);
+    border-radius: 50%;
+    transform: rotate(-15deg);
+ 
+  }
+
+  .middle-blue-star10 {
+      @include star(485px, 10px, $dark-blue-color, 1);
+     
+    }
+
+    .micro-blue-star1{
+       @include star(530px, 0px, $dark-blue-color, 1);
+    }
+
+     .micro-blue-star2{
+       @include star(520px, 235px, $dark-blue-color, 1);
+    }
+
+     .micro-blue-star3{
+       @include star(805px, 95px, $dark-blue-color, 1);
+    }
+
+     .micro-blue-star4{
+       @include star(985px, 65px, $dark-blue-color, 1);
+    }
+
+
 
   .team-title {
     @include section-title;
     max-width: 262px;
+    line-height: 90px;
   }
 
   .team-text {
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
 .team-wrapper {
-  @include flex(63px);
+  @include flex(5%);
 }
 
-.team-description1, .team-description2{
-  flex: 1;
+.team-description1 {
+  flex-basis: 46%;
 }
+
+.team-description2 {
+  flex-basis: 49%;
+  margin-top: 30px;
+  margin-right: -50px;
+}
+
 .team-description1 p:nth-child(1) {
-  margin: 50px 28px 20px 0;
+  margin: -280px auto 20px;
 }
 .team-description1 p:nth-child(2) {
-  margin: 20px 28px 110px 0;
+  margin: 20px auto 105px;
 }
 
 .team-images {
   position: relative;
 
-  img:nth-child(1) {
+  &::after {
+    content: "";
+    background-image: url("../../img/SafeRoom.png");
+    top: -145px;
+    left: 475px;
+    z-index: 3;
+    position: absolute;
+    width: 250px;
+    height: 120px;
+  }
+
+  .img-deroc-circle {
+    width: 72px;
+    height: 72px;
+    border: 1px solid rgba($main-blue-color, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    z-index: -1;
+    background-color: transparent;
+
+    
+  }
+
+  
+
+  .team-img1 {
     position: absolute;
     top: 0px;
     left: 0px;
   }
 
-  img:nth-child(2) {
+  .team-img2 {
+    width: 174px;
     position: absolute;
-    top: 255px;
+    top: 250px;
     left: 6px;
     z-index: 2;
+
+    &::after {
+      content: "";
+      background-image: url("../../img/plaster.png");
+      top: -33%;
+      left: -15%;
+      z-index: 3;
+      position: absolute;
+      width: 80px;
+      height: 72px;
+    }
   }
 
-  img:nth-child(3) {
+
+  .team-img3 {
+    width: 162px;
     position: absolute;
-    top: 175px;
-    left: 400px;
+    top: 180px;
+    left: 410px;
     z-index: 2;
+
+    &::after {
+      content: "";
+      background-image: url("../../img/plaster.png");
+      top: -14%;
+      left: 9%;
+      z-index: 3;
+      position: absolute;
+      width: 80px;
+      height: 72px;
+    }
   }
 }
 
 .team-description2 {
-  padding-left: 100px;
-
   & img {
     border-radius: 20px;
     box-shadow: -35px -27px 0px $blue-color;
+    margin-bottom: 75px;
   }
+}
+
+.text-border {
+  margin: 20px -100px 40px 15px;
+  border: 1px solid $main-blue-color;
+  border-radius: 20px;
+  padding: 10px 29px;
+
+  & p {
+    max-width: 670px;
+  }
+}
+
+.button-team-section {
+  display: block;
+  max-width: 365px;
+  text-transform: none;
+  padding: 14px 78px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: 400;
 }

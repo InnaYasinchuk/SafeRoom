@@ -83,8 +83,7 @@
   box-shadow: 0px 4px 4px 0px rgba(240, 187, 117, 0.3);
 }
 
-.swiper-slide-prev,
-.swiper-slide-next {
+.swiper-slide-prev, .swiper-slide-next {
   font-size: 30px;
 }
 
@@ -117,8 +116,7 @@
   background-color: #fff;
 }
 
-.swiper-slide-prev .slide-title,
-.swiper-slide-next .slide-title {
+.swiper-slide-prev .slide-title, .swiper-slide-next .slide-title {
   font-size: 30px;
   width: 385px;
 }
