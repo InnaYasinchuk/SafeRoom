@@ -22,12 +22,12 @@
         <img src="./img/logo.png" alt="logo" />
         <ul class="menu">
           <li class="menu-item"><a href="#about">Про нас</a></li>
-          <li class="menu-item"><a href="#">Команда</a></li>
+          <li class="menu-item"><a href="#team">Команда</a></li>
           <li class="menu-item"><a href="#">FAQ</a></li>
           <li class="menu-item"><a href="#">Контакти</a></li>
         </ul>
       </div>
-      <a href="#" class="button-join">Приєднатися</a>
+      <a href="#join" class="button-join">Приєднатися</a>
     </nav>
 
     <section class="hero">
@@ -162,18 +162,18 @@
     </section>
 
 
-    <section class="join">
+    <section class="join" id="join">
       <div class="join-title-wrapper">
         <h2 class="join-title">Приєднатися</h2>
         <div class="decor"></div>
         <div class="dot-decor"></div>
-      <svg class="middle-blue-star4" width="46" height="43">
-              <use xlink:href="sprite.svg#middleStar"></use>
-            </svg>
+        <svg class="middle-blue-star4" width="46" height="43">
+          <use xlink:href="sprite.svg#middleStar"></use>
+        </svg>
       </div>
-      
 
-      <div class="swiper">
+
+      <div class="swiper" id="joinSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <h4 class="slide-title title1">Потрібна психологічна підтримка?</h4>
@@ -201,38 +201,38 @@
               class="slide-button" target="_blank">Заповнити форму</a>
           </div>
 
-
-
-          <div class="swiper-slide">
-            <h4 class="slide-title title1">Потрібна психологічна підтримка?</h4>
-            <p class="slide-text">Зареєструйтесь у формі та очікуйте відповіді.</p>
-            <p class="slide-text">Дякуємо за вашу довіру!</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3PCcikv_ua6n4dh_Tdpyv931nNFQqPx2K9kIaZQw_SQijKg/viewform"
-              class="slide-button" target="_blank">Зареєструватися</a>
-          </div>
-
-          <div class="swiper-slide">
-            <h4 class="slide-title ">Зацікавлені у партнерстві?</h4>
-            <p class="slide-text text2">Пишіть нам на електронну пошту: </p>
-            <p class="slide-text-email">saferoom.project@gmail.com</p>
-            <a href="mailto:saferoom.project@gmail.com">
-              <svg class="email-svg" width="60" height="60">
-                <use xlink:href="sprite.svg#email"></use>
-              </svg>
-            </a>
-          </div>
-
-          <div class="swiper-slide">
-            <h4 class="slide-title title1">Хочете до нас в команду?</h4>
-            <p class="slide-text">Заповнюйте форму за посиланням і очікуйте відповіді!</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3PCcikv_ua6n4dh_Tdpyv931nNFQqPx2K9kIaZQw_SQijKg/viewform"
-              class="slide-button" target="_blank">Заповнити форму</a>
-          </div>
-
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
+
+    <section class="team" id="team">
+      <div class="team-header">
+        <h2 class="team-title">НАША КОМАНДА</h2>
+        <p class="team-text">Наш проєкт створений командою підлітків для підлітків!</p>
+      </div>
+      <div class="team-wrapper">
+        <div class="team-description1">
+          <p>Колектив є не лише обличчям, але й серцем нашого проєкту. Кожного дня, близько 20-ти підлітків з різних
+            куточків України й світу волонтерять, щоб забезпечити успішну діяльність проєкту</p>
+          <p>За роботу проєкту відповідають різні департаменти: комунікатори, СММ-відділ, Тікток відділ, HR та інші.</p>
+          <div class="team-images">
+            <img src="./img/team1.jpg" alt="our team">
+            <img src="./img/team2.png" alt="our team">
+            <img src="./img/team3.png" alt="our team">
+          </div>
+        </div>
+        <div class="team-description2">
+          <img src="./img/team4.png" alt="our team">
+          <p>Ціль нашої команди, це перш за все, зробити свій  вклад у доступність психологічної підтримки.</p>
+          <p>Наша команда - це змінотворці та різнопланові індивідууми, які привносять унікальність та своїм внеском
+            роблять проєкт ще кращим</p>
+          <a class="button-join" href="#">Приєднатися</a>
+        </div>
+      </div>
+
+    </section>
+
   </main>
 
   <footer></footer>

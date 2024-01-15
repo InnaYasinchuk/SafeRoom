@@ -1,26 +1,40 @@
-const swiper = new Swiper(".swiper", {
+const joinSwiper = new Swiper("#joinSwiper", {
   slidesPerView: 3,
-  spaceBetween: -7,
+  spaceBetween: 11,
   loop: true,
-  speed: 1000,
-  // grabCursor: true,
+  speed: 0,
   slideToClickedSlide: true,
   centeredSlides: true,
   centeredSlidesBounds: true,
-
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    dynamicBullets: true,
-    dynamicMainBullets: 3,
+    // dynamicBullets: true,
+    // dynamicMainBullets: 3,
   },
-  allowTouchMove: false, 
+  allowTouchMove: false,
+});
 
-  // autoplay: {
-  //   delay: 3500,
-  // },
+function setActiveSlide(index) {
+  joinSwiper.slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.classList.add('swiper-slide-active');
+    } else {
+      slide.classList.remove('swiper-slide-active');
+    }
+  });
+}
 
-  // coverflowEffect: {},
-
+joinSwiper.on('click', function () {
+  const clickedSlide = joinSwiper.clickedIndex;
   
+  if (clickedSlide !== undefined) {
+    joinSwiper.slideTo(clickedSlide);
+    setActiveSlide(clickedSlide);
+  }
+});
+
+joinSwiper.on('slideChange', function () {
+  const activeIndex = joinSwiper.activeIndex;
+  setActiveSlide(activeIndex);
 });

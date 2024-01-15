@@ -1,0 +1,69 @@
+@import "../base/vars";
+@import "../base/mixin";
+
+
+.team{
+  height: 1185px
+}
+.team-header {
+  @include flex(20px);
+  max-width: 1170px;
+  align-items: end;
+
+  .team-title {
+    @include section-title;
+    max-width: 262px;
+  }
+
+  .team-text {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.team-wrapper {
+  @include flex(63px);
+}
+
+.team-description1, .team-description2{
+  flex: 1;
+}
+.team-description1 p:nth-child(1) {
+  margin: 50px 28px 20px 0;
+}
+.team-description1 p:nth-child(2) {
+  margin: 20px 28px 110px 0;
+}
+
+.team-images {
+  position: relative;
+
+  img:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  img:nth-child(2) {
+    position: absolute;
+    top: 255px;
+    left: 6px;
+    z-index: 2;
+  }
+
+  img:nth-child(3) {
+    position: absolute;
+    top: 175px;
+    left: 400px;
+    z-index: 2;
+  }
+}
+
+.team-description2 {
+  padding-left: 100px;
+
+  & img {
+    border-radius: 20px;
+    box-shadow: -35px -27px 0px $blue-color;
+  }
+}

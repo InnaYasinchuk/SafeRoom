@@ -2,7 +2,7 @@
 @import "../base/mixin";
 
 .hero {
-  max-width: 1440px;
+  
   @include flex;
   margin: 35px auto;
   padding: 0 25px 145px 35px;
@@ -10,10 +10,11 @@
   
 }
 
-hero-img {
-  width: 100%;
-  height: 100%;
+.hero-img {
+ max-width: 551px;
   object-fit: cover;
+  margin-right: -70px;
+ 
 }
 
 .hero-content {
@@ -99,6 +100,9 @@ hero-img {
 
 .big-blue-star {
   @include star(1260px, 595px);
+  &:hover{
+    transform: scale(1.05);
+  }
 }
 
 .svg-text {

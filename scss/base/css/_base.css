@@ -28,6 +28,17 @@ footer {
   overflow-x: hidden;
 }
 
+footer {
+  margin-bottom: 200px;
+}
+
+section {
+  max-width: 1440px;
+  margin: 100px auto;
+  padding: 0px 90px;
+  border: 1px solid #d1d0d0;
+}
+
 ul,
 li {
   list-style: none;
