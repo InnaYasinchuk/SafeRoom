@@ -80,7 +80,7 @@ a {
   max-width: 668px;
 }
 .menu-item {
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
   position: relative;
 }
 .menu-item:hover, .menu-item:active {
@@ -129,7 +129,7 @@ a {
   border-radius: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .button-join:hover, .button-join:active, .button-join:focus {
   box-shadow: 0px 4px 4px 0px #97c2f0;
@@ -177,7 +177,7 @@ a {
   color: #fff;
   padding: 14.5px 21px;
   border-radius: 14px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .button-speak:hover, .button-speak:active, .button-speak:focus {
   box-shadow: 0px 4px 4px 0px #FFD497;
@@ -198,7 +198,7 @@ a {
 .socials .icon {
   fill: #F0BB75;
   stroke: #fbf6f6;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .socials .icon:hover, .socials .icon:active {
   fill: #FBB14E;
@@ -210,7 +210,7 @@ a {
   fill-opacity: 0.6;
   left: 35px;
   top: -10px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-blue-star1:hover {
   transform: scale(1.4);
@@ -222,7 +222,7 @@ a {
   fill-opacity: 0.6;
   left: 315px;
   top: 55px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-blue-star2:hover {
   transform: scale(1.4);
@@ -234,7 +234,7 @@ a {
   fill-opacity: 0.6;
   left: 780px;
   top: -25px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-blue-star3:hover {
   transform: scale(1.4);
@@ -246,7 +246,7 @@ a {
   fill-opacity: 0.6;
   left: 715px;
   top: 240px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-blue-star4:hover {
   transform: scale(1.4);
@@ -258,7 +258,7 @@ a {
   fill-opacity: 0.6;
   left: 480px;
   top: 440px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-blue-star5:hover {
   transform: scale(1.4);
@@ -270,7 +270,7 @@ a {
   fill-opacity: 0.6;
   left: 530px;
   top: 590px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-blue-star6:hover {
   transform: scale(1.4);
@@ -282,7 +282,7 @@ a {
   fill-opacity: 0.6;
   left: 830px;
   top: 605px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-blue-star7:hover {
   transform: scale(1.4);
@@ -294,13 +294,13 @@ a {
   fill-opacity: 0.6;
   left: 1260px;
   top: 595px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .big-blue-star:hover {
   transform: scale(1.4);
 }
 .big-blue-star:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .svg-text {
@@ -355,6 +355,7 @@ a {
   font-size: 30px;
   border-radius: 14px;
   background: #fff;
+  transition: 0.2s ease-in;
 }
 .about-button:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -366,7 +367,7 @@ a {
   fill-opacity: 1;
   left: 10px;
   top: 245px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-white-star1:hover {
   transform: scale(1.4);
@@ -378,7 +379,7 @@ a {
   fill-opacity: 1;
   left: 95px;
   top: 250px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-white-star2:hover {
   transform: scale(1.4);
@@ -390,7 +391,7 @@ a {
   fill-opacity: 1;
   left: 1140px;
   top: 200px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-white-star3:hover {
   transform: scale(1.4);
@@ -402,7 +403,7 @@ a {
   fill-opacity: 1;
   left: 1070px;
   top: 310px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-white-star4:hover {
   transform: scale(1.4);
@@ -414,7 +415,7 @@ a {
   fill-opacity: 1;
   left: 220px;
   top: 290px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .middle-blue-star1:hover {
   transform: scale(1.4);
@@ -465,7 +466,7 @@ a {
   fill-opacity: 1;
   left: 20px;
   top: 28px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .middle-blue-star2:hover {
   transform: scale(1.4);
@@ -477,7 +478,7 @@ a {
   fill-opacity: 1;
   left: 400px;
   top: 210px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .middle-blue-star3:hover {
   transform: scale(1.4);
@@ -501,7 +502,7 @@ a {
   fill-opacity: 1;
   left: 395px;
   top: 54px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .middle-blue-star4:hover {
   transform: scale(1.4);
@@ -556,6 +557,10 @@ a {
   border-radius: 14px;
   background: #f2c181;
   box-shadow: 0px 4px 4px 0px rgba(242, 197, 139, 0.3);
+  cursor: pointer;
+}
+.swiper-slide:hover {
+  background: #F0BB75;
 }
 
 .swiper-slide-active {
@@ -566,6 +571,7 @@ a {
   border-radius: 14px;
   background: #F0BB75;
   box-shadow: 0px 4px 4px 0px rgba(240, 187, 117, 0.3);
+  transition: background-color 1s, width 0.5s, height 0.5s;
 }
 
 .swiper-slide-prev, .swiper-slide-next {
@@ -690,7 +696,7 @@ a {
   fill-opacity: 1;
   left: 485px;
   top: 10px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .team-header .middle-blue-star10:hover {
   transform: scale(1.4);
@@ -701,7 +707,7 @@ a {
   fill-opacity: 1;
   left: 530px;
   top: 0px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .team-header .micro-blue-star1:hover {
   transform: scale(1.4);
@@ -712,7 +718,7 @@ a {
   fill-opacity: 1;
   left: 520px;
   top: 235px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .team-header .micro-blue-star2:hover {
   transform: scale(1.4);
@@ -723,7 +729,7 @@ a {
   fill-opacity: 1;
   left: 805px;
   top: 95px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .team-header .micro-blue-star3:hover {
   transform: scale(1.4);
@@ -734,7 +740,7 @@ a {
   fill-opacity: 1;
   left: 985px;
   top: 65px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .team-header .micro-blue-star4:hover {
   transform: scale(1.4);

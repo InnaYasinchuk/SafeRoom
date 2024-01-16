@@ -101,7 +101,7 @@
 .big-blue-star {
   @include star(1260px, 595px);
   &:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 }
 

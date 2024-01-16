@@ -16,7 +16,7 @@
   fill-opacity: 1;
   left: 395px;
   top: 54px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .middle-blue-star4:hover {
   transform: scale(1.4);
@@ -71,6 +71,10 @@
   border-radius: 14px;
   background: #f2c181;
   box-shadow: 0px 4px 4px 0px rgba(242, 197, 139, 0.3);
+  cursor: pointer;
+}
+.swiper-slide:hover {
+  background: #F0BB75;
 }
 
 .swiper-slide-active {
@@ -81,6 +85,7 @@
   border-radius: 14px;
   background: #F0BB75;
   box-shadow: 0px 4px 4px 0px rgba(240, 187, 117, 0.3);
+  transition: background-color 1s, width 0.5s, height 0.5s;
 }
 
 .swiper-slide-prev, .swiper-slide-next {

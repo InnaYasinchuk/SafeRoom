@@ -43,6 +43,7 @@
   font-size: 30px;
   border-radius: 14px;
   background: #fff;
+  transition: 0.2s ease-in;
 }
 .about-button:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -54,7 +55,7 @@
   fill-opacity: 1;
   left: 10px;
   top: 245px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-white-star1:hover {
   transform: scale(1.4);
@@ -66,7 +67,7 @@
   fill-opacity: 1;
   left: 95px;
   top: 250px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-white-star2:hover {
   transform: scale(1.4);
@@ -78,7 +79,7 @@
   fill-opacity: 1;
   left: 1140px;
   top: 200px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-white-star3:hover {
   transform: scale(1.4);
@@ -90,7 +91,7 @@
   fill-opacity: 1;
   left: 1070px;
   top: 310px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .little-white-star4:hover {
   transform: scale(1.4);
@@ -102,7 +103,7 @@
   fill-opacity: 1;
   left: 220px;
   top: 290px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 .middle-blue-star1:hover {
   transform: scale(1.4);
