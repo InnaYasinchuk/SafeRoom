@@ -18,6 +18,10 @@
   &-block {
     @include flex(50px);
   }
+
+  & ul{
+    list-style: none;
+  }
 }
 
 .menu {

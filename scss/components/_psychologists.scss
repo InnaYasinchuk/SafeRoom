@@ -1,0 +1,72 @@
+@import "../base/vars";
+@import "../base/mixin";
+
+.psychologists {
+  margin-top: 70px;
+  padding-top: 55px;
+  padding-bottom: 37px;
+  background-image: url(../../img/psychologists-bgr.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: $border-radius;
+}
+.psychologists-header {
+  @include flex;
+  margin-bottom: 35px;
+}
+.psychologists-image-wrapper {
+  @include flex(0px);
+  justify-content: center;
+
+  width: 610px;
+  margin-left: -100px;
+  padding-left: 50px;
+  border-bottom: 2px solid $white-color;
+
+  & img {
+    margin-bottom: -13px;
+  }
+}
+.psychologists-title-wrapper {
+}
+
+.psychologists-title {
+  @include section-title($white-color);
+}
+
+.psychologists-advantages {
+  color: $white-color;
+
+  & li {
+    padding-bottom: 5px;
+  }
+}
+
+.psychologists-button-wrapper {
+  position: relative;
+  margin: 43px auto 0px;
+  max-width: 365px;
+
+  .button-psychologists-section {
+    display: block;
+    text-transform: none;
+    padding: 14px 78px;
+    font-size: 30px;
+    font-weight: 400;
+    z-index: 3;
+    position: relative;
+    
+  }
+  .psychologists-decor {
+    position: absolute;
+    top: -13px;
+    left: 7px;
+    width: 345px;
+    height: 91px;
+    border: 1px solid rgba($white-color, 0.5);
+    border-radius: 50%;
+    transform: rotate(-8deg);
+    z-index: 2;
+  }
+}

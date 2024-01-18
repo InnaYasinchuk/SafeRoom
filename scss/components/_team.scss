@@ -1,6 +1,10 @@
 @import "../base/vars";
 @import "../base/mixin";
 
+
+.team{
+  padding-bottom: 100px;
+}
 .team-header {
   @include flex;
   max-width: 1170px;

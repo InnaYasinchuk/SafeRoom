@@ -20,6 +20,9 @@
   align-items: center;
   gap: 50px;
 }
+.nav ul {
+  list-style: none;
+}
 
 .menu {
   display: flex;
