@@ -1,0 +1,63 @@
+@import "../base/vars";
+@import "../base/mixin";
+
+.faq {
+  padding: 0 0 200px 0;
+}
+.faq-title {
+  @include section-title($accent-color);
+  text-align: center;
+  border-top: 1px solid $main-blue-color;
+  border-bottom: 1px solid $main-blue-color;
+}
+.accordion {
+  padding: 30px 40px;
+  list-style: none;
+}
+.accordion-item {
+  padding: 20px 50px;
+  border-bottom: 1px solid $main-blue-color;
+  position: relative;
+  
+}
+
+.faq-close{
+  fill: $main-blue-color;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  transform: rotate(0deg) ;
+  transition: $transition;
+}
+
+.accordion-item-title {
+  font-size: 32px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover, &:active {
+    color: $accent-color;
+  }
+
+  & span .faq-close:hover{
+    fill: $accent-color !important;
+  }
+  
+}
+.accordion-item-content {
+  max-width: 1195px;
+  margin-top: 0px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: .3s ease-in-out;
+  padding-right: 20px;
+
+  & a{
+    font-weight: 700;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

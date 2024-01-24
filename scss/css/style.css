@@ -45,6 +45,38 @@ a {
   color: inherit;
 }
 
+::-webkit-scrollbar {
+  width: 30px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbf6f6;
+  box-shadow: 0px 1px 15px #97c2f0 inset;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #97c2f0, #FFD497);
+  border-radius: 8px;
+  border: 1px solid #FBB14E;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #3A98FF, #FBB14E);
+}
+
+::-webkit-scrollbar-button:start:decrement {
+  background: #97c2f0 url(../../img/Scrollbar-star.svg) no-repeat center;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-button:end:increment {
+  background: #FFD497 url(../../img/Scrollbar-star.svg) no-repeat center;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-button:end:increment:hover {
+  background-color: #FBB14E;
+}
+
 .header {
   max-width: 1440px;
   margin: 0 auto;
@@ -210,10 +242,10 @@ a {
   fill-opacity: 0.6;
   left: 35px;
   top: -10px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .little-blue-star1:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .little-blue-star2 {
@@ -222,10 +254,26 @@ a {
   fill-opacity: 0.6;
   left: 315px;
   top: 55px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .little-blue-star2:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .little-blue-star3 {
@@ -234,10 +282,10 @@ a {
   fill-opacity: 0.6;
   left: 780px;
   top: -25px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .little-blue-star3:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .little-blue-star4 {
@@ -246,10 +294,26 @@ a {
   fill-opacity: 0.6;
   left: 715px;
   top: 240px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .little-blue-star4:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .little-blue-star5 {
@@ -258,10 +322,10 @@ a {
   fill-opacity: 0.6;
   left: 480px;
   top: 440px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .little-blue-star5:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .little-blue-star6 {
@@ -270,10 +334,26 @@ a {
   fill-opacity: 0.6;
   left: 530px;
   top: 590px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .little-blue-star6:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .little-blue-star7 {
@@ -282,22 +362,22 @@ a {
   fill-opacity: 0.6;
   left: 830px;
   top: 605px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .little-blue-star7:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .big-blue-star {
   position: absolute;
   fill: #007AFF;
   fill-opacity: 0.6;
-  left: 1260px;
-  top: 595px;
-  transition: 0.3s ease-in;
+  left: 1255px;
+  top: 590px;
+  transition: transform 1s ease-in-out;
 }
 .big-blue-star:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 .big-blue-star:hover {
   transform: scale(1.1);
@@ -368,10 +448,10 @@ a {
   fill-opacity: 1;
   left: 10px;
   top: 245px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .little-white-star1:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .little-white-star2 {
@@ -380,10 +460,26 @@ a {
   fill-opacity: 1;
   left: 95px;
   top: 250px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .little-white-star2:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .little-white-star3 {
@@ -392,10 +488,10 @@ a {
   fill-opacity: 1;
   left: 1140px;
   top: 200px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .little-white-star3:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .little-white-star4 {
@@ -404,10 +500,26 @@ a {
   fill-opacity: 1;
   left: 1070px;
   top: 310px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .little-white-star4:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .middle-blue-star1 {
@@ -416,10 +528,10 @@ a {
   fill-opacity: 1;
   left: 220px;
   top: 290px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .middle-blue-star1:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .meetings-title {
@@ -467,10 +579,10 @@ a {
   fill-opacity: 1;
   left: 20px;
   top: 28px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .middle-blue-star2:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .middle-blue-star3 {
@@ -479,10 +591,26 @@ a {
   fill-opacity: 1;
   left: 400px;
   top: 210px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .middle-blue-star3:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .join-title-wrapper {
@@ -503,17 +631,33 @@ a {
   fill-opacity: 1;
   left: 395px;
   top: 54px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .middle-blue-star4:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .decor {
   position: absolute;
   top: 75px;
   right: -20px;
-  width: 840px;
+  width: 855px;
   height: 60px;
   border-top: 1px solid #007AFF;
   border-right: 1px solid #007AFF;
@@ -667,6 +811,7 @@ a {
 
 .email-svg {
   fill: #fff;
+  transition: 0.3s ease-in;
 }
 .email-svg:hover {
   fill: #97c2f0;
@@ -701,10 +846,26 @@ a {
   fill-opacity: 1;
   left: 485px;
   top: 10px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .team-header .middle-blue-star10:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 .team-header .micro-blue-star1 {
   position: absolute;
@@ -712,10 +873,10 @@ a {
   fill-opacity: 1;
   left: 530px;
   top: 0px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .team-header .micro-blue-star1:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 .team-header .micro-blue-star2 {
   position: absolute;
@@ -723,10 +884,26 @@ a {
   fill-opacity: 1;
   left: 520px;
   top: 235px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .team-header .micro-blue-star2:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 .team-header .micro-blue-star3 {
   position: absolute;
@@ -734,10 +911,10 @@ a {
   fill-opacity: 1;
   left: 805px;
   top: 95px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .team-header .micro-blue-star3:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 .team-header .micro-blue-star4 {
   position: absolute;
@@ -745,10 +922,26 @@ a {
   fill-opacity: 1;
   left: 985px;
   top: 65px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .team-header .micro-blue-star4:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 .team-header .team-title {
   font-family: "Amatic SC", sans-serif;
@@ -912,6 +1105,10 @@ a {
   margin-bottom: -13px;
 }
 
+.psychologists-title-wrapper {
+  position: relative;
+}
+
 .psychologists-title {
   font-family: "Amatic SC", sans-serif;
   font-size: 96px;
@@ -950,4 +1147,66 @@ a {
   border-radius: 50%;
   transform: rotate(-8deg);
   z-index: 2;
+}
+
+.faq {
+  padding: 0 0 200px 0;
+}
+
+.faq-title {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  color: #F0BB75;
+  text-align: center;
+  border-top: 1px solid #007AFF;
+  border-bottom: 1px solid #007AFF;
+}
+
+.accordion {
+  padding: 30px 40px;
+  list-style: none;
+}
+
+.accordion-item {
+  padding: 20px 50px;
+  border-bottom: 1px solid #007AFF;
+  position: relative;
+}
+
+.faq-close {
+  fill: #007AFF;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in;
+}
+
+.accordion-item-title {
+  font-size: 32px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.accordion-item-title:hover, .accordion-item-title:active {
+  color: #F0BB75;
+}
+.accordion-item-title span .faq-close:hover {
+  fill: #F0BB75 !important;
+}
+
+.accordion-item-content {
+  max-width: 1195px;
+  margin-top: 0px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  padding-right: 20px;
+}
+.accordion-item-content a {
+  font-weight: 700;
+}
+.accordion-item-content a:hover {
+  text-decoration: underline;
 }

@@ -50,6 +50,7 @@
 
 .little-white-star2 {
   @include star(95px, 250px, $white-color, 1);
+   @include starAnimation(4s);
 }
 
 .little-white-star3 {
@@ -58,6 +59,7 @@
 
 .little-white-star4 {
   @include star(1070px, 310px, $white-color, 1);
+   @include starAnimation;
 }
 
 .middle-blue-star1{

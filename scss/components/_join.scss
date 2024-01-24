@@ -13,13 +13,14 @@
 
 .middle-blue-star4{
  @include star(395px, 54px, $dark-blue-color, 1);
+  @include starAnimation(8s);
 }
 
 .decor{
   position: absolute;
   top: 75px;
   right: -20px;
-  width: 840px;
+  width: 855px;
   height: 60px;
   border-top: 1px solid $main-blue-color;
   border-right: 1px solid $main-blue-color;
@@ -171,6 +172,7 @@
 
 .email-svg {
   fill: $white-color;
+  transition: $transition;
   &:hover {
     fill: $hover-button-blue-color;
   }

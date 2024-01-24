@@ -56,10 +56,10 @@
   fill-opacity: 1;
   left: 10px;
   top: 245px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .little-white-star1:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .little-white-star2 {
@@ -68,10 +68,26 @@
   fill-opacity: 1;
   left: 95px;
   top: 250px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .little-white-star2:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .little-white-star3 {
@@ -80,10 +96,10 @@
   fill-opacity: 1;
   left: 1140px;
   top: 200px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .little-white-star3:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 .little-white-star4 {
@@ -92,10 +108,26 @@
   fill-opacity: 1;
   left: 1070px;
   top: 310px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .little-white-star4:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .middle-blue-star1 {
@@ -104,8 +136,8 @@
   fill-opacity: 1;
   left: 220px;
   top: 290px;
-  transition: 0.3s ease-in;
+  transition: transform 1s ease-in-out;
 }
 .middle-blue-star1:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }

@@ -1,5 +1,6 @@
 "use strict";
 
+// SWIPER
 var joinSwiper = new Swiper("#joinSwiper", {
   slidesPerView: 3,
   spaceBetween: 11,
@@ -20,14 +21,14 @@ var joinSwiper = new Swiper("#joinSwiper", {
 function setActiveSlide(index) {
   joinSwiper.slides.forEach(function (slide, i) {
     if (i === index) {
-      slide.classList.add('swiper-slide-active');
+      slide.classList.add("swiper-slide-active");
     } else {
-      slide.classList.remove('swiper-slide-active');
+      slide.classList.remove("swiper-slide-active");
     }
   });
 }
 
-joinSwiper.on('click', function () {
+joinSwiper.on("click", function () {
   var clickedSlide = joinSwiper.clickedIndex;
 
   if (clickedSlide !== undefined) {
@@ -35,7 +36,39 @@ joinSwiper.on('click', function () {
     setActiveSlide(clickedSlide);
   }
 });
-joinSwiper.on('slideChange', function () {
+joinSwiper.on("slideChange", function () {
   var activeIndex = joinSwiper.activeIndex;
   setActiveSlide(activeIndex);
+}); // FAQ
+
+var accordionTitle = document.querySelectorAll(".accordion-item-title");
+accordionTitle.forEach(function (el, index) {
+  el.addEventListener("click", function () {
+    var accordionContent = el.nextElementSibling;
+    var faqClose = document.querySelectorAll(".faq-close")[index];
+
+    if (accordionContent.style.maxHeight) {
+      document.querySelectorAll(".accordion-item-content").forEach(function (el) {
+        el.style.maxHeight = null;
+        el.style.marginTop = "0px";
+      });
+      document.querySelectorAll(".faq-close").forEach(function (el) {
+        el.style.transform = "rotate(0deg)";
+        el.style.fill = "#007AFF";
+      });
+    } else {
+      document.querySelectorAll(".accordion-item-content").forEach(function (el) {
+        el.style.maxHeight = null;
+        el.style.marginTop = "0px";
+      });
+      document.querySelectorAll(".faq-close").forEach(function (el) {
+        el.style.transform = "rotate(0deg)";
+        el.style.fill = "#007AFF";
+      });
+      accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+      accordionContent.style.marginTop = "20px";
+      faqClose.style.transform = "rotate(45deg)";
+      faqClose.style.fill = "#F0BB75";
+    }
+  });
 });

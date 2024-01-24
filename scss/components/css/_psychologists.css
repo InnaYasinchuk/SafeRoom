@@ -32,6 +32,10 @@
   margin-bottom: -13px;
 }
 
+.psychologists-title-wrapper {
+  position: relative;
+}
+
 .psychologists-title {
   font-family: "Amatic SC", sans-serif;
   font-size: 96px;

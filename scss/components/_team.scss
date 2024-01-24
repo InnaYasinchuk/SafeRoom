@@ -25,6 +25,7 @@
 
   .middle-blue-star10 {
       @include star(485px, 10px, $dark-blue-color, 1);
+       @include starAnimation(8s);
      
     }
 
@@ -34,6 +35,7 @@
 
      .micro-blue-star2{
        @include star(520px, 235px, $dark-blue-color, 1);
+        @include starAnimation(4s);
     }
 
      .micro-blue-star3{
@@ -42,6 +44,7 @@
 
      .micro-blue-star4{
        @include star(985px, 65px, $dark-blue-color, 1);
+        @include starAnimation;
     }
 
 

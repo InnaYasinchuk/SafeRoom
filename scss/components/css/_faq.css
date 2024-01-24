@@ -1,0 +1,61 @@
+.faq {
+  padding: 0 0 200px 0;
+}
+
+.faq-title {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  color: #F0BB75;
+  text-align: center;
+  border-top: 1px solid #007AFF;
+  border-bottom: 1px solid #007AFF;
+}
+
+.accordion {
+  padding: 30px 40px;
+  list-style: none;
+}
+
+.accordion-item {
+  padding: 20px 50px;
+  border-bottom: 1px solid #007AFF;
+  position: relative;
+}
+
+.faq-close {
+  fill: #007AFF;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in;
+}
+
+.accordion-item-title {
+  font-size: 32px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.accordion-item-title:hover, .accordion-item-title:active {
+  color: #F0BB75;
+}
+.accordion-item-title span .faq-close:hover {
+  fill: #F0BB75 !important;
+}
+
+.accordion-item-content {
+  max-width: 1195px;
+  margin-top: 0px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  padding-right: 20px;
+}
+.accordion-item-content a {
+  font-weight: 700;
+}
+.accordion-item-content a:hover {
+  text-decoration: underline;
+}

@@ -77,6 +77,7 @@
 }
 .little-blue-star1:hover {
   transform: scale(1.4);
+  transform: rotate(360deg);
 }
 
 .little-blue-star2 {
@@ -86,9 +87,26 @@
   left: 315px;
   top: 55px;
   transition: 0.3s ease-in;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .little-blue-star2:hover {
   transform: scale(1.4);
+  transform: rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .little-blue-star3 {
@@ -101,6 +119,7 @@
 }
 .little-blue-star3:hover {
   transform: scale(1.4);
+  transform: rotate(360deg);
 }
 
 .little-blue-star4 {
@@ -110,9 +129,26 @@
   left: 715px;
   top: 240px;
   transition: 0.3s ease-in;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .little-blue-star4:hover {
   transform: scale(1.4);
+  transform: rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .little-blue-star5 {
@@ -125,6 +161,7 @@
 }
 .little-blue-star5:hover {
   transform: scale(1.4);
+  transform: rotate(360deg);
 }
 
 .little-blue-star6 {
@@ -134,9 +171,26 @@
   left: 530px;
   top: 590px;
   transition: 0.3s ease-in;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .little-blue-star6:hover {
   transform: scale(1.4);
+  transform: rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .little-blue-star7 {
@@ -149,18 +203,20 @@
 }
 .little-blue-star7:hover {
   transform: scale(1.4);
+  transform: rotate(360deg);
 }
 
 .big-blue-star {
   position: absolute;
   fill: #007AFF;
   fill-opacity: 0.6;
-  left: 1260px;
-  top: 595px;
+  left: 1255px;
+  top: 590px;
   transition: 0.3s ease-in;
 }
 .big-blue-star:hover {
   transform: scale(1.4);
+  transform: rotate(360deg);
 }
 .big-blue-star:hover {
   transform: scale(1.1);

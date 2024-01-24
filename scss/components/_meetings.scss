@@ -36,8 +36,10 @@
 
 .middle-blue-star2{
   @include star(20px, 28px, $dark-blue-color, 1);
+   
 }
 
 .middle-blue-star3{
   @include star(400px, 210px, $dark-blue-color, 1);
+   @include starAnimation(7s);
 }

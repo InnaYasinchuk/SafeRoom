@@ -74,10 +74,12 @@
 
 .little-blue-star1 {
   @include star(35px, -10px);
+ 
 }
 
 .little-blue-star2 {
   @include star(315px, 55px);
+   @include starAnimation(4s);
 }
 
 .little-blue-star3 {
@@ -86,6 +88,7 @@
 
 .little-blue-star4 {
   @include star(715px, 240px);
+  @include starAnimation;
 }
 
 .little-blue-star5 {
@@ -94,14 +97,16 @@
 
 .little-blue-star6 {
   @include star(530px, 590px);
+  @include starAnimation(5s);
 }
 
 .little-blue-star7 {
   @include star(830px, 605px);
+  
 }
 
 .big-blue-star {
-  @include star(1260px, 595px);
+  @include star(1255px, 590px);
   &:hover{
     transform: scale(1.1);
   }

@@ -16,17 +16,33 @@
   fill-opacity: 1;
   left: 395px;
   top: 54px;
-  transition: 0.2s ease-in;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .middle-blue-star4:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .decor {
   position: absolute;
   top: 75px;
   right: -20px;
-  width: 840px;
+  width: 855px;
   height: 60px;
   border-top: 1px solid #007AFF;
   border-right: 1px solid #007AFF;
@@ -180,6 +196,7 @@
 
 .email-svg {
   fill: #fff;
+  transition: 0.3s ease-in;
 }
 .email-svg:hover {
   fill: #97c2f0;
