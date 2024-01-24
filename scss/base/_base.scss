@@ -58,7 +58,7 @@ a {
 }
 
 ::-webkit-scrollbar{
-  width: 30px;
+  width: 20px;
 }
 ::-webkit-scrollbar-track{
   background: #fbf6f6;
@@ -69,8 +69,8 @@ a {
 ::-webkit-scrollbar-thumb{
   
   background: linear-gradient(to bottom, #97c2f0, #FFD497);
-  border-radius: 8px;
-  border: 1px solid #FBB14E;
+  border-radius: 5px;
+  border: 1px solid #97c2f0;
   
   &:hover{
     background:linear-gradient(to bottom,#3A98FF, #FBB14E);
@@ -80,13 +80,13 @@ a {
 ::-webkit-scrollbar-button:start:decrement {
   background: #97c2f0 url(../../img/Scrollbar-star.svg) no-repeat center; 
   // box-shadow: 0px 1px 15px #3A98FF inset;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-button:end:increment {
   background: #FFD497 url(../../img/Scrollbar-star.svg) no-repeat center;
   // box-shadow: 0px 1px 15px #FBB14E inset;
-  border-radius: 5px;
+  border-radius: 2px;
 
   &:hover{
     background-color: #FBB14E;
