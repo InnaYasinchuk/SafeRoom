@@ -12,7 +12,8 @@
   border-radius: $border-radius;
 }
 .psychologists-header {
-  @include flex;
+  @include flex(100px);
+  justify-content: start;
   margin-bottom: 35px;
 }
 .psychologists-image-wrapper {
@@ -30,14 +31,24 @@
 }
 .psychologists-title-wrapper {
   position: relative;
+  align-self: start;
+ 
 }
 
 .psychologists-title {
   @include section-title($white-color);
 }
 
+.svg-ps-text {
+  position: absolute;
+  left: -100px;
+  top: -20px;
+ 
+}
+
 .psychologists-advantages {
   color: $white-color;
+  padding-left: 30px;
 
   & li {
     padding-bottom: 5px;

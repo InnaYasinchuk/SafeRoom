@@ -2,14 +2,74 @@
   padding: 0 0 200px 0;
 }
 
+.faq-title-wrapper {
+  position: relative;
+  border-top: 1px solid #007AFF;
+  border-bottom: 1px solid #007AFF;
+}
+
 .faq-title {
   font-family: "Amatic SC", sans-serif;
   font-size: 96px;
   font-weight: 700;
   color: #F0BB75;
   text-align: center;
-  border-top: 1px solid #007AFF;
-  border-bottom: 1px solid #007AFF;
+}
+
+.middle-blue-star11 {
+  position: absolute;
+  fill: #0C6CD5;
+  fill-opacity: 1;
+  left: 430px;
+  top: 45px;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.middle-blue-star11:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.middle-blue-star12 {
+  position: absolute;
+  fill: #0C6CD5;
+  fill-opacity: 1;
+  left: 970px;
+  top: 45px;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.middle-blue-star12:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .accordion {

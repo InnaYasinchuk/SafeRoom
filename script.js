@@ -1,3 +1,5 @@
+AOS.init();
+
 // SWIPER
 
 const joinSwiper = new Swiper("#joinSwiper", {

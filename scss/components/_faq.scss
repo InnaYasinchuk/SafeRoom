@@ -4,12 +4,28 @@
 .faq {
   padding: 0 0 200px 0;
 }
+
+.faq-title-wrapper{
+position: relative;
+border-top: 1px solid $main-blue-color;
+border-bottom: 1px solid $main-blue-color;
+}
+
 .faq-title {
   @include section-title($accent-color);
   text-align: center;
-  border-top: 1px solid $main-blue-color;
-  border-bottom: 1px solid $main-blue-color;
 }
+
+.middle-blue-star11{
+  @include star(430px, 45px, $dark-blue-color, 1);
+  @include starAnimation(8s);
+}
+
+.middle-blue-star12{
+  @include star(970px, 45px, $dark-blue-color, 1);
+  @include starAnimation(8s);
+}
+
 .accordion {
   padding: 30px 40px;
   list-style: none;

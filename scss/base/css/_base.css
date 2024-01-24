@@ -46,7 +46,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 17px;
 }
 
 ::-webkit-scrollbar-track {
@@ -67,6 +67,9 @@ a {
 ::-webkit-scrollbar-button:start:decrement {
   background: #97c2f0 url(../../img/Scrollbar-star.svg) no-repeat center;
   border-radius: 2px;
+}
+::-webkit-scrollbar-button:start:decrement:hover {
+  background-color: #FBB14E;
 }
 
 ::-webkit-scrollbar-button:end:increment {

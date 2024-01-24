@@ -13,7 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0;
+  gap: 100px;
+  justify-content: start;
   margin-bottom: 35px;
 }
 
@@ -34,6 +35,7 @@
 
 .psychologists-title-wrapper {
   position: relative;
+  align-self: start;
 }
 
 .psychologists-title {
@@ -43,8 +45,15 @@
   color: #fff;
 }
 
+.svg-ps-text {
+  position: absolute;
+  left: -100px;
+  top: -20px;
+}
+
 .psychologists-advantages {
   color: #fff;
+  padding-left: 30px;
 }
 .psychologists-advantages li {
   padding-bottom: 5px;

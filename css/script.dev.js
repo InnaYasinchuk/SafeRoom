@@ -1,6 +1,7 @@
 "use strict";
 
-// SWIPER
+AOS.init(); // SWIPER
+
 var joinSwiper = new Swiper("#joinSwiper", {
   slidesPerView: 3,
   spaceBetween: 11,
