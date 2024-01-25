@@ -20,9 +20,13 @@
   align-items: center;
   gap: 0;
   flex-direction: column;
+  transition: 0.3s ease-in;
 }
 .meetings-item p {
   text-align: center;
+}
+.meetings-item:hover {
+  transform: scale(1.1);
 }
 
 .meetings-img-wrapper1, .meetings-img-wrapper2 {

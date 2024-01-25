@@ -16,9 +16,14 @@
 .meetings-item {
  @include flex;
  flex-direction: column;
+ transition: $transition;
 
  & p{
   text-align: center;
+ }
+
+ &:hover{
+  transform: scale(1.1);
  }
 }
 
