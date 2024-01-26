@@ -1,6 +1,6 @@
 "use strict";
 
-AOS.init(); // SWIPER
+AOS.init(); // SWIPER JOIN
 
 var joinSwiper = new Swiper("#joinSwiper", {
   slidesPerView: 3,
@@ -40,6 +40,22 @@ joinSwiper.on("click", function () {
 joinSwiper.on("slideChange", function () {
   var activeIndex = joinSwiper.activeIndex;
   setActiveSlide(activeIndex);
+}); // SWIPER REVIEWS
+
+var reviewsSwiper = new Swiper("#reviewsSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 18,
+  loop: true,
+  speed: 2000,
+  slideToClickedSlide: true,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true // dynamicMainBullets: 3,
+
+  }
 }); // FAQ
 
 var accordionTitle = document.querySelectorAll(".accordion-item-title");

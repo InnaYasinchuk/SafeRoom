@@ -69,7 +69,7 @@ a {
   border-radius: 2px;
 }
 ::-webkit-scrollbar-button:start:decrement:hover {
-  background-color: #FBB14E;
+  background-color: #3A98FF;
 }
 
 ::-webkit-scrollbar-button:end:increment {

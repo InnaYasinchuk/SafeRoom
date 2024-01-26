@@ -1,6 +1,6 @@
 AOS.init();
 
-// SWIPER
+// SWIPER JOIN
 
 const joinSwiper = new Swiper("#joinSwiper", {
   slidesPerView: 3,
@@ -42,6 +42,26 @@ joinSwiper.on("slideChange", function () {
   const activeIndex = joinSwiper.activeIndex;
   setActiveSlide(activeIndex);
 });
+
+// SWIPER REVIEWS
+
+const reviewsSwiper = new Swiper("#reviewsSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 18,
+  loop: true,
+  speed: 2000,
+  slideToClickedSlide: true,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+    // dynamicMainBullets: 3,
+  }
+ 
+});
+
 
 // FAQ
 

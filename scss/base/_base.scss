@@ -81,7 +81,8 @@ a {
   background: $hover-button-blue-color url(../../img/Scrollbar-star.svg) no-repeat center; 
   border-radius: 2px;
   &:hover{
-    background-color:$hover-accent-color;
+    background-color:$blue-color;
+;
   }
 }
 

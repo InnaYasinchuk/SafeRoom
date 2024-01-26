@@ -1,0 +1,141 @@
+@import "../base/vars";
+@import "../base/mixin";
+
+.reviews {
+  padding: 0;
+  padding-bottom: 200px;
+}
+.reviews-title {
+  @include section-title;
+  margin-left: 90px;
+}
+.swiper.swiper-reviews {
+  margin: 0;
+  margin-top: 50px;
+  width: 1443px;
+  height: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-reviews .swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews-swiper-slide-wrapper {
+  height: 346px;
+  border: 1px solid $white-color;
+  border-radius: 20px;
+  padding: 30px 10px;
+  color: $white-color;
+}
+
+.swiper-slide .reviews-slide1,
+.swiper-slide .reviews-slide2,
+.swiper-slide .reviews-slide3,
+.swiper-slide .reviews-slide4,
+.swiper-slide .reviews-slide5 {
+  padding: 20px 9px;
+  background-color: $blue-color;
+  border-radius: 20px;
+  position: relative;
+  width: 465px;
+
+  &::after {
+    content: "";
+    background: url(../../img/Polygon.svg) no-repeat;
+    bottom: -65px;
+    left: 40px;
+    width: 90px;
+    height: 89px;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.swiper-slide .reviews-slide1 {
+  &::before {
+    content: "";
+    background: url(../../img/rev-slide1.svg) no-repeat;
+    bottom: 25px;
+    right: 45px;
+    width: 117px;
+    height: 115px;
+    position: absolute;
+  }
+}
+
+.swiper-slide .reviews-slide2 {
+  &::before {
+    content: "";
+    background: url(../../img/rev-slide2.png) no-repeat;
+    bottom: -11px;
+    right: 45px;
+    width: 145px;
+    height: 100px;
+    position: absolute;
+  }
+
+  &-decor1,
+  &-decor2 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: $white-color;
+    filter: blur(8px);
+    border-radius: $border-radius;
+  }
+
+  &-decor1 {
+    bottom: 70px;
+    right: 155px;
+  }
+
+  &-decor2 {
+    bottom: 70px;
+    right: 70px;
+  }
+}
+
+.superMicroStar1 {
+  @include star(65px, 315px, $white-color, 1);
+  @include starAnimation(4s);
+}
+
+.superMicroStar2 {
+  @include star(135px, 300px, $white-color, 1);
+  @include starAnimation;
+}
+.superMicroStar3 {
+  @include star(180px, 265px, $white-color, 1);
+  @include starAnimation(8s);
+}
+
+.superMicroStar4 {
+  @include star(225px, 300px, $white-color, 1);
+  @include starAnimation;
+}
+
+.superMicroStar5 {
+  @include star(245px, 300px, $white-color, 1);
+  // @include starAnimation;
+}
+.superMicroStar6 {
+  @include star(195px, 300px, $white-color, 1);
+  @include starAnimation;
+}
+.superMicroStar7 {
+  @include star(215px, 300px, $white-color, 1);
+  @include starAnimation;
+}
+
+.middle-blue-star13{
+  @include star(370px, 295px, $white-color, 1);
+  @include starAnimation;
+}
+
+.little-white-star5{
+  @include star(320px, 295px, $white-color, 1);
+  @include starAnimation;
+}
