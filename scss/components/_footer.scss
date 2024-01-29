@@ -1,0 +1,110 @@
+@import "../base/base";
+@import "../base/vars";
+@import "../base/mixin";
+
+.footer {
+  @include flex(40px);
+  align-items: start;
+  background-color: $blue-color;
+  padding: 60px 105px 100px 140px;
+  margin: 150px auto 50px;
+  font-family: "Amatic SC", sans-serif;
+  color: $white-color;
+  font-weight: 700;
+  border-radius: $border-radius;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    background: url(../../img/footer-img.png) no-repeat;
+    bottom: -12px;
+    right: -20px;
+    width: 538px;
+    height: 124px;
+    position: absolute;
+  }
+}
+
+.logo-footer {
+  @include flex(13px);
+  margin-right: 100px;
+
+  & img {
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.footer-titles {
+  font-size: 36px;
+  margin-top: 12px;
+}
+
+.logo-footer .footer-titles {
+  margin-top: 0;
+}
+
+address ul {
+  list-style: none;
+}
+
+address .footer-titles {
+  margin-bottom: 13px;
+}
+
+.address-link {
+  margin-bottom: 10px;
+  font-style: 24px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-socials svg {
+  fill: $white-color;
+}
+
+footer .icon {
+  margin-top: 22px;
+  margin-right: 20px;
+  fill: $white-color;
+  stroke: $blue-color;
+  transition: $transition;
+
+  &:hover,
+  &:active {
+    fill: $hover-accent-color;
+  }
+}
+
+footer .button-footer {
+  margin-top: 12px;
+  margin-left: 70px;
+  padding: 2px 47px;
+  font-size: 44px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footer-star1 {
+  @include star(85px, 75px, $accent-color, 1);
+  @include starAnimation;
+}
+
+.footer-star2 {
+  @include star(355px, 165px, $white-color, 1);
+  @include starAnimation(4s);
+}
+
+.footer-star3 {
+  @include star(995px, 85px, $accent-color, 1);
+  @include starAnimation(8s);
+}
+
+.footer-star4 {
+  @include star(1305px, 180px, $white-color, 1);
+  @include starAnimation(4s);
+}

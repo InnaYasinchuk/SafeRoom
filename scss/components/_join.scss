@@ -144,6 +144,11 @@
   white-space: normal;
   word-break: break-all;
   font-size: 26px;
+  transition: $transition;
+
+  &:hover{
+   text-decoration: underline;
+  }
 }
 
 .swiper-join .swiper-slide-next .slide-text-email,
