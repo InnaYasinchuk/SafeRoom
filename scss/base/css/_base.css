@@ -7,6 +7,12 @@ svg,
   box-sizing: border-box;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color-scheme: light;
+    background-color: #fbf6f6;
+  }
+}
 html {
   scroll-behavior: smooth;
 }

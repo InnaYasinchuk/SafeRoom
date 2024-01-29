@@ -10,6 +10,13 @@ svg,
   box-sizing: border-box;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color-scheme: light;
+    background-color: $background-color;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
