@@ -20,6 +20,12 @@
   align-items: center;
   gap: 50px;
 }
+.nav-block img {
+  transition: 0.3s ease-in;
+}
+.nav-block img:hover {
+  transform: scale(1.1);
+}
 .nav ul {
   list-style: none;
 }

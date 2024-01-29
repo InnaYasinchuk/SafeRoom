@@ -102,6 +102,12 @@ a {
   align-items: center;
   gap: 50px;
 }
+.nav-block img {
+  transition: 0.3s ease-in;
+}
+.nav-block img:hover {
+  transform: scale(1.1);
+}
 .nav ul {
   list-style: none;
 }
@@ -1084,6 +1090,7 @@ a {
   margin-top: 70px;
   padding-top: 55px;
   padding-bottom: 37px;
+  background-color: #3A98FF;
   background-image: url(../../img/psychologists-bgr.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1335,6 +1342,14 @@ a {
   border-radius: 20px;
   position: relative;
   width: 465px;
+  cursor: grab;
+}
+.swiper-slide .reviews-slide1:active,
+.swiper-slide .reviews-slide2:active,
+.swiper-slide .reviews-slide3:active,
+.swiper-slide .reviews-slide4:active,
+.swiper-slide .reviews-slide5:active {
+  cursor: grabbing;
 }
 .swiper-slide .reviews-slide1::after,
 .swiper-slide .reviews-slide2::after,
@@ -1359,18 +1374,30 @@ a {
   width: 117px;
   height: 115px;
   position: absolute;
+  animation: rotateEl 25s linear infinite;
+}
+@keyframes rotateEl {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.swiper-slide .reviews-slide2::before {
+.swiper-slide .reviews-slide2::before, .swiper-slide .reviews-slide5::before {
   content: "";
   background: url(../../img/rev-slide2.png) no-repeat;
   bottom: -11px;
-  right: 45px;
+  right: 25px;
   width: 145px;
   height: 100px;
   position: absolute;
 }
-.swiper-slide .reviews-slide2-decor1, .swiper-slide .reviews-slide2-decor2 {
+.swiper-slide .reviews-slide2-decor1, .swiper-slide .reviews-slide2-decor2, .swiper-slide .reviews-slide5-decor1, .swiper-slide .reviews-slide5-decor2 {
   position: absolute;
   width: 15px;
   height: 15px;
@@ -1378,13 +1405,13 @@ a {
   filter: blur(8px);
   border-radius: 14px;
 }
-.swiper-slide .reviews-slide2-decor1 {
+.swiper-slide .reviews-slide2-decor1, .swiper-slide .reviews-slide5-decor1 {
   bottom: 70px;
-  right: 155px;
+  right: 135px;
 }
-.swiper-slide .reviews-slide2-decor2 {
+.swiper-slide .reviews-slide2-decor2, .swiper-slide .reviews-slide5-decor2 {
   bottom: 70px;
-  right: 70px;
+  right: 50px;
 }
 
 .superMicroStar1 {
@@ -1503,20 +1530,36 @@ a {
   position: absolute;
   fill: #fff;
   fill-opacity: 1;
-  left: 245px;
-  top: 300px;
+  left: 320px;
+  top: 290px;
   transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .superMicroStar5:hover {
   transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .superMicroStar6 {
   position: absolute;
   fill: #fff;
   fill-opacity: 1;
-  left: 195px;
-  top: 300px;
+  left: 325px;
+  top: 315px;
   transition: transform 1s ease-in-out;
   transform-origin: center;
   animation-name: scaleAndRotate;
@@ -1543,12 +1586,12 @@ a {
   position: absolute;
   fill: #fff;
   fill-opacity: 1;
-  left: 215px;
-  top: 300px;
+  left: 350px;
+  top: 285px;
   transition: transform 1s ease-in-out;
   transform-origin: center;
   animation-name: scaleAndRotate;
-  animation-duration: 6s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -1571,16 +1614,40 @@ a {
   position: absolute;
   fill: #fff;
   fill-opacity: 1;
-  left: 370px;
-  top: 295px;
+  left: 345px;
+  top: 310px;
+  transition: transform 1s ease-in-out;
+}
+.middle-blue-star13:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+
+.little-white-star5 {
+  position: absolute;
+  fill: #fff;
+  fill-opacity: 1;
+  left: 325px;
+  top: 340px;
+  transition: transform 1s ease-in-out;
+}
+.little-white-star5:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+
+.superMicroStar8 {
+  position: absolute;
+  fill: #fff;
+  fill-opacity: 1;
+  left: 30px;
+  top: 365px;
   transition: transform 1s ease-in-out;
   transform-origin: center;
   animation-name: scaleAndRotate;
-  animation-duration: 6s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.middle-blue-star13:hover {
+.superMicroStar8:hover {
   transform: scale(1.4) rotate(360deg);
 }
 @keyframes scaleAndRotate {
@@ -1595,12 +1662,12 @@ a {
   }
 }
 
-.little-white-star5 {
+.superMicroStar9 {
   position: absolute;
   fill: #fff;
   fill-opacity: 1;
-  left: 320px;
-  top: 295px;
+  left: 45px;
+  top: 345px;
   transition: transform 1s ease-in-out;
   transform-origin: center;
   animation-name: scaleAndRotate;
@@ -1608,7 +1675,125 @@ a {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.little-white-star5:hover {
+.superMicroStar9:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.superMicroStar10 {
+  position: absolute;
+  fill: #fff;
+  fill-opacity: 1;
+  left: 70px;
+  top: 338px;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.superMicroStar10:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.superMicroStar11 {
+  position: absolute;
+  fill: #fff;
+  fill-opacity: 1;
+  left: 95px;
+  top: 355px;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.superMicroStar11:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.star-text-reviews {
+  position: absolute;
+  bottom: 35px;
+  right: 40px;
+}
+
+.superMicroStar12 {
+  position: absolute;
+  fill: #fff;
+  fill-opacity: 1;
+  left: 318px;
+  top: 302px;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.superMicroStar12:hover {
+  transform: scale(1.4) rotate(360deg);
+}
+@keyframes scaleAndRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.superMicroStar13 {
+  position: absolute;
+  fill: #fff;
+  fill-opacity: 1;
+  left: 404px;
+  top: 301px;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  animation-name: scaleAndRotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.superMicroStar13:hover {
   transform: scale(1.4) rotate(360deg);
 }
 @keyframes scaleAndRotate {

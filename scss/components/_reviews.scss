@@ -41,6 +41,10 @@
   border-radius: 20px;
   position: relative;
   width: 465px;
+  cursor: grab;
+  &:active{
+    cursor: grabbing;
+  }
 
   &::after {
     content: "";
@@ -63,15 +67,28 @@
     width: 117px;
     height: 115px;
     position: absolute;
+    animation: rotateEl 25s linear infinite;
+
+     @keyframes rotateEl {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg); 
+    }
+    100% {
+      transform: rotate(360deg);  
+    }
+  }
   }
 }
 
-.swiper-slide .reviews-slide2 {
+.swiper-slide .reviews-slide2, .swiper-slide .reviews-slide5{
   &::before {
     content: "";
     background: url(../../img/rev-slide2.png) no-repeat;
     bottom: -11px;
-    right: 45px;
+    right: 25px;
     width: 145px;
     height: 100px;
     position: absolute;
@@ -89,14 +106,16 @@
 
   &-decor1 {
     bottom: 70px;
-    right: 155px;
+    right: 135px;
   }
 
   &-decor2 {
     bottom: 70px;
-    right: 70px;
+    right: 50px;
   }
 }
+
+// slide 2
 
 .superMicroStar1 {
   @include star(65px, 315px, $white-color, 1);
@@ -117,25 +136,66 @@
   @include starAnimation;
 }
 
+// slide 3
+
 .superMicroStar5 {
-  @include star(245px, 300px, $white-color, 1);
-  // @include starAnimation;
+  @include star(320px, 290px, $white-color, 1);
+  @include starAnimation;
 }
 .superMicroStar6 {
-  @include star(195px, 300px, $white-color, 1);
+  @include star(325px, 315px, $white-color, 1);
   @include starAnimation;
 }
 .superMicroStar7 {
-  @include star(215px, 300px, $white-color, 1);
-  @include starAnimation;
+  @include star(350px, 285px, $white-color, 1);
+  @include starAnimation(8s);
 }
 
 .middle-blue-star13{
-  @include star(370px, 295px, $white-color, 1);
-  @include starAnimation;
+  @include star(345px, 310px, $white-color, 1);
 }
 
 .little-white-star5{
-  @include star(320px, 295px, $white-color, 1);
+  @include star(325px, 340px, $white-color, 1);
+}
+
+// slide 4
+
+.superMicroStar8 {
+  @include star(30px, 365px, $white-color, 1);
+  @include starAnimation(4s);
+}
+
+.superMicroStar9 {
+  @include star(45px, 345px, $white-color, 1);
+  @include starAnimation;
+}
+
+.superMicroStar10 {
+  @include star(70px, 338px, $white-color, 1);
+  @include starAnimation(8s);
+}
+
+.superMicroStar11 {
+  @include star(95px, 355px, $white-color, 1);
+  @include starAnimation;
+}
+
+.star-text-reviews{
+  position: absolute;
+  bottom: 35px;
+  right: 40px;
+}
+
+
+// slide 5
+
+.superMicroStar12 {
+  @include star(318px, 302px, $white-color, 1);
+  @include starAnimation(4s);
+}
+
+.superMicroStar13 {
+  @include star(404px, 301px, $white-color, 1);
   @include starAnimation;
 }

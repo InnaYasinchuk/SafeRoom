@@ -19,7 +19,15 @@
     @include flex(50px);
   }
 
-  & ul{
+  &-block img {
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  & ul {
     list-style: none;
   }
 }
