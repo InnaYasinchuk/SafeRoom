@@ -1,4 +1,7 @@
-AOS.init();
+AOS.init({
+  mirror: false,
+  once: true,
+});
 
 // SWIPER JOIN
 

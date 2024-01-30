@@ -1,6 +1,9 @@
 "use strict";
 
-AOS.init(); // SWIPER JOIN
+AOS.init({
+  mirror: false,
+  once: true
+}); // SWIPER JOIN
 
 var joinSwiper = new Swiper("#joinSwiper", {
   slidesPerView: 3,
