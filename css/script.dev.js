@@ -1,9 +1,23 @@
 "use strict";
 
+// ANIMATION
 AOS.init({
   mirror: false,
   once: true
-}); // SWIPER JOIN
+}); // BURGER MENU
+
+var menu = document.querySelector('.nav-wrapper');
+var menuBtn = document.querySelector('.menu-burger');
+var body = document.body;
+
+if (menu && menuBtn) {
+  menuBtn.addEventListener('click', function () {
+    menu.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+    body.classList.toggle('lock');
+  });
+} // SWIPER JOIN
+
 
 var joinSwiper = new Swiper("#joinSwiper", {
   slidesPerView: 3,

@@ -15,6 +15,7 @@ svg,
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 body {
@@ -23,7 +24,11 @@ body {
   font-size: 26px;
   color: #007AFF;
   line-height: normal;
-  overflow-x: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body.lock {
+  overflow: hidden;
 }
 
 main,
@@ -32,6 +37,15 @@ footer {
   margin: 0 auto;
   max-width: 1440px;
   overflow-x: hidden;
+}
+
+header {
+  padding: 0px 50px;
+}
+@media (max-width: 575.98px) {
+  header {
+    padding: 0px 20px;
+  }
 }
 
 footer {
@@ -43,6 +57,18 @@ section {
   margin: 0 auto;
   margin-top: 100px;
   padding: 0px 90px;
+}
+@media (max-width: 991.98px) {
+  section {
+    margin-top: 70px;
+    padding: 0px 50px;
+  }
+}
+@media (max-width: 575.98px) {
+  section {
+    margin-top: 50px;
+    padding: 0px 20px;
+  }
 }
 
 a {

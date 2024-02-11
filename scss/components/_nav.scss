@@ -1,40 +1,161 @@
 @import "../base/vars";
 @import "../base/mixin";
 
-.header {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0px 50px;
-  // border: 1px solid rgb(209, 208, 208);
-}
-
 .nav {
-  max-width: 1320px;
-  @include flex;
+  @include flex(50px);
+  justify-content: flex-start;
   font-family: "Amatic SC", sans-serif;
   font-size: 44px;
   margin: 3px auto;
+  position: relative;
 
-  &-block {
-    @include flex(50px);
+  @include laptop {
+    font-size: 36px;
   }
 
-  &-block img {
-    transition: $transition;
+  @include lg-tablet {
+    font-size: 32px;
+    justify-content: space-between;
+  }
+}
+.logo {
+  transition: $transition;
+  &:hover {
+    transform: scale(1.1);
+  }
 
-    &:hover {
-      transform: scale(1.1);
+  @include laptop {
+    width: 100px;
+  }
+
+  @include lg-mobile {
+    width: 50px;
+  }
+}
+
+.menu-burger {
+  display: none;
+  position: fixed;
+  z-index: 25;
+  cursor: pointer;
+
+  &.active {
+    right: 41px;
+  }
+
+  @include lg-tablet {
+    display: block;
+    width: 30px;
+    height: 20px;
+    top: 35px;
+    right: 20px;
+  }
+
+  @include lg-mobile {
+    width: 22px;
+    height: 15px;
+    top: 20px;
+  }
+
+  span {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $accent-color;
+    border-radius: 4px;
+    transition: $transition;
+    transform-origin: center;
+
+    &:first-child {
+      top: 0;
+    }
+
+    &:last-child {
+      top: auto;
+      bottom: 0;
     }
   }
 
-  & ul {
-    list-style: none;
+  &.active {
+    span {
+      transform: scale(0);
+      margin-right: -20px;
+
+      &:first-child {
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+      }
+
+      &:last-child {
+        transform: rotate(45deg);
+        bottom: calc(50% - 1px);
+      }
+    }
+  }
+}
+
+.nav-wrapper {
+  @include flex();
+  width: 100%;
+  transition: $transition;
+
+  &.active {
+    right: 0%;
+  }
+
+  @include lg-tablet {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: $background-color;
+    z-index: 15;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    overflow: auto;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 150px;
+      filter: blur(50px);
+    }
+
+    &::before {
+      top: 45%;
+      left: 2%;
+      background: rgba(58, 152, 255, 0.4);
+    }
+    &::after {
+      top: 15%;
+      right: 5%;
+      border-radius: 50px 0px 0px 0px;
+      background: rgba(249, 198, 124, 0.68);
+    }
   }
 }
 
 .menu {
+  list-style: none;
   @include flex(70px);
-  max-width: 668px;
+  // max-width: 668px;
+
+  @include lg-tablet {
+    flex-direction: column;
+    gap: 25px;
+    font-size: 40px;
+  }
+
+  @include mobile {
+    gap: 15px;
+    font-size: 32px;
+  }
 
   &-item {
     transition: $transition;
@@ -106,3 +227,80 @@
     outline: none;
   }
 }
+
+// STARS SVG MENU ACTIVE
+
+.little-blue-star30,
+.little-blue-star31,
+.little-blue-star32,
+.little-blue-star33,
+.little-blue-star34,
+.little-blue-star35,
+.little-blue-star36,
+.little-blue-star37,
+.little-blue-star38 {
+  display: none;
+}
+
+.nav-wrapper.active .little-blue-star30,
+.nav-wrapper.active .little-blue-star30,
+.nav-wrapper.active .little-blue-star31,
+.nav-wrapper.active .little-blue-star32,
+.nav-wrapper.active .little-blue-star33,
+.nav-wrapper.active .little-blue-star34,
+.nav-wrapper.active .little-blue-star35,
+.nav-wrapper.active .little-blue-star36,
+.nav-wrapper.active .little-blue-star37,
+.nav-wrapper.active .little-blue-star38 {
+  display: block;
+  transform: scale(0.5);
+  z-index: 16;
+}
+
+.nav-wrapper.active .little-blue-star30{
+@include star(9%, 8%, $main-blue-color);
+  @include starAnimationMobile(4s);
+}
+
+.nav-wrapper.active .little-blue-star31{
+@include star(5%, 40%, $main-blue-color);
+  @include starAnimationMobile(8s);
+}
+
+.nav-wrapper.active .little-blue-star32{
+@include star(4%, 80%, $main-blue-color);
+  @include starAnimationMobile;
+}
+
+.nav-wrapper.active .little-blue-star33{
+@include star(61%, 42%, $main-blue-color);
+  @include starAnimationMobile(8s);
+}
+
+.nav-wrapper.active .little-blue-star34{
+@include star(85%, 68%, $main-blue-color);
+  @include starAnimationMobile;
+}
+
+.nav-wrapper.active .little-blue-star35{
+@include star(90%, 38%, $accent-color);
+  @include starAnimationMobile(4s);
+}
+
+
+.nav-wrapper.active .little-blue-star36{
+@include star(7%, 95%, $accent-color);
+  @include starAnimationMobile(4s);
+}
+
+.nav-wrapper.active .little-blue-star37{
+@include star(39%, 87%, $accent-color);
+  @include starAnimationMobile;
+}
+
+.nav-wrapper.active .little-blue-star38{
+@include star(69%, 80%, $accent-color);
+  @include starAnimationMobile(8s);
+}
+
+

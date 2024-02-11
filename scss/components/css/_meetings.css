@@ -26,7 +26,7 @@
   text-align: center;
 }
 .meetings-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .meetings-img-wrapper1, .meetings-img-wrapper2 {

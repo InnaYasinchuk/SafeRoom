@@ -19,6 +19,7 @@ svg,
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 body {
@@ -28,7 +29,13 @@ body {
   font-size: 26px;
   color: $main-blue-color;
   line-height: normal;
-  overflow-x: hidden;
+  
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &.lock{
+    overflow: hidden;
+  }
 }
 
 main,
@@ -37,26 +44,40 @@ footer {
   margin: 0 auto;
   max-width: 1440px;
   overflow-x: hidden;
-  
+  // border: 1px solid rgb(209, 208, 208);
 }
 
-footer{
+header {
+  padding: 0px 50px;
+ 
+  @include lg-mobile {
+    padding: 0px 20px;
+  
+  }
+}
+
+footer {
   margin-bottom: 200px;
 }
 
-section{
+section {
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 100px;
   padding: 0px 90px;
   // border: 1px solid rgb(209, 208, 208);
-  
-}
 
-// ul,
-// li {
-//   list-style: none;
-// }
+  @include lg-tablet {
+    margin-top: 70px;
+    padding: 0px 50px;
+  }
+
+  @include lg-mobile {
+    margin-top: 50px;
+    padding: 0px 20px;
+    
+  }
+}
 
 a {
   text-decoration: none;
@@ -64,70 +85,51 @@ a {
   color: inherit;
 }
 
-address{
+address {
   font-style: normal;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 17px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: $background-color;
   box-shadow: 0px 1px 15px $hover-button-blue-color inset;
   border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb{
-  
-  background: linear-gradient(to bottom, $hover-button-blue-color, $hover-button-color);
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    $hover-button-blue-color,
+    $hover-button-color
+  );
   border-radius: 5px;
   border: 1px solid $hover-button-blue-color;
-  
-  &:hover{
-    background:linear-gradient(to bottom, $blue-color, $hover-accent-color);
+
+  &:hover {
+    background: linear-gradient(to bottom, $blue-color, $hover-accent-color);
   }
- }
+}
 
 ::-webkit-scrollbar-button:start:decrement {
-  background: $hover-button-blue-color url(../../img/Scrollbar-star.svg) no-repeat center; 
+  background: $hover-button-blue-color url(../../img/Scrollbar-star.svg)
+    no-repeat center;
   border-radius: 2px;
-  &:hover{
-    background-color:$blue-color;
-;
+  &:hover {
+    background-color: $blue-color;
   }
 }
 
 ::-webkit-scrollbar-button:end:increment {
-  background: $hover-button-color url(../../img/Scrollbar-star.svg) no-repeat center;
+  background: $hover-button-color url(../../img/Scrollbar-star.svg) no-repeat
+    center;
   border-radius: 2px;
 
-  &:hover{
-    background-color:$hover-accent-color;
+  &:hover {
+    background-color: $hover-accent-color;
   }
 }
-
-
-// main {
-//   max-width: 1440px;
-//   margin: 0 auto;
-
-//   border: 1px solid rgb(208, 208, 208);
-
-// @include tablet {
-//   padding: 0px 50px;
-// }
-// @include leptop {
-//   padding: 0px 80px;
-// }
-// @include desktop {
-//   padding: 0px 90px;
-// }
-// }
-
-// footer{
-//    margin-bottom: 100px;
-// }
-
 
 // width: 100%
 // height: 100%

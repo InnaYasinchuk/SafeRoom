@@ -1,7 +1,31 @@
+
+// ANIMATION
+
 AOS.init({
   mirror: false,
   once: true,
 });
+
+
+
+// BURGER MENU
+
+const menu = document.querySelector('.nav-wrapper');
+const menuBtn = document.querySelector('.menu-burger');
+
+const body = document.body;
+
+if (menu && menuBtn) {
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+    body.classList.toggle('lock');
+  })
+  
+}
+
+
+
 
 // SWIPER JOIN
 
