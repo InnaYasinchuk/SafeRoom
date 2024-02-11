@@ -21,8 +21,15 @@ if (menu && menuBtn) {
     menuBtn.classList.toggle('active');
     body.classList.toggle('lock');
   })
-  
 }
+
+menu.querySelectorAll('.menu-item').forEach(link => {
+  link.addEventListener('click', () => {
+     menu.classList.remove('active');
+    menuBtn.classList.remove('active');
+    body.classList.remove('lock');
+  })
+})
 
 
 

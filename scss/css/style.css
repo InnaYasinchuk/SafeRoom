@@ -162,9 +162,6 @@ address {
   z-index: 25;
   cursor: pointer;
 }
-.menu-burger.active {
-  right: 41px;
-}
 @media (max-width: 991.98px) {
   .menu-burger {
     display: block;

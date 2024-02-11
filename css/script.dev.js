@@ -16,8 +16,15 @@ if (menu && menuBtn) {
     menuBtn.classList.toggle('active');
     body.classList.toggle('lock');
   });
-} // SWIPER JOIN
+}
 
+menu.querySelectorAll('.menu-item').forEach(function (link) {
+  link.addEventListener('click', function () {
+    menu.classList.remove('active');
+    menuBtn.classList.remove('active');
+    body.classList.remove('lock');
+  });
+}); // SWIPER JOIN
 
 var joinSwiper = new Swiper("#joinSwiper", {
   slidesPerView: 3,

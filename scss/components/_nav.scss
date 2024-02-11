@@ -39,10 +39,6 @@
   z-index: 25;
   cursor: pointer;
 
-  &.active {
-    right: 41px;
-  }
-
   @include lg-tablet {
     display: block;
     width: 30px;
