@@ -17,3 +17,31 @@
 @import "./components/faq";
 @import "./components/reviews";
 @import "./components/footer";
+
+
+
+
+
+@include desktop {
+   
+  }
+
+  @include laptop {
+    
+  }
+
+  @include lg-tablet {
+    
+  }
+
+  @include tablet {
+   
+  }
+
+  @include lg-mobile {
+    
+  }
+
+  @include mobile {
+   
+  }

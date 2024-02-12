@@ -1,15 +1,53 @@
 @import "../base/vars";
 @import "../base/mixin";
 
-.about{
+.about {
   margin: 0 auto;
   padding-top: 35px;
+
+  @include lg-tablet {
+    padding-top: 0px;
   }
+  
+
+  @include mobile {
+    padding: 0px 15px;
+  }
+
+  &-img {
+    object-fit: cover;
+
+    @include laptop {
+    max-width: 450px;
+  }
+  @include lg-tablet {
+    max-width: 390px;
+  }
+
+  @include tablet {
+    max-width: 290px;
+  }
+
+    @include lg-mobile {
+      max-width: 162px;
+      
+    }
+  }
+}
 
 .about-header {
   @include flex(63px);
   justify-content: flex-start;
   margin-left: -10px;
+
+  @include lg-tablet {
+    gap: 45px;
+    margin-left: 0px;
+  }
+
+  @include lg-mobile {
+    gap: 36px;
+  }
 }
 .about-title {
   @include section-title;
@@ -18,12 +56,36 @@
 .about-content {
   position: relative;
   padding: 51px 40px 6px;
-  border-radius: 14px;
+  border-radius: $border-radius;
   background: $blue-color;
   box-shadow: 0px 4px 9.3px 0px $main-blue-color;
+
+  @include lg-tablet {
+    padding: 30px 25px 15px;
+    border-radius: $border-radius-mobile;
+  }
+
+  @include lg-mobile {
+    padding: 20px 10px 12px;
+    border-radius: $border-radius-mobile;
+  }
+
   & p {
     color: $white-color;
     margin-bottom: 20px;
+
+    @include lg-mobile {
+            margin-bottom: 10px;
+      
+      }
+    }
+    
+    & p span {
+        display: inline;
+
+        @include tablet {
+    display: none;
+  }
   }
 }
 
@@ -35,33 +97,97 @@
   height: 65px;
   padding: 10px;
   font-size: 30px;
-  border-radius: 14px;
+  border-radius: $border-radius;
   background: $white-color;
   transition: $transition;
 
-  &:hover{
+  &:hover {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+@include lg-tablet {
+   width: 280px;
+  height: 55px;
+  font-size: 24px;
+    margin: 20px auto 10px;
+  }
+
+  @include lg-mobile {
+    border-radius: $border-radius-mobile;
+    width: 160px;
+    height: 37px;
+    font-size: 14px;
+    margin: 20px auto 0;
   }
 }
 
+// STARS SVG
+
 .little-white-star1 {
-  @include star(10px, 245px, $white-color, 1);
+  @include star(1%, 70%, $white-color, 1);
+
+  @include lg-tablet {
+  transform: scale(0.5);
+  }
+
+   @include lg-mobile {
+    display: none;
+   
+  }
 }
 
 .little-white-star2 {
-  @include star(95px, 250px, $white-color, 1);
-   @include starAnimation(4s);
+  @include star(8%, 71%, $white-color, 1);
+  @include starAnimation(4s);
+
+  @include lg-tablet {
+   left: 10%;
+   top: 78%;
+   transform: scale(0.5);
+   @include starAnimationMobile;
+  }
+
+  @include lg-mobile {
+    left: 5%;
+   top: 75%;
+  }
 }
 
 .little-white-star3 {
-  @include star(1140px, 200px, $white-color, 1);
+  @include star(90%, 55%, $white-color, 1);
+
+  @include lg-tablet{
+    display: none;
+   
+  }
 }
 
 .little-white-star4 {
-  @include star(1070px, 310px, $white-color, 1);
-   @include starAnimation;
+  @include star(85%, 85%, $white-color, 1);
+  @include starAnimation;
+
+   @include lg-tablet {
+   left: 87%;
+   top: 70%;
+   transform: scale(0.5);
+   @include starAnimationMobile;
+  }
+
+  @include lg-mobile {
+     top: 65%;
+  }
 }
 
-.middle-blue-star1{
-  @include star(220px, 290px, $dark-blue-color, 1);
+.middle-blue-star1 {
+  @include star(20%, 82%, $dark-blue-color, 1);
+
+  @include lg-tablet {
+   left: 80%;
+   top: 80%;
+    transform: scale(0.5);
+  }
+
+   @include lg-mobile {
+   transform: scale(0.35);
+   }
 }

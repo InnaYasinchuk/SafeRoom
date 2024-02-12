@@ -12,6 +12,18 @@ font-family: 'Amatic SC', sans-serif;
 font-size: $fsize;
 font-weight: 700;
 color: $color;
+
+ @include laptop {
+    font-size: 76px;
+  }
+
+  @include tablet() {
+    font-size: 56px;
+  }
+
+   @include lg-mobile {
+    font-size: 30px;
+  }
 }
 
 @mixin star ($left, $top, $fill: $main-blue-color, $fill-opasity: .6){
@@ -104,4 +116,29 @@ color: $color;
     @content;
   }
 }
+
+
+@include desktop {
+   
+  }
+
+  @include laptop {
+    
+  }
+
+  @include lg-tablet {
+    
+  }
+
+  @include tablet {
+   
+  }
+
+  @include lg-mobile {
+    
+  }
+
+  @include mobile {
+   
+  }
 

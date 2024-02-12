@@ -140,8 +140,7 @@
 .menu {
   list-style: none;
   @include flex(70px);
-  // max-width: 668px;
-
+  
   @include lg-tablet {
     flex-direction: column;
     gap: 25px;
@@ -253,50 +252,47 @@
   z-index: 16;
 }
 
-.nav-wrapper.active .little-blue-star30{
-@include star(9%, 8%, $main-blue-color);
+.nav-wrapper.active .little-blue-star30 {
+  @include star(9%, 8%, $main-blue-color);
   @include starAnimationMobile(4s);
 }
 
-.nav-wrapper.active .little-blue-star31{
-@include star(5%, 40%, $main-blue-color);
+.nav-wrapper.active .little-blue-star31 {
+  @include star(5%, 40%, $main-blue-color);
   @include starAnimationMobile(8s);
 }
 
-.nav-wrapper.active .little-blue-star32{
-@include star(4%, 80%, $main-blue-color);
+.nav-wrapper.active .little-blue-star32 {
+  @include star(4%, 80%, $main-blue-color);
   @include starAnimationMobile;
 }
 
-.nav-wrapper.active .little-blue-star33{
-@include star(61%, 42%, $main-blue-color);
+.nav-wrapper.active .little-blue-star33 {
+  @include star(61%, 42%, $main-blue-color);
   @include starAnimationMobile(8s);
 }
 
-.nav-wrapper.active .little-blue-star34{
-@include star(85%, 68%, $main-blue-color);
+.nav-wrapper.active .little-blue-star34 {
+  @include star(85%, 68%, $main-blue-color);
   @include starAnimationMobile;
 }
 
-.nav-wrapper.active .little-blue-star35{
-@include star(90%, 38%, $accent-color);
+.nav-wrapper.active .little-blue-star35 {
+  @include star(90%, 38%, $accent-color);
   @include starAnimationMobile(4s);
 }
 
-
-.nav-wrapper.active .little-blue-star36{
-@include star(7%, 95%, $accent-color);
+.nav-wrapper.active .little-blue-star36 {
+  @include star(7%, 95%, $accent-color);
   @include starAnimationMobile(4s);
 }
 
-.nav-wrapper.active .little-blue-star37{
-@include star(39%, 87%, $accent-color);
+.nav-wrapper.active .little-blue-star37 {
+  @include star(39%, 87%, $accent-color);
   @include starAnimationMobile;
 }
 
-.nav-wrapper.active .little-blue-star38{
-@include star(69%, 80%, $accent-color);
+.nav-wrapper.active .little-blue-star38 {
+  @include star(69%, 80%, $accent-color);
   @include starAnimationMobile(8s);
 }
-
-

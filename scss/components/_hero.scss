@@ -15,8 +15,8 @@
   @include tablet() {
     padding: 0 0 100px;
     flex-direction: column;
-  
   }
+  
 
   &::before,
   &::after {
@@ -41,7 +41,7 @@
 
     @include lg-mobile {
       right: -3%;
-       bottom: 33%;
+      bottom: 33%;
       width: 126px;
       height: 131px;
     }
@@ -54,11 +54,11 @@
     right: -16%;
     bottom: 20%;
 
-    @include tablet{
+    @include tablet {
       width: 243px;
       height: 126px;
-       bottom: 11%;
-          }
+      bottom: 11%;
+    }
 
     @include lg-mobile {
       bottom: 19%;
@@ -100,7 +100,7 @@
 .hero-content {
   max-width: 710px;
   position: relative;
- 
+
   @include laptop {
     max-width: 550px;
   }
@@ -109,7 +109,7 @@
     max-width: 450px;
   }
 
-  @include lg-tablet {
+  @include tablet {
     max-width: 550px;
   }
 
@@ -151,6 +151,7 @@
   }
 
   @include tablet {
+    font-size: 88px;
     margin-bottom: 15px;
     margin-top: 20px;
   }
@@ -194,12 +195,11 @@
     font-size: 16px;
     padding: 10px;
     border-radius: $border-radius-mobile;
-  } 
+  }
 
   @include mobile {
     width: 171px;
     font-size: 14px;
-    
   }
 }
 
@@ -209,13 +209,12 @@
   max-width: 160px;
 
   @include lg-mobile {
-   margin-left: -23px;
+    margin-left: -23px;
   }
 
-  
   @include mobile {
-   margin-left: -30px;
-   margin-top: 0;
+    margin-left: -30px;
+    margin-top: 0;
   }
 
   & a {
@@ -226,7 +225,7 @@
     fill: $accent-color;
     stroke: $background-color;
     transition: $transition;
-    
+
     &:hover,
     &:active {
       fill: $hover-accent-color;
@@ -237,10 +236,12 @@
     transform: scale(0.7);
   }
 
-   @include mobile {
+  @include mobile {
     transform: scale(0.63);
   }
 }
+
+// STARS SVG
 
 .little-blue-star1 {
   @include star(35px, -10px);
@@ -252,7 +253,7 @@
     transform: scale(0.7);
   }
 
-   @include lg-mobile {
+  @include lg-mobile {
     left: 127px;
     top: -65px;
   }
@@ -261,7 +262,6 @@
     left: 87px;
     top: -65px;
   }
-
 }
 
 .little-blue-star2 {
@@ -284,7 +284,7 @@
     transform: scale(0.7);
   }
 
-   @include lg-mobile {
+  @include lg-mobile {
     left: 215px;
     top: -24px;
   }
@@ -306,7 +306,7 @@
     display: block;
     left: 85%;
     top: 35%;
-     @include starAnimationMobile(8s);
+    @include starAnimationMobile(8s);
     transform: scale(0.7);
   }
 
@@ -327,11 +327,11 @@
   @include tablet {
     display: block;
     @include star(16%, 50%, $hover-button-color, 1);
-     @include starAnimationMobile(8s);
+    @include starAnimationMobile(8s);
     transform: scale(0.7);
   }
 
-   @include mobile {
+  @include mobile {
     left: 10%;
     top: 46%;
   }
@@ -355,7 +355,7 @@
     transform: scale(0.7);
   }
 
-   @include mobile {
+  @include mobile {
     left: 22%;
     top: 51%;
     transform: scale(0.5);
@@ -380,11 +380,11 @@
     left: 10%;
     top: 85%;
     fill-opacity: 1;
-     @include starAnimationMobile(8s);
+    @include starAnimationMobile(8s);
     transform: scale(0.7);
   }
 
-   @include lg-mobile {
+  @include lg-mobile {
     top: 80%;
   }
 }
@@ -409,7 +409,7 @@
     transform: scale(0.7);
   }
 
-   @include lg-mobile {
+  @include lg-mobile {
     left: 50%;
     top: 87%;
     transform: scale(0.5);
@@ -427,11 +427,11 @@
   }
 
   @include tablet {
-    @include star(99%, 52%, $hover-button-color, 1);
-   
-  }
+     left: 99%;
+    top: 52%;
+   }
 
-  @include lg-mobile{
+  @include lg-mobile {
     left: 95%;
     top: 49%;
   }
@@ -447,11 +447,11 @@
     transform: scale(0.7);
   }
 
-  @include lg-mobile{
+  @include lg-mobile {
     left: 95%;
   }
 
-  @include mobile{
+  @include mobile {
     top: 78%;
   }
 }
@@ -475,15 +475,14 @@
   }
 
   @include lg-mobile {
-     left: 130px;
+    left: 130px;
     top: -87px;
     transform: scale(0.4);
-   }
+  }
 
   @include mobile {
     left: 90px;
     top: -87px;
-    
   }
 }
 
@@ -514,12 +513,12 @@
     transform: scale(0.7) rotate(-25deg);
   }
 
-  @include lg-mobile{
+  @include lg-mobile {
     right: 75%;
     transform: scale(0.5) rotate(-25deg);
   }
 
-   @include mobile{
+  @include mobile {
     right: 70%;
     transform: scale(0.4) rotate(-25deg);
   }

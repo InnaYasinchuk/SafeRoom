@@ -32,6 +32,15 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 
+   @include laptop {
+    font-size: 22px;
+  }
+
+  @include lg-mobile {
+      font-size: 13px;
+           
+      }
+
   &.lock{
     overflow: hidden;
   }
@@ -71,6 +80,10 @@ section {
   }
 
   @include lg-mobile {
+    padding: 0px 35px;
+  }
+
+  @include mobile {
     margin-top: 50px;
     padding: 0px 20px;
     
