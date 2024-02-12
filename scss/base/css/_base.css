@@ -41,7 +41,6 @@ footer {
 
 header {
   padding: 0px 50px;
-  overflow-x: visible;
 }
 @media (max-width: 575.98px) {
   header {

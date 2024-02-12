@@ -10,7 +10,7 @@
 @media (max-width: 991.98px) {
   .hero {
     padding: 0 25px 100px 0px;
-    overflow: visible;
+    overflow-y: visible;
   }
 }
 @media (max-width: 767.98px) {
@@ -52,13 +52,18 @@
   height: 226px;
   border-radius: 50px 150px 0px 0px;
   right: -16%;
-  bottom: 8%;
+  bottom: 20%;
+}
+@media (max-width: 767.98px) {
+  .hero::after {
+    width: 243px;
+    height: 126px;
+    bottom: 11%;
+  }
 }
 @media (max-width: 575.98px) {
   .hero::after {
-    bottom: 10%;
-    width: 243px;
-    height: 126px;
+    bottom: 19%;
   }
 }
 
