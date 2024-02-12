@@ -41,6 +41,7 @@ footer {
 
 header {
   padding: 0px 50px;
+  overflow-x: visible;
 }
 @media (max-width: 575.98px) {
   header {
@@ -622,6 +623,7 @@ address {
 @media (max-width: 991.98px) {
   .hero {
     padding: 0 25px 100px 0px;
+    overflow: visible;
   }
 }
 @media (max-width: 767.98px) {
@@ -2900,6 +2902,7 @@ footer {
 
 header {
   padding: 0px 50px;
+  overflow-x: visible;
 }
 @media (max-width: 575.98px) {
   header {

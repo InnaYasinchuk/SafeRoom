@@ -8,6 +8,7 @@ AOS.init({
 
 var menu = document.querySelector('.nav-wrapper');
 var menuBtn = document.querySelector('.menu-burger');
+var navBtn = document.querySelector('#nav-button');
 var body = document.body;
 
 if (menu && menuBtn) {
@@ -24,6 +25,11 @@ menu.querySelectorAll('.menu-item').forEach(function (link) {
     menuBtn.classList.remove('active');
     body.classList.remove('lock');
   });
+});
+navBtn.addEventListener('click', function () {
+  menu.classList.remove('active');
+  menuBtn.classList.remove('active');
+  body.classList.remove('lock');
 }); // SWIPER JOIN
 
 var joinSwiper = new Swiper("#joinSwiper", {

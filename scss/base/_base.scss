@@ -29,7 +29,6 @@ body {
   font-size: 26px;
   color: $main-blue-color;
   line-height: normal;
-  
   max-width: 1440px;
   margin: 0 auto;
 
@@ -49,7 +48,7 @@ footer {
 
 header {
   padding: 0px 50px;
- 
+  overflow-x: visible; 
   @include lg-mobile {
     padding: 0px 20px;
   

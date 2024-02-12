@@ -12,6 +12,7 @@ AOS.init({
 
 const menu = document.querySelector('.nav-wrapper');
 const menuBtn = document.querySelector('.menu-burger');
+const navBtn = document.querySelector('#nav-button');
 
 const body = document.body;
 
@@ -25,12 +26,17 @@ if (menu && menuBtn) {
 
 menu.querySelectorAll('.menu-item').forEach(link => {
   link.addEventListener('click', () => {
-     menu.classList.remove('active');
+    menu.classList.remove('active');
     menuBtn.classList.remove('active');
     body.classList.remove('lock');
   })
 })
 
+navBtn.addEventListener('click', () => {
+    menu.classList.remove('active');
+    menuBtn.classList.remove('active');
+    body.classList.remove('lock');
+})
 
 
 

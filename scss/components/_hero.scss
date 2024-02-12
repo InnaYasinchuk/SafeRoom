@@ -9,6 +9,7 @@
 
   @include lg-tablet() {
     padding: 0 25px 100px 0px;
+    overflow: visible; 
   }
 
   @include tablet() {
