@@ -135,20 +135,9 @@
 .hero-content p {
   margin-bottom: 50px;
 }
-@media (max-width: 1199.98px) {
-  .hero-content p {
-    font-size: 22px;
-  }
-}
 @media (max-width: 575.98px) {
   .hero-content p {
-    font-size: 15px;
     margin-bottom: 15px;
-  }
-}
-@media (max-width: 390px) {
-  .hero-content p {
-    font-size: 13px;
   }
 }
 
@@ -168,7 +157,7 @@
 }
 @media (max-width: 767.98px) {
   .hero-title {
-    font-size: 48px;
+    font-size: 56px;
   }
 }
 @media (max-width: 575.98px) {

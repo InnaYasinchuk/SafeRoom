@@ -20,6 +20,18 @@ svg,
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 50px;
+
+  @include laptop {
+   scroll-padding-top: 30px;
+  }
+
+  @include lg-mobile {
+    scroll-padding-top: 20px;
+  }
+
+  @include mobile {
+    scroll-padding-top: 15px;
+  }
 }
 
 body {
@@ -32,16 +44,19 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 
-   @include laptop {
+  @include laptop {
     font-size: 22px;
   }
 
   @include lg-mobile {
-      font-size: 13px;
-           
-      }
+    font-size: 15px;
+  }
 
-  &.lock{
+  @include mobile {
+    font-size: 13px;
+  }
+
+  &.lock {
     overflow: hidden;
   }
 }
@@ -59,7 +74,6 @@ header {
   padding: 0px 50px;
   @include lg-mobile {
     padding: 0px 20px;
-  
   }
 }
 
@@ -80,13 +94,13 @@ section {
   }
 
   @include lg-mobile {
-    padding: 0px 35px;
+    margin-top: 40px;
+    padding: 0px 30px;
   }
 
   @include mobile {
     margin-top: 50px;
     padding: 0px 20px;
-    
   }
 }
 

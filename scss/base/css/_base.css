@@ -17,6 +17,21 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 50px;
 }
+@media (max-width: 1199.98px) {
+  html {
+    scroll-padding-top: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  html {
+    scroll-padding-top: 20px;
+  }
+}
+@media (max-width: 390px) {
+  html {
+    scroll-padding-top: 15px;
+  }
+}
 
 body {
   background-color: #fbf6f6;
@@ -33,6 +48,11 @@ body {
   }
 }
 @media (max-width: 575.98px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 390px) {
   body {
     font-size: 13px;
   }
@@ -76,7 +96,8 @@ section {
 }
 @media (max-width: 575.98px) {
   section {
-    padding: 0px 35px;
+    margin-top: 40px;
+    padding: 0px 30px;
   }
 }
 @media (max-width: 390px) {
