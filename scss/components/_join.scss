@@ -1,51 +1,192 @@
 @import "../base/vars";
 @import "../base/mixin";
 
-.join-title-wrapper{
+.join {
+  padding: 0;
+
+  @media (max-width: 1054.98px) {
+    padding: 0 50px;
+  }
+  @include lg-tablet {
+    padding: 40px;
+  }
+
+  @include tablet {
+    padding: 30px;
+  }
+
+  @include lg-mobile {
+    padding: 20px;
+  }
+}
+
+.join-title-wrapper {
   position: relative;
+  padding-left: 90px;
+  @include flex;
+
+  @media (max-width: 1175.98px) {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  &::before {
+    content: "";
+    width: 856px;
+    height: 2px;
+    background-color: $main-blue-color;
+    position: absolute;
+    bottom: 55%;
+    left: 36%;
+    @include desktop {
+      width: 55%;
+      left: 35%;
+    }
+
+    @media (max-width: 1375.98px) {
+      width: 54%;
+      left: 36%;
+    }
+
+    @media (max-width: 1309.98px) {
+      width: 49%;
+      left: 41%;
+    }
+
+    @include laptop {
+      width: 48%;
+      left: 42%;
+      bottom: 59%;
+    }
+    @media (max-width: 1175.98px) {
+      width: 66%;
+      left: 50%;
+      bottom: 22%;
+      transform: translateX(-50%);
+    }
+
+    @include tablet {
+      width: 52%;
+      bottom: 32%;
+    }
+    @include lg-mobile {
+      width: 55%;
+      height: 1px;
+      bottom: 46%;
+    }
+    @include mobile {
+      width: 72%;
+    }
+  }
+
+  .dot-line-decor {
+    position: relative;
+    width: 2px;
+    height: 60px;
+    background-color: $main-blue-color;
+    margin-right: 4.7%;
+    margin-top: 39px;
+
+    @include desktop {
+      margin-right: 10.5%;
+    }
+
+    @media (max-width: 1309.98px) {
+      margin-right: 10.8%;
+    }
+
+    @include laptop {
+      margin-top: 31px;
+      margin-right: 11%;
+    }
+
+    @media (max-width: 1175.98px) {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: $main-blue-color;
+      right: 50%;
+      bottom: -1px;
+      transform: translateX(50%);
+    }
+  }
 }
 
 .join-title {
   @include section-title;
   margin-bottom: 50px;
+
+  @media (max-width: 1175.98px) {
+    text-align: center;
+  }
 }
 
-.middle-blue-star4{
- @include star(395px, 54px, $dark-blue-color, 1);
+.middle-blue-star4 {
+  @include star(34%, 54px, $dark-blue-color, 1);
   @include starAnimation(8s);
+
+  @media (max-width: 1309.98px) {
+    left: 39%;
+  }
+
+  @include laptop {
+    left: 40%;
+    top: 35px;
+  }
+
+  @media (max-width: 1175.98px) {
+    left: 81%;
+    top: 62%;
+    fill: $accent-color;
+  }
+
+  @include tablet {
+    transform: scale(0.6);
+    @include starAnimationMobile(8s);
+    left: 72%;
+    top: 49%;
+  }
+
+  @include lg-mobile {
+    transform: scale(0.5);
+    top: 29%;
+  }
+
+  @include mobile {
+    left: 78%;
+    transform: scale(0.4);
+  }
 }
 
-.decor{
-  position: absolute;
-  top: 75px;
-  right: -20px;
-  width: 855px;
-  height: 60px;
-  border-top: 1px solid $main-blue-color;
-  border-right: 1px solid $main-blue-color;
-}
-
-.dot-decor{
-  position: absolute;
-  top: 130px;
-  right: -22px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: $main-blue-color;
-}
+// SWIPER DESKTOP
 
 .swiper.swiper-join {
-  width: 1310px;
   height: 500px;
-  display: flex;
-  justify-content: center;
-  margin-left: -18px;
+  margin: 0 auto;
+
+  @include desktop {
+    height: 450px;
+    margin-top: -20px;
+  }
+
+  @include laptop {
+    height: 420px;
+    margin-top: -40px;
+  }
+
+  @media (max-width: 1054.98px) {
+    display: none;
+  }
 }
 
 .swiper-join .swiper-wrapper {
- 
-  display: flex;
+  @include flex;
   justify-content: center;
   align-items: center;
 }
@@ -54,6 +195,7 @@
   @include flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 385px !important;
   height: 378px;
   padding: 50px auto;
@@ -63,11 +205,27 @@
   background: rgb(242, 193, 129);
   box-shadow: 0px 4px 4px 0px rgba(242, 197, 139, 0.3);
   cursor: pointer;
-  &:hover{
+  &:hover {
     background: $accent-color;
-
   }
- }
+
+  @include desktop {
+    width: 345px !important;
+    height: 320px;
+    padding: 30px auto;
+  }
+
+  @include laptop {
+    width: 315px !important;
+    height: 290px;
+  }
+
+  @include lg-mobile {
+    width: 280px !important;
+    height: 195px;
+    padding: 20px 25px;
+  }
+}
 
 .swiper-join .swiper-slide-active {
   width: 465px !important;
@@ -79,57 +237,93 @@
   box-shadow: 0px 4px 4px 0px rgba(240, 187, 117, 0.3);
   transition: background-color 1s, width 0.5s, height 0.5s;
 
+  @include desktop {
+    width: 370px !important;
+    height: 360px;
+    bottom: 5px;
+  }
+
+  @include laptop {
+    width: 330px !important;
+    height: 310px;
+  }
+
+  @include lg-mobile {
+    width: 280px !important;
+    height: 195px;
+    padding: 20px 25px;
+  }
 }
 
-.swiper-join .swiper-slide-prev, 
-.swiper-join .swiper-slide-next{
+.swiper-join .swiper-slide-prev,
+.swiper-join .swiper-slide-next {
   font-size: 30px;
+
+  @include desktop {
+    font-size: 22px;
+  }
 }
 
- .swiper-pagination {
-  bottom: 0px;
-}
-
-.swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
-  background-color: $dark-blue-color;
-}
-
-.slide-title {
- 
-  font-size: 32px;
+.swiper-join .slide-title {
   font-weight: 500;
   position: relative;
   margin: 0 auto;
   margin-bottom: 30px;
+
+  @include desktop {
+    font-size: 26px;
+  }
+
+  @include lg-mobile {
+    font-size: 16px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background-color: $white-color;
+  }
 }
 
-.slide-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  height: 1px;
-  background-color: $white-color;
-}
-
-.swiper-slide-prev .slide-title, 
-.swiper-slide-next .slide-title{
+.swiper-slide-prev .slide-title,
+.swiper-slide-next .slide-title {
   font-size: 30px;
-   width: 385px;
+  width: 385px;
+
+  @include desktop {
+    font-size: 26px;
+    width: 315px;
+  }
 }
 
-.swiper-join .swiper-slide-active .slide-title{
+.swiper-join .swiper-slide-active .slide-title {
   font-size: 32px;
-   width: 420px;
+  width: 420px;
+
+  @include desktop {
+    font-size: 26px;
+    width: 350px;
+  }
+
+  @include laptop {
+    font-size: 26px;
+    width: 330px;
+  }
 }
 
-.slide-text {
-   font-size: 26px;
+.swiper-join .slide-text {
+  font-size: 26px;
   max-width: 350px;
+
+  @include desktop {
+    font-size: 18px;
+    max-width: 300px;
+  }
 }
 
 .text2 {
@@ -146,8 +340,17 @@
   font-size: 26px;
   transition: $transition;
 
-  &:hover{
-   text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    max-width: 300px;
+  }
+
+  @include lg-mobile {
+    font-size: 13px;
   }
 }
 
@@ -158,7 +361,15 @@
 }
 
 .swiper-join .swiper-slide-active .slide-text-email {
-   max-width: 420px;
+  max-width: 420px;
+}
+
+.email-svg {
+  fill: $white-color;
+  transition: $transition;
+  &:hover {
+    fill: $hover-button-blue-color;
+  }
 }
 
 .slide-button {
@@ -174,13 +385,218 @@
   &:hover {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
-}
 
-.email-svg {
-  fill: $white-color;
-  transition: $transition;
-  &:hover {
-    fill: $hover-button-blue-color;
+  @include desktop {
+    width: 270px;
+    height: 50px;
+    margin-top: 15px;
+    font-size: 22px;
   }
 }
 
+.swiper-join .swiper-pagination {
+  bottom: 0px;
+}
+
+.swiper-join .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background-color: $dark-blue-color;
+}
+
+// SWIPER MOBILE
+
+.swiper.swiper-join-mobile {
+  display: none;
+
+  @media (max-width: 1054.98px) {
+    display: flex;
+    margin: 30px auto;
+    height: 290px;
+  }
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include lg-mobile {
+    margin: -5px auto;
+    height: 260px;
+  }
+
+  @include mobile {
+    height: 230px;
+    margin: -15px auto;
+  }
+}
+
+.swiper-join-mobile .swiper-slide {
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 250px;
+  padding: 20px auto;
+  text-align: center;
+  color: $white-color;
+  border-radius: $border-radius-mobile;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+
+  @include lg-mobile {
+    height: 220px;
+  }
+
+  @include mobile {
+    height: 195px;
+  }
+}
+.swiper-join-mobile .slide-title {
+  width: 370px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+
+  @include lg-tablet {
+    width: 280px;
+    font-size: 22px;
+  }
+  @include tablet {
+    width: 240px;
+    font-size: 20px;
+  }
+
+  @include lg-mobile {
+    width: 240px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  @include mobile {
+    width: 236px;
+    font-size: 16px;
+  }
+}
+
+.join-mobile-slide1 .slide-title {
+  margin-top: -30px;
+}
+
+.swiper-join-mobile .slide-text {
+  width: 380px;
+  font-size: 18px;
+  text-align: left;
+
+  @include lg-tablet {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  @include tablet {
+    width: 210px;
+    font-size: 14px;
+  }
+
+  @include lg-mobile {
+    width: 199px;
+  }
+
+  @include mobile {
+    width: 251px;
+    font-size: 13px;
+  }
+}
+
+.join-mobile-slide1 .slide-text {
+  text-align: center;
+}
+
+.swiper-join-mobile .slide-text-email {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px auto 0;
+  transition: $transition;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.swiper-join-mobile .email-svg {
+  transform: scale(0.8);
+
+  @include tablet {
+    margin-top: -8px;
+    transform: scale(0.7);
+  }
+  @include mobile {
+     margin-top: 0;
+    transform: scale(0.6);
+  }
+}
+
+.join-mobile-slide1 img {
+  position: absolute;
+  bottom: 1%;
+  right: 0;
+}
+
+.join-mobile-slide3 img {
+  margin: 10px auto -15px;
+}
+
+.heart {
+  margin-bottom: -4px;
+}
+.swiper-join-mobile .slide-button {
+  width: 240px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: $border-radius-mobile;
+
+  @include tablet {
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  @include mobile {
+    width: 160px;
+    height: 37px;
+    font-size: 14px;
+  }
+}
+
+.swiper-join-mobile .swiper-pagination {
+  bottom: 0px;
+}
+
+.swiper-join-mobile .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: $dark-blue-color;
+
+  @include lg-mobile {
+    width: 8px;
+    height: 8px;
+  }
+
+  @include mobile {
+    width: 7px;
+    height: 7px;
+  }
+}

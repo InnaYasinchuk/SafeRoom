@@ -6,31 +6,31 @@ AOS.init({
   once: true
 }); // BURGER MENU
 
-var menu = document.querySelector('.nav-wrapper');
-var menuBtn = document.querySelector('.menu-burger');
-var navBtn = document.querySelector('#nav-button');
+var menu = document.querySelector(".nav-wrapper");
+var menuBtn = document.querySelector(".menu-burger");
+var navBtn = document.querySelector("#nav-button");
 var body = document.body;
 
 if (menu && menuBtn) {
-  menuBtn.addEventListener('click', function () {
-    menu.classList.toggle('active');
-    menuBtn.classList.toggle('active');
-    body.classList.toggle('lock');
+  menuBtn.addEventListener("click", function () {
+    menu.classList.toggle("active");
+    menuBtn.classList.toggle("active");
+    body.classList.toggle("lock");
   });
 }
 
-menu.querySelectorAll('.menu-item').forEach(function (link) {
-  link.addEventListener('click', function () {
-    menu.classList.remove('active');
-    menuBtn.classList.remove('active');
-    body.classList.remove('lock');
+menu.querySelectorAll(".menu-item").forEach(function (link) {
+  link.addEventListener("click", function () {
+    menu.classList.remove("active");
+    menuBtn.classList.remove("active");
+    body.classList.remove("lock");
   });
 });
-navBtn.addEventListener('click', function () {
-  menu.classList.remove('active');
-  menuBtn.classList.remove('active');
-  body.classList.remove('lock');
-}); // SWIPER JOIN
+navBtn.addEventListener("click", function () {
+  menu.classList.remove("active");
+  menuBtn.classList.remove("active");
+  body.classList.remove("lock");
+}); // SWIPER JOIN DESKTOP
 
 var joinSwiper = new Swiper("#joinSwiper", {
   slidesPerView: 3,
@@ -70,6 +70,30 @@ joinSwiper.on("click", function () {
 joinSwiper.on("slideChange", function () {
   var activeIndex = joinSwiper.activeIndex;
   setActiveSlide(activeIndex);
+}); // SWIPER JOIN MOBILE
+
+var joinSwiperMobile = new Swiper("#joinSwiperMobile", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  speed: 2000,
+  slideToClickedSlide: true,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    420: {
+      slidesPerView: 1.5,
+      spaceBetween: 15
+    },
+    575: {
+      slidesPerView: 2,
+      spaceBetween: 25
+    }
+  }
 }); // SWIPER REVIEWS
 
 var reviewsSwiper = new Swiper("#reviewsSwiper", {

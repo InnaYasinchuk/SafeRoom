@@ -1,4 +1,3 @@
-
 // ANIMATION
 
 AOS.init({
@@ -6,41 +5,38 @@ AOS.init({
   once: true,
 });
 
-
-
 // BURGER MENU
 
-const menu = document.querySelector('.nav-wrapper');
-const menuBtn = document.querySelector('.menu-burger');
-const navBtn = document.querySelector('#nav-button');
+const menu = document.querySelector(".nav-wrapper");
+const menuBtn = document.querySelector(".menu-burger");
+const navBtn = document.querySelector("#nav-button");
 
 const body = document.body;
 
 if (menu && menuBtn) {
-  menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    menuBtn.classList.toggle('active');
-    body.classList.toggle('lock');
-  })
+  menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    menuBtn.classList.toggle("active");
+    body.classList.toggle("lock");
+  });
 }
 
-menu.querySelectorAll('.menu-item').forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('active');
-    menuBtn.classList.remove('active');
-    body.classList.remove('lock');
-  })
-})
+menu.querySelectorAll(".menu-item").forEach((link) => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("active");
+    menuBtn.classList.remove("active");
+    body.classList.remove("lock");
+  });
+});
 
-navBtn.addEventListener('click', () => {
-    menu.classList.remove('active');
-    menuBtn.classList.remove('active');
-    body.classList.remove('lock');
-})
+navBtn.addEventListener("click", () => {
+  menu.classList.remove("active");
+  menuBtn.classList.remove("active");
+  body.classList.remove("lock");
+});
 
 
-
-// SWIPER JOIN
+// SWIPER JOIN DESKTOP
 
 const joinSwiper = new Swiper("#joinSwiper", {
   slidesPerView: 3,
@@ -83,6 +79,34 @@ joinSwiper.on("slideChange", function () {
   setActiveSlide(activeIndex);
 });
 
+
+// SWIPER JOIN MOBILE
+
+const joinSwiperMobile = new Swiper("#joinSwiperMobile", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  speed: 2000,
+  slideToClickedSlide: true,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    420: {
+      slidesPerView: 1.5,
+      spaceBetween: 15,
+    },
+    575: {
+      slidesPerView: 2,
+      spaceBetween: 25,
+    },
+  },
+});
+
+
 // SWIPER REVIEWS
 
 const reviewsSwiper = new Swiper("#reviewsSwiper", {
@@ -98,10 +122,8 @@ const reviewsSwiper = new Swiper("#reviewsSwiper", {
     clickable: true,
     dynamicBullets: true,
     // dynamicMainBullets: 3,
-  }
- 
+  },
 });
-
 
 // FAQ
 

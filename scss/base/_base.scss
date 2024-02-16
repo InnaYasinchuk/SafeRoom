@@ -93,6 +93,11 @@ section {
     padding: 0px 50px;
   }
 
+  @include tablet {
+    margin-top: 50px;
+    padding: 0px 40px;
+  }
+
   @include lg-mobile {
     margin-top: 40px;
     padding: 0px 30px;

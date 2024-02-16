@@ -52,7 +52,7 @@
     height: 430px;
   }
   @include lg-tablet {
-    height: 400px;
+    height: 330px;
   }
 
   @include lg-mobile {
@@ -63,12 +63,12 @@
     text-align: center;
 
     @include tablet {
-      text-align: left;
+     font-size: 18px;
     }
 
     @include lg-mobile {
+      max-width: 450px;
       font-size: 13px;
-      text-align: center;
     }
   }
 
@@ -136,16 +136,13 @@
   @include starAnimation(7s);
 
   @include tablet {
-     top: 75%;
-        transform: scale(0.45);
+    top: 75%;
+    transform: scale(0.45);
     @include starAnimationMobile;
   }
 
   @include lg-mobile {
     left: 87%;
     top: 8%;
-  }
-  @include mobile {
-   
   }
 }
