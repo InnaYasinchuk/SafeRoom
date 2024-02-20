@@ -212,6 +212,11 @@
   box-shadow: 0px 4px 4px 0px #97c2f0;
   outline: none;
 }
+@media (max-width: 575.98px) {
+  .button-join {
+    border-radius: 8px;
+  }
+}
 
 .little-blue-star30,
 .little-blue-star31,

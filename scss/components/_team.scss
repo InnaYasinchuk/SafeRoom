@@ -1,17 +1,33 @@
 @import "../base/vars";
 @import "../base/mixin";
 
+.team {
+  @include flex(23px);
+  flex-direction: column;
 
-.team{
-  padding-bottom: 100px;
+  @include lg-tablet {
+    margin-top: 10px;
+  }
+
+  @include lg-mobile {
+    gap: 20px;
+    margin-top: 50px;
+  }
 }
 .team-header {
   @include flex;
   max-width: 1170px;
   align-items: end;
   position: relative;
+  align-self: self-start;
 
-  .team-header-decor {
+  @include lg-mobile {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &::before {
+    content: "";
     position: absolute;
     top: 27px;
     left: -45px;
@@ -20,114 +36,341 @@
     border: 1px solid rgba($main-blue-color, 0.5);
     border-radius: 50%;
     transform: rotate(-15deg);
- 
+
+    @include lg-tablet {
+      width: 390px;
+      height: 100px;
+      top: 50px;
+      left: -35px;
+    }
+
+    @include lg-mobile {
+      width: 257px;
+      height: 33px;
+      top: -7px;
+      left: 3px;
+      border: 1px solid rgba($decor-color, 0.5);
+      transform: rotate(-10deg);
+    }
   }
 
   .middle-blue-star10 {
-      @include star(485px, 10px, $dark-blue-color, 1);
-       @include starAnimation(8s);
-     
+    @include star(485px, 10px, $dark-blue-color, 1);
+    @include starAnimation(8s);
+
+    @include lg-tablet {
+      left: 325px;
+      top: 27px;
+      transform: scale(0.8);
     }
 
-    .micro-blue-star1{
-       @include star(530px, 0px, $dark-blue-color, 1);
+    @include lg-mobile {
+      left: 230px;
+      top: -33px;
+      transform: scale(0.45);
+      fill: $decor-color;
+      animation: none;
+    }
+  }
+
+  .micro-blue-star1 {
+    @include star(530px, 0px, $dark-blue-color, 1);
+
+    @include lg-tablet {
+      left: 390px;
+      top: 6px;
     }
 
-     .micro-blue-star2{
-       @include star(520px, 235px, $dark-blue-color, 1);
-        @include starAnimation(4s);
+    @include lg-mobile {
+      left: 230px;
+      top: -7px;
+      transform: scale(0.9);
+      fill: $decor-color;
+    }
+  }
+
+  .micro-blue-star2 {
+    @include star(47%, 135%, $dark-blue-color, 1);
+    @include starAnimation(4s);
+
+    @include lg-tablet {
+      left: 60%;
+      top: 35%;
     }
 
-     .micro-blue-star3{
-       @include star(805px, 95px, $dark-blue-color, 1);
+    @include tablet {
+      left: 60%;
+      top: 375%;
+      fill: $decor-color;
     }
 
-     .micro-blue-star4{
-       @include star(985px, 65px, $dark-blue-color, 1);
-        @include starAnimation;
+    @include lg-mobile {
+      left: 213px;
+      top: -1px;
+      transform: scale(0.7);
+      animation: none;
+    }
+  }
+
+  .micro-blue-star3 {
+    @include star(68%, 50%, $dark-blue-color, 1);
+
+    @include desktop {
+      top: 90%;
     }
 
+    @include tablet {
+      top: 315%;
+      fill: $decor-color;
+    }
+    @include lg-mobile {
+      display: none;
+    }
 
+    @include mobile {
+      display: block;
+      @include starAnimationMobile;
+      left: 53%;
+      top: 373%;
+    }
+
+    @media (max-width: 335.98px) {
+      top: 350%;
+    }
+  }
+
+  .micro-blue-star4 {
+    @include star(84%, 35%, $dark-blue-color, 1);
+    @include starAnimation;
+
+    @include lg-mobile {
+      display: none;
+    }
+
+    @include mobile {
+      display: block;
+      @include starAnimationMobile;
+      left: 68%;
+      top: 360%;
+    }
+
+    @media (max-width: 335.98px) {
+      top: 340%;
+    }
+  }
+
+  .micro-blue-star41 {
+    display: none;
+
+    @include mobile {
+      @include star(38%, 380%, $dark-blue-color, 1);
+      display: block;
+      @include starAnimationMobile;
+    }
+
+    @media (max-width: 335.98px) {
+      top: 360%;
+    }
+  }
 
   .team-title {
     @include section-title;
     max-width: 262px;
     line-height: 90px;
+
+    @include tablet {
+      line-height: normal;
+    }
+
+    @include lg-mobile {
+      margin-bottom: 5px;
+    }
   }
 
   .team-text {
     font-size: 30px;
     margin-bottom: 20px;
+
+    @include lg-tablet {
+      font-size: 26px;
+    }
+
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    @include lg-mobile {
+      font-size: 15px;
+      margin-bottom: 0px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 }
 
 .team-wrapper {
-  @include flex(5%);
+  @include flex(63px);
+
+  @include tablet {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .team-description1 {
-  flex-basis: 46%;
-}
+  display: flex;
+  flex-direction: column;
+  max-width: 46%;
+  flex-grow: 1;
+  padding-top: 73px;
 
-.team-description2 {
-  flex-basis: 49%;
-  margin-top: 30px;
-  margin-right: -50px;
-}
-
-.team-description1 p:nth-child(1) {
-  margin: -280px auto 20px;
-}
-.team-description1 p:nth-child(2) {
-  margin: 20px auto 105px;
-}
-
-.team-images {
-  position: relative;
-
-  &::after {
-    content: "";
-    background-image: url("../../img/SafeRoom.png");
-    top: -145px;
-    left: 475px;
-    z-index: 3;
-    position: absolute;
-    width: 250px;
-    height: 120px;
+  @include laptop {
+    padding-top: 40px;
   }
 
-  .img-deroc-circle {
-    width: 72px;
-    height: 72px;
-    border: 1px solid rgba($main-blue-color, 0.5);
-    border-radius: 50%;
-    position: absolute;
-    top: -25px;
-    left: -25px;
-    z-index: -1;
-    background-color: transparent;
-
-    
+  @include lg-tablet {
+    padding-top: 20px;
+    font-size: 20px;
   }
 
-  
-
-  .team-img1 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  @include tablet {
+    max-width: 100%;
   }
 
-  .team-img2 {
-    width: 174px;
-    position: absolute;
-    top: 250px;
-    left: 6px;
-    z-index: 2;
+  @include lg-mobile {
+    font-size: 14px;
+    padding-top: 0;
+  }
+
+  @include mobile {
+    font-size: 13px;
+  }
+
+  & p:nth-child(1) {
+    margin: 0px auto 20px;
+    @include tablet {
+      order: 2;
+    }
+
+    @include lg-mobile {
+      margin-top: 20px;
+    }
+  }
+  & p:nth-child(2) {
+    position: relative;
+    margin-bottom: 105px;
+
+    @include laptop {
+      margin-bottom: 70px;
+    }
+
+    @include tablet {
+      margin-bottom: 30px;
+      color: $accent-color;
+      order: 3;
+    }
+
+    @include lg-mobile {
+      margin-bottom: 0px;
+    }
 
     &::after {
       content: "";
-      background-image: url("../../img/plaster.png");
+      background-image: url("../../img/team/SafeRoom.webp");
+      background-repeat: no-repeat;
+      top: 55%;
+      left: 75%;
+      z-index: 3;
+      position: absolute;
+      width: 250px;
+      height: 120px;
+
+      @include lg-tablet {
+        transform: scale(0.7);
+        left: 25%;
+        top: -280px;
+      }
+      @include lg-mobile {
+        transform: scale(1);
+        left: -1%;
+        top: 60px;
+        background-image: url("../../img/team/SafeRoom_mob.webp");
+      }
+      @include mobile {
+        left: 0%;
+        top: 62px;
+      }
+    }
+  }
+
+  .team-images {
+    position: relative;
+
+    @include tablet {
+      order: 1;
+    }
+
+    &::before {
+      content: "";
+      width: 72px;
+      height: 72px;
+      border: 1px solid rgba($main-blue-color, 0.5);
+      border-radius: 50%;
+      position: absolute;
+      top: -25px;
+      left: -25px;
+      z-index: -1;
+      background-color: transparent;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  .team-img1 {
+    width: 542px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team-img2 {
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+    margin-top: -17px;
+    margin-left: 0;
+    position: relative;
+
+    @include lg-tablet {
+      transform: scale(0.8);
+      margin-top: -30px;
+      margin-left: 0%;
+    }
+
+    @include lg-mobile {
+      margin-top: -25%;
+      margin-left: -6%;
+      transform: scale(0.7);
+    }
+
+    @media (max-width: 434.98px) {
+      margin-top: -17%;
+    }
+
+    @include mobile {
+      transform: scale(0.6);
+      margin-top: -23%;
+      margin-left: -11%;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../../img/team/plaster.webp");
       top: -33%;
       left: -15%;
       z-index: 3;
@@ -137,40 +380,159 @@
     }
   }
 
-
   .team-img3 {
-    width: 162px;
-    position: absolute;
-    top: 180px;
-    left: 410px;
-    z-index: 2;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: -210px;
+    margin-left: 75%;
+    position: relative;
+
+    @include lg-tablet {
+      transform: scale(0.8);
+      margin-top: -200px;
+      margin-left: 65%;
+    }
+
+    @include lg-mobile {
+      margin-top: -22%;
+      margin-left: 69%;
+    }
+
+    @media (max-width: 475.98px) {
+      margin-top: -29%;
+    }
+
+    @include mobile {
+      margin-top: -41%;
+    }
+
+    & .img_desktop {
+      @include lg-mobile {
+        display: none;
+      }
+    }
+
+    & .img_mobile {
+      display: none;
+
+      @include lg-mobile {
+        display: block;
+        transform: scale(1.4);
+      }
+
+      @include mobile {
+        transform: scale(1.1);
+      }
+    }
 
     &::after {
       content: "";
-      background-image: url("../../img/plaster.png");
+      background-image: url("../../img/team/plaster.webp");
       top: -14%;
-      left: 9%;
+      left: 3%;
       z-index: 3;
       position: absolute;
       width: 80px;
       height: 72px;
+
+      @include tablet {
+        left: 3%;
+      }
+      @include lg-mobile {
+        top: -57%;
+        left: -10%;
+        transform: scale(0.85);
+      }
+
+      @include mobile {
+        top: -44%;
+        left: -7%;
+        transform: scale(0.8);
+      }
     }
   }
 }
 
 .team-description2 {
+  max-width: 49%;
+  margin-right: -50px;
+  flex-grow: 1;
+  position: relative;
+
+  @media (max-width: 1254.98px) {
+    margin-top: -50px;
+  }
+
+  @include lg-tablet {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  @include tablet {
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+  @include lg-mobile {
+    font-size: 14px;
+  }
+
+  @include mobile {
+    font-size: 13px;
+  }
+
   & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 20px;
     box-shadow: -35px -27px 0px $blue-color;
     margin-bottom: 75px;
+
+    @include lg-tablet {
+      margin-bottom: 25px;
+    }
+
+    @include tablet {
+      box-shadow: -20px -17px 0px $blue-color;
+      margin-left: 8px;
+    }
+    @include lg-mobile {
+      box-shadow: -14px -10px 0px $blue-color;
+      margin-bottom: 19px;
+    }
+
+    @include mobile {
+      box-shadow: -8px -5px 0px $blue-color;
+    }
   }
 }
 
 .text-border {
-  margin: 20px -100px 40px 15px;
+  margin: 20px -120px 40px 15px;
   border: 1px solid $main-blue-color;
   border-radius: 20px;
-  padding: 10px 29px;
+  padding: 10px 60px 10px 20px;
+
+  @include laptop {
+    margin-right: -90px;
+  }
+
+  @include lg-tablet {
+    margin-right: -50px;
+  }
+  @include tablet {
+    margin-right: -60px;
+  }
+
+  @include lg-mobile {
+    margin-bottom: 20px;
+  }
+
+  @include mobile {
+    display: none;
+  }
 
   & p {
     max-width: 670px;
@@ -185,4 +547,87 @@
   margin: 0 auto;
   font-size: 30px;
   font-weight: 400;
+  text-align: center;
+
+  @include lg-tablet {
+    max-width: 290px;
+    padding: 14px 58px;
+    font-size: 22px;
+  }
+
+  @include lg-mobile {
+    max-width: 200px;
+    padding: 12px 48px;
+    font-size: 16px;
+  }
+  @include mobile {
+    margin-top: 20px;
+    max-width: 160px;
+    padding: 10px 31px;
+    font-size: 14px;
+  }
+}
+
+.micro-blue-star42 {
+  display: none;
+
+  @include lg-mobile {
+    @include star(0%, 95%, $dark-blue-color, 1);
+    display: block;
+    transform: scale(0.75);
+  }
+}
+
+.micro-blue-star43 {
+  display: none;
+
+  @include lg-mobile {
+    @include star(15%, 105%, $dark-blue-color, 1);
+    display: block;
+    @include starAnimationMobile;
+  }
+}
+
+.micro-blue-star44 {
+  display: none;
+
+  @include lg-mobile {
+    @include star(58%, 102%, $accent-color, 1);
+    display: block;
+    @include starAnimationMobile(8s);
+  }
+
+  @include mobile {
+    top: 106%;
+  }
+}
+
+.micro-blue-star45 {
+  display: none;
+
+  @include lg-mobile {
+    @include star(80%, 100%, $dark-blue-color, 1);
+    display: block;
+    transform: scale(0.75);
+  }
+}
+
+.micro-blue-star46 {
+  display: none;
+
+  @include mobile {
+    @include star(79%, 82%, $accent-color, 1);
+    display: block;
+    @include starAnimationMobile(4s);
+  }
+}
+
+.micro-blue-star47 {
+  display: none;
+
+  @include mobile {
+    @include star(90%, 72%, $accent-color, 1);
+    display: block;
+    transform: scale(0.75);
+  }
 }
