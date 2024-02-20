@@ -127,9 +127,16 @@
       display: none;
     }
 
+    
+    @media (max-width: 434.98px) {
+       display: block;
+       @include starAnimationMobile;
+      left: 53%;
+      top: 373%;
+    }
+
     @include mobile {
-      display: block;
-      @include starAnimationMobile;
+     
       left: 53%;
       top: 373%;
     }
@@ -147,6 +154,13 @@
       display: none;
     }
 
+    @media (max-width: 434.98px) {
+       display: block;
+       @include starAnimationMobile;
+      left: 62%;
+      top: 360%;
+    }
+
     @include mobile {
       display: block;
       @include starAnimationMobile;
@@ -162,10 +176,16 @@
   .micro-blue-star41 {
     display: none;
 
+    @media (max-width: 434.98px) {
+       display: block;
+       @include star(43%, 385%, $dark-blue-color, 1);
+       @include starAnimationMobile;
+    }
+
     @include mobile {
-      @include star(38%, 380%, $dark-blue-color, 1);
-      display: block;
-      @include starAnimationMobile;
+     
+      left: 38%;
+      top: 380%;
     }
 
     @media (max-width: 335.98px) {
