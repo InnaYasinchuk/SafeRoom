@@ -486,8 +486,14 @@
 @media (max-width: 991.98px) {
   .team-description1 p:nth-child(2)::after {
     transform: scale(0.7);
+    left: 57%;
+    top: 35px;
+  }
+}
+@media (max-width: 767.98px) {
+  .team-description1 p:nth-child(2)::after {
     left: 25%;
-    top: -280px;
+    top: -250px;
   }
 }
 @media (max-width: 575.98px) {
@@ -685,6 +691,7 @@
 @media (max-width: 575.98px) {
   .team-description2 {
     font-size: 14px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 390px) {
