@@ -119,6 +119,7 @@
 
   @include mobile {
     max-width: 285px;
+   align-self: flex-start;
   }
 
   & p {
@@ -189,7 +190,7 @@
   }
 
   @include mobile {
-    width: 171px;
+    width: 180px;
     font-size: 14px;
   }
 }

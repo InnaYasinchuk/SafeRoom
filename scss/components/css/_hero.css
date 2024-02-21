@@ -130,6 +130,7 @@
 @media (max-width: 390px) {
   .hero-content {
     max-width: 285px;
+    align-self: flex-start;
   }
 }
 .hero-content p {
@@ -222,7 +223,7 @@
 }
 @media (max-width: 390px) {
   .button-speak {
-    width: 171px;
+    width: 180px;
     font-size: 14px;
   }
 }
