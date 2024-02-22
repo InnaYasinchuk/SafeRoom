@@ -2,38 +2,157 @@
 @import "../base/mixin";
 
 .psychologists {
-  
   padding-top: 55px;
   padding-bottom: 37px;
   background-color: $blue-color;
-  background-image:  url(../../img/psychologists-bgr.png);
+  background-image: url(../../img/psychologists/psychologists-bgr.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: $border-radius;
-}
-.psychologists-header {
-  @include flex(100px);
-  justify-content: start;
-  margin-bottom: 35px;
-}
-.psychologists-image-wrapper {
-  @include flex(0px);
-  justify-content: center;
 
-  width: 610px;
-  margin-left: -100px;
-  padding-left: 50px;
-  border-bottom: 2px solid $white-color;
+  @include tablet {
+    background-image: url(../../img/psychologists/psychologists-bgr_mob.webp);
+    background-position: left;
+    border-radius: $border-radius-mobile;
+    padding: 27px 10px 37px;
+  }
 
-  & img {
-    margin-bottom: -13px;
+   @include mobile {
+    padding: 27px 0px 17px;
+       
   }
 }
+.psychologists-header {
+  @include flex(120px);
+  max-width: 100%;
+  justify-content: start;
+  margin-bottom: 35px;
+  position: relative;
+
+  @include laptop {
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: 1044.98px) {
+    gap: 90px;
+  }
+
+    @include tablet {
+    gap: 12px;
+    justify-content: space-between;
+  }
+
+  @include lg-mobile {
+   margin-bottom: 20px;
+      }
+
+       @include mobile {
+        min-width: 101%;
+    margin-left:-3px;
+     margin-right:-3px;
+    
+  }
+
+ 
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: -9%;
+    width: 50%;
+    height: 1px;
+    background-color: $white-color;
+
+    @media (max-width: 1339.98px) {
+      width: 43%;
+    }
+
+    @include laptop {
+      width: 50%;
+      left: -11%;
+    }
+
+    @media (max-width: 1044.98px) {
+      left: -15%;
+    }
+
+    @media (max-width: 869.98px) {
+      width: 38%;
+    }
+
+    @include tablet {
+      width: 140%;
+    }
+  }
+}
+.psychologists-img1,
+.psychologists-img2 {
+  display: block;
+  max-width: 245px;
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: -13px;
+
+  @media (max-width: 1339.98px) {
+    width: 16%;
+    margin-bottom: -38px;
+  }
+
+  @include laptop {
+    margin-bottom: -20px;
+  }
+
+  @media (max-width: 1044.98px) {
+    margin-bottom: -30px;
+  }
+
+  @media (max-width: 909.98px) {
+    margin-bottom: -38px;
+  }
+
+  @include tablet {
+    margin-bottom: -18px;
+  }
+
+  @include lg-mobile {
+    margin-bottom: -5px;
+    width: 19%;
+  }
+}
+
+.psychologists-img1 {
+  @include tablet {
+    order: 1;
+  }
+}
+
+.psychologists-img2 {
+  margin-left: -120px;
+
+  @include laptop {
+    margin-left: -14%;
+  }
+
+  @media (max-width: 869.98px) {
+    display: none;
+  }
+
+  @include tablet {
+    display: block;
+    order: 3;
+    margin-left: 0;
+  }
+}
+
 .psychologists-title-wrapper {
   position: relative;
   align-self: start;
- 
+  @include tablet {
+    order: 2;
+  }
 }
 
 .psychologists-title {
@@ -44,12 +163,28 @@
   position: absolute;
   left: -100px;
   top: -20px;
- 
+  @include laptop {
+    transform: scale(0.8);
+    left: -81px;
+    top: -33px;
+  }
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .psychologists-advantages {
   color: $white-color;
   padding-left: 30px;
+
+  @include tablet {
+    padding: 0 30px 0 60px;
+  }
+
+  @include lg-mobile {
+    padding: 0 20px 0 40px;
+  }
 
   & li {
     padding-bottom: 5px;
@@ -61,15 +196,43 @@
   margin: 43px auto 0px;
   max-width: 365px;
 
+  @include lg-tablet {
+    max-width: 290px;
+  }
+
+  @include lg-mobile {
+    max-width: 200px;
+    margin-top: 30px;
+  }
+
+  @include mobile {
+    max-width: 160px;
+    margin-top: 20px;
+  }
+
   .button-psychologists-section {
-    display: block;
+    display: flex;
+    justify-content: center;
     text-transform: none;
     padding: 14px 78px;
     font-size: 30px;
     font-weight: 400;
     z-index: 3;
     position: relative;
-    
+
+    @include lg-tablet {
+      padding: 14px 58px;
+      font-size: 22px;
+    }
+
+    @include lg-mobile {
+      padding: 12px 48px;
+      font-size: 16px;
+    }
+    @include mobile {
+      padding: 10px 31px;
+      font-size: 14px;
+    }
   }
   .psychologists-decor {
     position: absolute;
@@ -81,5 +244,23 @@
     border-radius: 50%;
     transform: rotate(-8deg);
     z-index: 2;
+
+    @include lg-tablet {
+      width: 290px;
+      height: 74px;
+      top: -12px;
+      left: -1px;
+    }
+
+    @include lg-mobile {
+      width: 200px;
+      height: 55px;
+      top: -8px;
+      left: -1px;
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
 }
