@@ -3937,9 +3937,9 @@ address {
 }
 @media (max-width: 390px) {
   .psychologists-header {
-    min-width: 101%;
-    margin-left: -3px;
-    margin-right: -3px;
+    min-width: 102%;
+    margin-left: -4px;
+    margin-right: -4px;
   }
 }
 .psychologists-header::before {
@@ -4021,8 +4021,21 @@ address {
 @media (max-width: 575.98px) {
   .psychologists-img1,
 .psychologists-img2 {
-    margin-bottom: -5px;
+    margin-bottom: -4px;
+    width: 20%;
+  }
+}
+@media (max-width: 390px) {
+  .psychologists-img1,
+.psychologists-img2 {
+    margin-bottom: -4px;
     width: 19%;
+  }
+}
+@media (max-width: 344.98px) {
+  .psychologists-img1,
+.psychologists-img2 {
+    margin-bottom: -8px;
   }
 }
 
