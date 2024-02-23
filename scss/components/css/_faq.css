@@ -6,6 +6,18 @@
   position: relative;
   border-top: 1px solid #007AFF;
   border-bottom: 1px solid #007AFF;
+  text-align: center;
+}
+@media (max-width: 575.98px) {
+  .faq-title-wrapper {
+    padding: 24px 40px;
+    text-align: left;
+  }
+}
+@media (max-width: 389.98px) {
+  .faq-title-wrapper {
+    padding: 24px 20px;
+  }
 }
 
 .faq-title {
@@ -13,15 +25,29 @@
   font-size: 96px;
   font-weight: 700;
   color: #F0BB75;
-  text-align: center;
+}
+@media (max-width: 1199.98px) {
+  .faq-title {
+    font-size: 76px;
+  }
+}
+@media (max-width: 767.98px) {
+  .faq-title {
+    font-size: 56px;
+  }
+}
+@media (max-width: 575.98px) {
+  .faq-title {
+    font-size: 30px;
+  }
 }
 
 .middle-blue-star11 {
   position: absolute;
   fill: #0C6CD5;
   fill-opacity: 1;
-  left: 430px;
-  top: 45px;
+  left: 28%;
+  top: 32%;
   transition: transform 1s ease-in-out;
   transform-origin: center;
   animation-name: scaleAndRotate;
@@ -43,13 +69,50 @@
     transform: scale(1) rotate(360deg);
   }
 }
+@media (max-width: 991.98px) {
+  .middle-blue-star11 {
+    transform: scale(0.8);
+    animation: none;
+    left: 23%;
+  }
+}
+@media (max-width: 767.98px) {
+  .middle-blue-star11 {
+    top: 22%;
+    transform-origin: center;
+    animation-name: scaleAndRotateMobile;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes scaleAndRotateMobile {
+    0% {
+      transform: scale(0.7) rotate(0deg);
+    }
+    50% {
+      transform: scale(0.5) rotate(180deg);
+    }
+    100% {
+      transform: scale(0.7) rotate(360deg);
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .middle-blue-star11 {
+    fill: #F0BB75;
+    animation: none;
+    transform: scale(0.45);
+    top: 27%;
+    left: 157px;
+  }
+}
 
 .middle-blue-star12 {
   position: absolute;
   fill: #0C6CD5;
   fill-opacity: 1;
-  left: 970px;
-  top: 45px;
+  left: 68%;
+  top: 32%;
   transition: transform 1s ease-in-out;
   transform-origin: center;
   animation-name: scaleAndRotate;
@@ -71,10 +134,110 @@
     transform: scale(1) rotate(360deg);
   }
 }
+@media (max-width: 991.98px) {
+  .middle-blue-star12 {
+    transform: scale(0.8);
+    animation: none;
+    left: 73%;
+  }
+}
+@media (max-width: 767.98px) {
+  .middle-blue-star12 {
+    top: 22%;
+    left: 69%;
+    transform-origin: center;
+    animation-name: scaleAndRotateMobile;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes scaleAndRotateMobile {
+    0% {
+      transform: scale(0.7) rotate(0deg);
+    }
+    50% {
+      transform: scale(0.5) rotate(180deg);
+    }
+    100% {
+      transform: scale(0.7) rotate(360deg);
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .middle-blue-star12 {
+    fill: #F0BB75;
+    animation: none;
+    transform: scale(0.3);
+    top: 28%;
+    left: 184px;
+  }
+}
+
+.micro-blue-star48 {
+  display: none;
+}
+@media (max-width: 575.98px) {
+  .micro-blue-star48 {
+    display: block;
+    position: absolute;
+    fill: #F0BB75;
+    fill-opacity: 1;
+    left: 222px;
+    top: 45%;
+    transition: transform 1s ease-in-out;
+    transform-origin: center;
+    animation-name: scaleAndRotateMobile;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  .micro-blue-star48:hover {
+    transform: scale(1.4) rotate(360deg);
+  }
+  @keyframes scaleAndRotateMobile {
+    0% {
+      transform: scale(0.7) rotate(0deg);
+    }
+    50% {
+      transform: scale(0.5) rotate(180deg);
+    }
+    100% {
+      transform: scale(0.7) rotate(360deg);
+    }
+  }
+}
+
+.svg-faq-text {
+  display: none;
+}
+@media (max-width: 575.98px) {
+  .svg-faq-text {
+    display: block;
+    position: absolute;
+    transform: scale(0.7) rotate(25deg);
+    right: 7%;
+    bottom: -5%;
+  }
+}
+@media (max-width: 389.98px) {
+  .svg-faq-text {
+    right: -3%;
+  }
+}
 
 .accordion {
   padding: 30px 40px;
   list-style: none;
+}
+@media (max-width: 767.98px) {
+  .accordion {
+    padding: 20px 25px;
+  }
+}
+@media (max-width: 575.98px) {
+  .accordion {
+    padding: 6px 0px;
+  }
 }
 
 .accordion-item {
@@ -82,14 +245,55 @@
   border-bottom: 1px solid #007AFF;
   position: relative;
 }
+@media (max-width: 991.98px) {
+  .accordion-item {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .accordion-item {
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .accordion-item {
+    padding: 10px 20px;
+  }
+}
 
 .faq-close {
   fill: #007AFF;
   position: absolute;
   top: 20px;
   right: 50px;
-  transform: rotate(0deg);
+  transform: scale(1) rotate(0deg);
   transition: 0.3s ease-in;
+}
+@media (max-width: 991.98px) {
+  .faq-close {
+    transform: scale(0.8) rotate(0deg);
+    right: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .faq-close {
+    transform: scale(0.6) rotate(0deg);
+    right: 10px;
+    top: 11px;
+  }
+}
+@media (max-width: 575.98px) {
+  .faq-close {
+    transform: scale(0.5) rotate(0deg);
+    right: 10px;
+    top: 1px;
+  }
+}
+@media (max-width: 389.98px) {
+  .faq-close {
+    transform: scale(0.45) rotate(0deg);
+    top: 0;
+  }
 }
 
 .accordion-item-title {
@@ -97,6 +301,27 @@
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s ease-in;
+  width: 87%;
+}
+@media (max-width: 991.98px) {
+  .accordion-item-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767.98px) {
+  .accordion-item-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 575.98px) {
+  .accordion-item-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 389.98px) {
+  .accordion-item-title {
+    font-size: 14px;
+  }
 }
 .accordion-item-title:hover, .accordion-item-title:active {
   color: #F0BB75;
@@ -111,7 +336,21 @@
   max-height: 0px;
   overflow: hidden;
   transition: 0.3s ease-in-out;
-  padding-right: 20px;
+}
+@media (max-width: 767.98px) {
+  .accordion-item-content {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  .accordion-item-content {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575.98px) {
+  .accordion-item-content {
+    font-size: 13px;
+  }
 }
 .accordion-item-content a {
   font-weight: 700;

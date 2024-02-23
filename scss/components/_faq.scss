@@ -5,45 +5,159 @@
   padding: 0;
 }
 
-.faq-title-wrapper{
-position: relative;
-border-top: 1px solid $main-blue-color;
-border-bottom: 1px solid $main-blue-color;
+.faq-title-wrapper {
+  position: relative;
+  border-top: 1px solid $main-blue-color;
+  border-bottom: 1px solid $main-blue-color;
+  text-align: center;
+
+  @include lg-mobile {
+    padding: 24px 40px;
+    text-align: left;
+  }
+
+  @include mobile {
+    padding: 24px 20px;
+  }
 }
 
 .faq-title {
   @include section-title($accent-color);
-  text-align: center;
 }
 
-.middle-blue-star11{
-  @include star(430px, 45px, $dark-blue-color, 1);
+.middle-blue-star11 {
+  @include star(28%, 32%, $dark-blue-color, 1);
   @include starAnimation(8s);
+
+  @include lg-tablet {
+    transform: scale(0.8);
+    animation: none;
+    left: 23%;
+  }
+
+  @include tablet {
+    top: 22%;
+    @include starAnimationMobile;
+  }
+
+  @include lg-mobile {
+    fill: $accent-color;
+    animation: none;
+    transform: scale(0.45);
+    top: 27%;
+    left: 157px;
+  }
 }
 
-.middle-blue-star12{
-  @include star(970px, 45px, $dark-blue-color, 1);
+.middle-blue-star12 {
+  @include star(68%, 32%, $dark-blue-color, 1);
   @include starAnimation(8s);
+
+  @include lg-tablet {
+    transform: scale(0.8);
+    animation: none;
+    left: 73%;
+  }
+
+  @include tablet {
+    top: 22%;
+    left: 69%;
+    @include starAnimationMobile;
+  }
+
+  @include lg-mobile {
+    fill: $accent-color;
+    animation: none;
+    transform: scale(0.3);
+    top: 28%;
+    left: 184px;
+  }
+}
+
+.micro-blue-star48 {
+  display: none;
+
+  @include lg-mobile {
+    display: block;
+    @include star(222px, 45%, $accent-color, 1);
+    @include starAnimationMobile(8s);
+  }
+}
+
+.svg-faq-text {
+  display: none;
+
+  @include lg-mobile {
+    display: block;
+    position: absolute;
+    transform: scale(0.7) rotate(25deg);
+    right: 7%;
+    bottom: -5%;
+  }
+
+  @include mobile {
+    right: -3%;
+  }
 }
 
 .accordion {
   padding: 30px 40px;
   list-style: none;
+
+  @include tablet {
+    padding: 20px 25px;
+  }
+
+  @include lg-mobile {
+    padding: 6px 0px;
+  }
 }
+
 .accordion-item {
   padding: 20px 50px;
   border-bottom: 1px solid $main-blue-color;
   position: relative;
-  
+
+  @include lg-tablet {
+    padding: 20px 30px;
+  }
+
+  @include tablet {
+    padding: 15px 20px;
+  }
+
+  @include lg-mobile {
+    padding: 10px 20px;
+  }
 }
 
-.faq-close{
+.faq-close {
   fill: $main-blue-color;
   position: absolute;
   top: 20px;
   right: 50px;
-  transform: rotate(0deg);
+  transform: scale(1) rotate(0deg);
   transition: $transition;
+
+  @include lg-tablet {
+    transform: scale(0.8) rotate(0deg);
+    right: 30px;
+  }
+
+  @include tablet {
+    transform: scale(0.6) rotate(0deg);
+    right: 10px;
+    top: 11px;
+  }
+  @include lg-mobile {
+    transform: scale(0.5) rotate(0deg);
+    right: 10px;
+    top: 1px;
+  }
+  @include mobile {
+    transform: scale(0.45) rotate(0deg);
+    top: 0;
+  }
 }
 
 .accordion-item-title {
@@ -51,28 +165,56 @@ border-bottom: 1px solid $main-blue-color;
   font-weight: 500;
   cursor: pointer;
   transition: $transition;
+  width: 87%;
 
-  &:hover, &:active {
+  @include lg-tablet {
+    font-size: 28px;
+  }
+
+  @include tablet {
+    font-size: 22px;
+  }
+
+  @include lg-mobile {
+    font-size: 16px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+  }
+
+  &:hover,
+  &:active {
     color: $accent-color;
   }
 
-  & span .faq-close:hover{
+  & span .faq-close:hover {
     fill: $accent-color !important;
   }
-  
 }
 .accordion-item-content {
   max-width: 1195px;
   margin-top: 0px;
   max-height: 0px;
   overflow: hidden;
-  transition: .3s ease-in-out;
-  padding-right: 20px;
+  transition: 0.3s ease-in-out;
 
-  & a{
+  @include tablet {
+    font-size: 16px;
+  }
+
+  @include lg-mobile {
+    font-size: 14px;
+  }
+
+  @include lg-mobile {
+    font-size: 13px;
+  }
+
+  & a {
     font-weight: 700;
 
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }

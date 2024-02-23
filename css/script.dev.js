@@ -117,6 +117,7 @@ accordionTitle.forEach(function (el, index) {
   el.addEventListener("click", function () {
     var accordionContent = el.nextElementSibling;
     var faqClose = document.querySelectorAll(".faq-close")[index];
+    var windowWidth = window.innerWidth;
 
     if (accordionContent.style.maxHeight) {
       document.querySelectorAll(".accordion-item-content").forEach(function (el) {
@@ -124,7 +125,7 @@ accordionTitle.forEach(function (el, index) {
         el.style.marginTop = "0px";
       });
       document.querySelectorAll(".faq-close").forEach(function (el) {
-        el.style.transform = "rotate(0deg)";
+        el.style.transform = "scale(".concat(getScaleValueFaqClose(windowWidth), ") rotate(0deg)");
         el.style.fill = "#007AFF";
       });
     } else {
@@ -133,13 +134,41 @@ accordionTitle.forEach(function (el, index) {
         el.style.marginTop = "0px";
       });
       document.querySelectorAll(".faq-close").forEach(function (el) {
-        el.style.transform = "rotate(0deg)";
+        el.style.transform = "scale(".concat(getScaleValueFaqClose(windowWidth), ") rotate(0deg)");
         el.style.fill = "#007AFF";
       });
       accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
-      accordionContent.style.marginTop = "20px";
-      faqClose.style.transform = "rotate(45deg)";
+      accordionContent.style.marginTop = "".concat(getMarginTopValue(windowWidth), "px");
+      faqClose.style.transform = "scale(".concat(getScaleValueFaqClose(windowWidth), ") rotate(45deg)");
       faqClose.style.fill = "#F0BB75";
     }
   });
 });
+
+function getScaleValueFaqClose(width) {
+  if (width <= 389.98) {
+    return 0.45;
+  } else if (width > 389.98 && width <= 575.98) {
+    return 0.5;
+  } else if (width > 575.98 && width <= 767.98) {
+    return 0.6;
+  } else if (width > 767.98 && width <= 991.98) {
+    return 0.8;
+  } else {
+    return 1;
+  }
+}
+
+function getMarginTopValue(width) {
+  if (width <= 389.98) {
+    return 5;
+  } else if (width > 389.98 && width <= 575.98) {
+    return 8;
+  } else if (width > 575.98 && width <= 767.98) {
+    return 10;
+  } else if (width > 767.98 && width <= 991.98) {
+    return 15;
+  } else {
+    return 20;
+  }
+}
