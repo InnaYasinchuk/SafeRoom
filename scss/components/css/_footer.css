@@ -195,6 +195,7 @@ address {
     justify-content: space-between;
     padding: 30px 30px 40px;
     gap: 0%;
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 389.98px) {
