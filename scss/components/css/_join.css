@@ -709,6 +709,16 @@
     bottom: -2%;
   }
 }
+@media (max-width: 399.98px) {
+  .slide1-img-wrapper {
+    bottom: -11%;
+  }
+}
+@media (max-width: 389.98px) {
+  .slide1-img-wrapper {
+    bottom: -1%;
+  }
+}
 
 .join-mobile-slide1 img {
   width: 100%;

@@ -575,6 +575,16 @@
     bottom: -2%;
   }
 
+  
+  @media (max-width: 399.98px) {
+    bottom: -11%;
+  }
+
+   @include mobile {
+    bottom: -1%;
+    
+  }
+
 }
 
 .join-mobile-slide1 img {
@@ -617,6 +627,7 @@
 .heart {
   margin-bottom: -4px;
 }
+
 .swiper-join-mobile .slide-button {
   width: 240px;
   height: 40px;

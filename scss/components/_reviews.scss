@@ -6,6 +6,10 @@
   position: relative;
   margin-bottom: 150px;
 
+   @include tablet {
+   margin-bottom: 120px;
+  }
+
   @include lg-mobile {
     margin-bottom: 100px;
   }

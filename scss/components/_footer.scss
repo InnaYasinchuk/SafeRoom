@@ -3,9 +3,9 @@
 @import "../base/mixin";
 
 .footer {
-  @include flex(40px);
+  @include flex(9%);
   align-items: start;
-  background-color: $blue-color;
+  background-color: $main-blue-color;
   padding: 60px 105px 100px 140px;
   margin: 0px auto 50px;
   font-family: "Amatic SC", sans-serif;
@@ -15,6 +15,29 @@
   position: relative;
   overflow: hidden;
 
+ @include laptop {
+    padding: 60px 80px 100px 80px;
+  }
+
+   @include lg-tablet {
+     padding: 50px 40px 100px;
+     gap: 3%;
+  }
+
+  @include tablet {
+    justify-content: space-around;
+  }
+
+  @include lg-mobile {
+    justify-content: space-between;
+    padding: 30px 30px 40px;
+    gap: 0%;
+  }
+
+   @include mobile {
+     padding: 20px 20px 30px;
+    }
+
   &::before {
     content: "";
     background: url(../../img/footer-img.png) no-repeat;
@@ -23,29 +46,99 @@
     width: 538px;
     height: 124px;
     position: absolute;
+
+    @include lg-tablet {
+    transform: scale(0.8);
+    bottom: -19px;
+     right: -58px;
+  }
+   @include lg-mobile {
+     transform: scale(0.6);
+    bottom: -38px;
+     right: -96px;
+  }
+
+    @media (max-width: 474.98px) {
+    transform: scale(0.45);
+    bottom: -44px;
+     right: -140px;
+  }
+
+  @include mobile {
+    transform: scale(0.34);
+    bottom: -49px;
+     right: -161px;
+  }
+
   }
 }
 
-.logo-footer {
+.logo-footer, .logo-footer-mobile {
   @include flex(13px);
-  margin-right: 100px;
-
+  margin-right: 37px;
+ 
   & img {
     transition: $transition;
 
+    @include tablet {
+  width: 50px;
+   height: 50px;
+  }
+
+  @include lg-mobile {
+   width: 35px;
+   height: 35px;
+  }
     &:hover {
       transform: scale(1.1);
     }
   }
 }
 
+.logo-footer{
+ @include tablet {
+  display: none;
+  }
+}
+
+.logo-footer-mobile{
+  display: none;
+
+   @include tablet {
+  display: flex;
+  margin-right: 10px;
+  gap: 15px;
+   }
+}
+
+.contacts-wrapper{
+  @include flex(40px);
+
+   @media (max-width: 1384.98px) {
+   flex-direction: column;
+   gap: 20px;
+   align-items: start;
+  }
+
+   @include lg-mobile {
+    gap: 0px;
+  }
+}
+
 .footer-titles {
   font-size: 36px;
   margin-top: 12px;
+
+   @include lg-mobile {
+     font-size: 30px;
+     margin-top: 0px;
+  }
 }
 
 .logo-footer .footer-titles {
   margin-top: 0;
+  margin-left: -10px;
+
 }
 
 address ul {
@@ -54,11 +147,20 @@ address ul {
 
 address .footer-titles {
   margin-bottom: 13px;
+
+  @include lg-mobile {
+    margin-bottom: 20px;
+  }
 }
 
 .address-link {
   margin-bottom: 10px;
-  font-style: 24px;
+  font-size: 24px;
+
+  @include lg-mobile {
+     font-size: 16px;
+     margin-bottom: 19px;
+  }
   &:hover {
     text-decoration: underline;
   }
@@ -66,6 +168,11 @@ address .footer-titles {
 
 .footer-socials svg {
   fill: $white-color;
+@include lg-mobile {
+    margin-left: -5px;
+  }
+
+
 }
 
 footer .icon {
@@ -75,36 +182,130 @@ footer .icon {
   stroke: $blue-color;
   transition: $transition;
 
+    @include lg-mobile {
+    transform: scale(0.63);
+    margin-top: 7px;
+     margin-right: 2px;
+  }
+
   &:hover,
   &:active {
     fill: $hover-accent-color;
   }
 }
 
+.footer-button-wrapper{
+   margin-top: 12px;
+   @include flex(24px);
+   flex-direction: column;
+
+   @include lg-mobile {
+    margin-top: -1px;
+    align-items: end;
+    gap: 24px;
+    max-width: 45%;
+   
+  }
+   }
+
 footer .button-footer {
-  margin-top: 12px;
-  margin-left: 70px;
+ 
   padding: 2px 47px;
   font-size: 44px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  @include lg-tablet {
+     font-size: 36px;
+     padding: 5px 47px;
+  }
+
+  @include lg-mobile {
+     font-size: 20px;
+     padding: 3px 28px;
+  }
+
 }
 
 .footer-star1 {
   @include star(85px, 75px, $accent-color, 1);
   @include starAnimation;
+
+   @include laptop {
+    left: 13%;
+    top: 62%;
+  }
+
+   @include tablet {
+   left: 3%;
+    top: 6%;
+  }
+
+  @include lg-mobile {
+    left: 3%;
+    top: 1%;
+     @include starAnimationMobile;
+  }
 }
 
 .footer-star2 {
-  @include star(355px, 165px, $white-color, 1);
+  @include star(25%, 58%, $white-color, 1);
   @include starAnimation(4s);
-}
+
+  @include tablet {
+   left: 43%;
+    top: 71%;
+  }
+
+  @include lg-mobile {
+    left: 60%;
+    top: 46%;
+     @include starAnimationMobile(4s);
+  }
+
+  }
 
 .footer-star3 {
-  @include star(995px, 85px, $accent-color, 1);
+  @include star(69%, 30%, $accent-color, 1);
   @include starAnimation(8s);
+
+   @media (max-width: 1384.98px) {
+   left: 66%;
+   top: 45%;
+  }
+
+  @include tablet {
+       top: 58%;
+  }
+
+  @include lg-mobile {
+    left: 67%;
+    top: 70%;
+    fill: $white-color;
+     @include starAnimationMobile(8s);
+  }
+
 }
 
 .footer-star4 {
-  @include star(1305px, 180px, $white-color, 1);
+  @include star(90%, 62%, $accent-color, 1);
   @include starAnimation(4s);
+
+  @include lg-mobile {
+    left: 79%;
+    top: 54%;
+    fill: $white-color;
+     @include starAnimationMobile(4s);
+  }
+
+}
+
+.footer-star5 {
+ display: none;
+
+  @include lg-mobile {
+    display: block;
+    @include star(87%, 74%, $white-color, 1);
+     @include starAnimationMobile;
+  }
+
 }

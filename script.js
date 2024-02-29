@@ -98,7 +98,7 @@ const joinSwiperMobile = new Swiper("#joinSwiperMobile", {
       slidesPerView: 1.2,
       spaceBetween: 12,
     },
-    390: {
+    400: {
       slidesPerView: 1.3,
       spaceBetween: 15,
     },
