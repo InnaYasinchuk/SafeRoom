@@ -7,8 +7,30 @@ svg,
   box-sizing: border-box;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color-scheme: light;
+    background-color: #fbf6f6;
+  }
+}
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+@media (max-width: 1199.98px) {
+  html {
+    scroll-padding-top: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  html {
+    scroll-padding-top: 20px;
+  }
+}
+@media (max-width: 389.98px) {
+  html {
+    scroll-padding-top: 15px;
+  }
 }
 
 body {
@@ -17,7 +39,26 @@ body {
   font-size: 26px;
   color: #007AFF;
   line-height: normal;
-  overflow-x: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media (max-width: 1199.98px) {
+  body {
+    font-size: 22px;
+  }
+}
+@media (max-width: 575.98px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 389.98px) {
+  body {
+    font-size: 13px;
+  }
+}
+body.lock {
+  overflow: hidden;
 }
 
 main,
@@ -26,6 +67,15 @@ footer {
   margin: 0 auto;
   max-width: 1440px;
   overflow-x: hidden;
+}
+
+header {
+  padding: 0px 50px;
+}
+@media (max-width: 575.98px) {
+  header {
+    padding: 0px 20px;
+  }
 }
 
 footer {
@@ -37,6 +87,30 @@ section {
   margin: 0 auto;
   margin-top: 100px;
   padding: 0px 90px;
+}
+@media (max-width: 991.98px) {
+  section {
+    margin-top: 70px;
+    padding: 0px 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  section {
+    margin-top: 50px;
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  section {
+    margin-top: 40px;
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 389.98px) {
+  section {
+    margin-top: 50px;
+    padding: 0px 20px;
+  }
 }
 
 a {
@@ -92,7 +166,7 @@ address {
   align-items: start;
   background-color: #3A98FF;
   padding: 60px 105px 100px 140px;
-  margin: 150px auto 50px;
+  margin: 0px auto 50px;
   font-family: "Amatic SC", sans-serif;
   color: #fff;
   font-weight: 700;

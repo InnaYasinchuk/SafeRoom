@@ -194,11 +194,11 @@
 .swiper-join .swiper-slide {
   @include flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 385px !important;
   height: 378px;
-  padding: 50px auto;
+  padding: 20px 0;
   text-align: center;
   color: $white-color;
   border-radius: $border-radius;
@@ -375,6 +375,7 @@
 .slide-button {
   @include flex;
   justify-content: center;
+  align-items: center;
   width: 306px;
   height: 65px;
   margin-top: 30px;
@@ -433,11 +434,11 @@
 .swiper-join-mobile .swiper-slide {
   @include flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 280px;
   height: 250px;
-  padding: 20px auto;
+  padding: 20px 0;
   text-align: center;
   color: $white-color;
   border-radius: $border-radius-mobile;
@@ -451,6 +452,11 @@
 
   @include lg-mobile {
     height: 220px;
+    padding: 10px 0;
+    }
+
+    @media (max-width: 423.98px) {
+   padding: 20px 0;
   }
 
   @include mobile {
@@ -458,58 +464,49 @@
   }
 }
 .swiper-join-mobile .slide-title {
-  width: 370px;
+  width: 85%;
   margin-bottom: 15px;
   font-size: 24px;
   font-weight: 500;
 
   @include lg-tablet {
-    width: 280px;
-    font-size: 22px;
+     font-size: 22px;
   }
   @include tablet {
-    width: 240px;
+   
     font-size: 20px;
   }
 
   @include lg-mobile {
-    width: 240px;
-    margin-bottom: 10px;
+     margin-bottom: 10px;
     font-size: 18px;
+    
+  }
+
+  @media (max-width: 460.98px) {
+    width: 97%;
   }
 
   @include mobile {
-    width: 236px;
     font-size: 16px;
   }
 }
 
-.join-mobile-slide1 .slide-title {
-  margin-top: -30px;
-}
-
 .swiper-join-mobile .slide-text {
-  width: 380px;
+  width: 90%;
   font-size: 18px;
   text-align: left;
 
   @include lg-tablet {
-    width: 300px;
     font-size: 16px;
   }
 
   @include tablet {
-    width: 210px;
     font-size: 14px;
   }
-
-  @include lg-mobile {
-    width: 199px;
-  }
-
+  
   @include mobile {
-    width: 251px;
-    font-size: 13px;
+   font-size: 13px;
   }
 }
 
@@ -540,23 +537,81 @@
   transform: scale(0.8);
 
   @include tablet {
-    margin-top: -8px;
     transform: scale(0.7);
   }
   @include mobile {
-     margin-top: 0;
     transform: scale(0.6);
   }
 }
 
-.join-mobile-slide1 img {
-  position: absolute;
-  bottom: 1%;
-  right: 0;
+.slide1-img-wrapper{
+  width: 227px;
+  height: 55px;
+  position: relative;
+ align-self: flex-end;
+ bottom: -10%;
+
+  @media (max-width: 844.98px) {
+   bottom: -2%;
+  }
+
+  @include tablet {
+   bottom: -9%;
+  }
+
+   @media (max-width: 636.98px) {
+    bottom: 0%;
+  }
+
+   @include lg-mobile {
+    bottom: -5%;
+  }
+
+    @media (max-width: 423.98px) {
+    bottom: -11%;
+  }
+
+  @media (max-width: 402.98px) {
+    bottom: -2%;
+  }
+
 }
 
+.join-mobile-slide1 img {
+  width: 100%;
+ }
+
+
+
 .join-mobile-slide3 img {
-  margin: 10px auto -15px;
+  margin: 24px auto -21px;
+
+  @media (max-width: 804.98px) {
+   margin: 3px auto -23px;
+  }
+
+  @include tablet {
+  margin: 23px auto -28px;
+  }
+
+     @media (max-width: 720.98px) {
+   margin: 8px auto -25px;
+  }
+
+   @include lg-mobile {
+     margin: 37px auto -21px;
+  }
+
+   @media (max-width: 423.98px) {
+   margin: 20px auto -20px;
+  }
+
+   @include mobile {
+    margin: 3px auto -20px;
+    
+  }
+
+
 }
 
 .heart {
@@ -564,7 +619,7 @@
 }
 .swiper-join-mobile .slide-button {
   width: 240px;
-  height: 50px;
+  height: 40px;
   font-size: 20px;
   border-radius: $border-radius-mobile;
 

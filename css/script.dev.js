@@ -85,11 +85,15 @@ var joinSwiperMobile = new Swiper("#joinSwiperMobile", {
     clickable: true
   },
   breakpoints: {
-    420: {
-      slidesPerView: 1.5,
+    360: {
+      slidesPerView: 1.2,
+      spaceBetween: 12
+    },
+    390: {
+      slidesPerView: 1.3,
       spaceBetween: 15
     },
-    575: {
+    576: {
       slidesPerView: 2,
       spaceBetween: 25
     }
@@ -97,8 +101,8 @@ var joinSwiperMobile = new Swiper("#joinSwiperMobile", {
 }); // SWIPER REVIEWS
 
 var reviewsSwiper = new Swiper("#reviewsSwiper", {
-  slidesPerView: 3,
-  spaceBetween: 18,
+  slidesPerView: 1.24,
+  spaceBetween: 10,
   loop: true,
   speed: 2000,
   slideToClickedSlide: true,
@@ -109,6 +113,36 @@ var reviewsSwiper = new Swiper("#reviewsSwiper", {
     clickable: true,
     dynamicBullets: true // dynamicMainBullets: 3,
 
+  },
+  breakpoints: {
+    360: {
+      slidesPerView: 1.4,
+      spaceBetween: 10
+    },
+    410: {
+      slidesPerView: 1.5,
+      spaceBetween: 15
+    },
+    470: {
+      slidesPerView: 1.6,
+      spaceBetween: 15
+    },
+    510: {
+      slidesPerView: 1.9,
+      spaceBetween: 15
+    },
+    655: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    },
+    860: {
+      slidesPerView: 2.5,
+      spaceBetween: 18
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 18
+    }
   }
 }); // FAQ
 

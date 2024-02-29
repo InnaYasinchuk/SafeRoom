@@ -3,19 +3,77 @@
 
 .reviews {
   padding: 0;
+  position: relative;
+  margin-bottom: 150px;
+
+  @include lg-mobile {
+    margin-bottom: 100px;
+  }
+
+  &::before,
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 117px;
+    height: 102px;
+    border-radius: 50%;
+    background-color: $blur-color;
+    filter: blur(55px);
+
+    @include lg-mobile {
+      display: block;
+    }
+  }
+  &::before {
+    top: 9%;
+    left: -3%;
+  }
+  &::after {
+    bottom: -16%;
+    right: -7%;
+  }
 }
+
 .reviews-title {
   @include section-title;
   margin-left: 90px;
+
+  @include tablet {
+    text-align: center;
+    margin-left: 0;
+  }
 }
+
 .swiper.swiper-reviews {
   margin: 0;
   margin-top: 50px;
-  width: 1443px;
+  width: 100%;
   height: 480px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1399.98px) {
+    height: 510px;
+  }
+
+  @include laptop {
+    height: 470px;
+  }
+  @media (max-width: 1021.98px) {
+    height: 500px;
+  }
+
+  @include tablet {
+    height: 410px;
+  }
+
+  @include lg-mobile {
+    height: 225px;
+    margin-top: 20px;
+  }
 }
+
 .swiper-reviews .swiper-wrapper {
   display: flex;
   justify-content: space-between;
@@ -28,6 +86,46 @@
   border-radius: 20px;
   padding: 30px 10px;
   color: $white-color;
+  position: relative;
+
+  @media (max-width: 1399.98px) {
+    height: 390px;
+  }
+
+  @include laptop {
+    height: 340px;
+  }
+
+  @media (max-width: 1021.98px) {
+    height: 370px;
+  }
+
+  @include tablet {
+    font-size: 18px;
+    height: 300px;
+  }
+
+  @include lg-mobile {
+    height: 160px;
+    padding: 10px 6px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  &::after {
+    content: "";
+    background: url(../../img/reviews/Polygon.svg) no-repeat;
+    bottom: -22%;
+    left: 8%;
+    width: 90px;
+    height: 89px;
+    position: absolute;
+    z-index: -1;
+    @include lg-mobile {
+      bottom: -31%;
+      left: 2%;
+    }
+  }
 }
 
 .swiper-slide .reviews-slide1,
@@ -39,162 +137,520 @@
   background-color: $blue-color;
   border-radius: 20px;
   position: relative;
-  width: 465px;
   cursor: grab;
-  &:active{
+  &:active {
     cursor: grabbing;
   }
-
-  &::after {
-    content: "";
-    background: url(../../img/Polygon.svg) no-repeat;
-    bottom: -65px;
-    left: 40px;
-    width: 90px;
-    height: 89px;
-    position: absolute;
-    z-index: -1;
+  @include lg-mobile {
+    padding: 10px 3px;
+    border-radius: 8px;
   }
 }
 
+// slide 1
+
 .swiper-slide .reviews-slide1 {
+  .slide1-img1,
+  .slide1-img2 {
+    position: absolute;
+    display: none;
+  }
+
+  .slide1-img1 {
+    @include lg-mobile {
+      display: block;
+      bottom: 3%;
+      left: 11%;
+    }
+  }
+
+  .slide1-img2 {
+    @include lg-mobile {
+      display: block;
+      bottom: 3%;
+      right: 8%;
+    }
+  }
+
   &::before {
     content: "";
-    background: url(../../img/rev-slide1.svg) no-repeat;
-    bottom: 25px;
-    right: 45px;
+    background: url(../../img/reviews/rev-slide1.svg) no-repeat;
+    bottom: 7%;
+    right: 6%;
     width: 117px;
     height: 115px;
     position: absolute;
     animation: rotateEl 25s linear infinite;
 
-     @keyframes rotateEl {
+    @include lg-mobile {
+      background: url(../../img/reviews/rev-slide1_mob.svg) no-repeat;
+      width: 30px;
+      height: 30px;
+      bottom: 10%;
+      right: 34%;
+    }
+  }
+
+  &::after {
+    display: none;
+
+    @include lg-mobile {
+      display: block;
+      content: "";
+      background: url(../../img/reviews/rev-slide1_mob.svg) no-repeat;
+      bottom: 18%;
+      left: 30%;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      animation: rotateEl 25s linear infinite;
+    }
+  }
+
+  @keyframes rotateEl {
     0% {
       transform: rotate(0deg);
     }
     50% {
-      transform: rotate(180deg); 
+      transform: rotate(180deg);
     }
     100% {
-      transform: rotate(360deg);  
+      transform: rotate(360deg);
     }
-  }
-  }
-}
-
-.swiper-slide .reviews-slide2, .swiper-slide .reviews-slide5{
-  &::before {
-    content: "";
-    background: url(../../img/rev-slide2.png) no-repeat;
-    bottom: -11px;
-    right: 25px;
-    width: 145px;
-    height: 100px;
-    position: absolute;
-  }
-
-  &-decor1,
-  &-decor2 {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: $white-color;
-    filter: blur(8px);
-    border-radius: $border-radius;
-  }
-
-  &-decor1 {
-    bottom: 70px;
-    right: 135px;
-  }
-
-  &-decor2 {
-    bottom: 70px;
-    right: 50px;
   }
 }
 
 // slide 2
 
+.swiper-slide .reviews-slide2 {
+  .slide2-img-decor {
+    position: absolute;
+    width: 145px;
+    height: 100px;
+    bottom: -3%;
+    right: 4%;
+
+    @include lg-mobile {
+      width: 87px;
+      height: 60px;
+      bottom: 2%;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: $white-color;
+      filter: blur(8px);
+      border-radius: $border-radius;
+    }
+
+    &::before {
+      bottom: 81%;
+      right: 75%;
+    }
+
+    &::after {
+      bottom: 78%;
+      right: 15%;
+    }
+
+    .slide2-img {
+      width: 100%;
+    }
+  }
+}
+
 .superMicroStar1 {
-  @include star(65px, 315px, $white-color, 1);
+  @include star(14%, 82%, $white-color, 1);
   @include starAnimation(4s);
+
+  @include lg-mobile {
+    @include starAnimationMobile(4s);
+  }
 }
 
 .superMicroStar2 {
-  @include star(135px, 300px, $white-color, 1);
+  @include star(30%, 78%, $white-color, 1);
   @include starAnimation;
+
+  @include lg-mobile {
+    @include starAnimationMobile(4s);
+  }
 }
 .superMicroStar3 {
-  @include star(180px, 265px, $white-color, 1);
+  @include star(39%, 68%, $white-color, 1);
   @include starAnimation(8s);
+
+  @media (max-width: 1304.98px) {
+    top: 73%;
+  }
+
+  @include lg-mobile {
+    @include starAnimationMobile(4s);
+    top: 68%;
+  }
 }
 
 .superMicroStar4 {
-  @include star(225px, 300px, $white-color, 1);
+  @include star(48%, 78%, $white-color, 1);
   @include starAnimation;
+
+  @include lg-mobile {
+    @include starAnimationMobile(4s);
+  }
 }
 
 // slide 3
 
+.slide3-img {
+  display: none;
+  position: absolute;
+
+  @include lg-mobile {
+    display: block;
+    bottom: 3%;
+    left: 35%;
+  }
+}
+
 .superMicroStar5 {
-  @include star(320px, 290px, $white-color, 1);
+  @include star(68%, 75%, $white-color, 1);
   @include starAnimation;
+
+  @media (max-width: 1271.98px) {
+    display: none;
+  }
+
+  @include laptop {
+    display: block;
+  }
+
+  @media (max-width: 1099.98px) {
+    display: none;
+  }
+
+  @include lg-tablet {
+    display: block;
+  }
+
+  @include lg-mobile {
+    left: 96%;
+    top: 8%;
+    fill: $hover-accent-color;
+    @include starAnimationMobile;
+  }
+
+  @media (max-width: 419.98px) {
+    left: 92%;
+  }
+
+  @include mobile {
+    left: 93%;
+    top: 8%;
+  }
 }
+
 .superMicroStar6 {
-  @include star(325px, 315px, $white-color, 1);
+  @include star(70%, 82%, $white-color, 1);
   @include starAnimation;
+
+  @include lg-mobile {
+    left: 95%;
+    top: 27%;
+    fill: $hover-accent-color;
+    @include starAnimationMobile;
+  }
+
+  @media (max-width: 419.98px) {
+    left: 95%;
+    top: 23%;
+  }
+
+  @include mobile {
+    left: 94%;
+    top: 22%;
+  }
+
+  @media (max-width: 339.98px) {
+    left: 92%;
+    top: 27%;
+  }
 }
+
 .superMicroStar7 {
-  @include star(350px, 285px, $white-color, 1);
+  @include star(74%, 73%, $white-color, 1);
   @include starAnimation(8s);
+
+  @media (max-width: 1271.98px) {
+    display: none;
+  }
+
+  @include laptop {
+    display: block;
+  }
+
+  @media (max-width: 1099.98px) {
+    display: none;
+  }
+
+  @include lg-tablet {
+    display: block;
+  }
+
+  @include lg-mobile {
+    left: 94%;
+    top: 43%;
+    fill: $hover-accent-color;
+    @include starAnimationMobile(8s);
+  }
+
+  @media (max-width: 524.98px) {
+    top: 51%;
+  }
+
+  @include mobile {
+    left: 93%;
+    top: 58%;
+  }
+
+  @media (max-width: 339.98px) {
+    left: 91%;
+    top: 43%;
+  }
 }
 
-.middle-blue-star13{
-  @include star(345px, 310px, $white-color, 1);
+.superMicroStar47 {
+  display: none;
+
+  @include lg-mobile {
+    display: block;
+    @include star(89%, 37%, $hover-accent-color, 1);
+    @include starAnimationMobile(8s);
+  }
+
+  @media (max-width: 419.98px) {
+    left: 86%;
+    top: 27%;
+  }
+
+  @include mobile {
+    left: 86%;
+    top: 30%;
+  }
+
+  @media (max-width: 339.98px) {
+    left: 86%;
+    top: 37%;
+  }
 }
 
-.little-white-star5{
-  @include star(325px, 340px, $white-color, 1);
+.middle-blue-star13 {
+  @include star(76%, 81%, $white-color, 1);
+
+  @include tablet {
+    top: 78%;
+  }
+
+  @include lg-mobile {
+    fill: $hover-accent-color;
+    transform: scale(0.45);
+    left: 74%;
+    top: 61%;
+  }
+}
+
+.little-white-star5 {
+  @include star(70%, 89%, $white-color, 1);
+
+  @include laptop {
+    top: 88%;
+  }
+
+  @include tablet {
+    top: 86%;
+  }
+
+  @include lg-mobile {
+    fill: $hover-accent-color;
+    transform: scale(0.45);
+    left: 72%;
+    top: 71%;
+  }
 }
 
 // slide 4
 
+.slide4-img {
+  display: none;
+  position: absolute;
+
+  @include lg-mobile {
+    display: block;
+    bottom: 6%;
+    right: 9%;
+  }
+}
+
 .superMicroStar8 {
-  @include star(30px, 365px, $white-color, 1);
+  @include star(7%, 95%, $white-color, 1);
   @include starAnimation(4s);
+
+  @include lg-mobile {
+    left: 6%;
+    top: 72%;
+    @include starAnimationMobile(4s);
+  }
 }
 
 .superMicroStar9 {
-  @include star(45px, 345px, $white-color, 1);
+  @include star(10%, 89%, $white-color, 1);
   @include starAnimation;
+
+  @include lg-mobile {
+    left: 9%;
+    top: 87%;
+    @include starAnimationMobile;
+  }
 }
 
 .superMicroStar10 {
-  @include star(70px, 338px, $white-color, 1);
+  @include star(16%, 87%, $white-color, 1);
   @include starAnimation(8s);
+
+  @include lg-mobile {
+    left: 17%;
+    top: 76%;
+    @include starAnimationMobile(8s);
+  }
 }
 
 .superMicroStar11 {
-  @include star(95px, 355px, $white-color, 1);
+  @include star(22%, 92%, $white-color, 1);
   @include starAnimation;
+
+  @include lg-mobile {
+    left: 126px;
+    top: 136px;
+    @include starAnimationMobile;
+  }
 }
 
-.star-text-reviews{
+.superMicroStar51 {
+  display: none;
+
+  @include lg-mobile {
+    display: block;
+    @include star(90%, 3%, $white-color, 1);
+    @include starAnimationMobile;
+  }
+}
+
+.superMicroStar52 {
+  display: none;
+
+  @include lg-mobile {
+    display: block;
+    @include star(146px, 126px, $white-color, 1);
+  }
+}
+
+.star-text-reviews {
   position: absolute;
-  bottom: 35px;
-  right: 40px;
-}
+  bottom: 10%;
+  right: 8%;
 
+  @include lg-mobile {
+    top: 91px;
+    left: 87px;
+    transform: scale(0.55) rotate(-18deg);
+  }
+}
 
 // slide 5
 
-.superMicroStar12 {
-  @include star(318px, 302px, $white-color, 1);
-  @include starAnimation(4s);
-}
+.slide5-img-decor {
+  position: absolute;
+  width: 145px;
+  height: 100px;
+  bottom: -3%;
+  right: 4%;
 
-.superMicroStar13 {
-  @include star(404px, 301px, $white-color, 1);
-  @include starAnimation;
+  @include lg-mobile {
+    width: 71px;
+    height: 55px;
+    bottom: 5%;
+    right: 5%;
+  }
+
+  .slide5-img {
+    width: 100%;
+
+    @include lg-mobile {
+      display: none;
+    }
+  }
+
+  .slide5-img-mob {
+    width: 100%;
+    display: none;
+
+    @include lg-mobile {
+      display: block;
+    }
+  }
+
+  .superMicroStar12 {
+    @include star(16%, 5%, $white-color, 1);
+    @include starAnimation(4s);
+
+    @include lg-mobile {
+      left: -207%;
+      top: 63%;
+      @include starAnimationMobile(4s);
+    }
+  }
+
+  .superMicroStar13 {
+    @include star(75%, 7%, $white-color, 1);
+    @include starAnimation;
+
+    @include lg-mobile {
+      left: -180%;
+      top: 32%;
+      @include starAnimationMobile(4s);
+    }
+  }
+
+  .superMicroStar52 {
+    display: none;
+
+    @include lg-mobile {
+      display: block;
+      @include star(78%, -124%, $white-color, 1);
+      @include starAnimationMobile(4s);
+
+      @media (max-width: 444.98px) {
+        left: 29%;
+        top: -163%;
+      }
+    }
+  }
+
+  .superMicroStar53 {
+    display: none;
+
+    @include lg-mobile {
+      display: block;
+      @include star(96%, -134%, $white-color, 1);
+      @include starAnimationMobile(8s);
+
+      @media (max-width: 444.98px) {
+        left: 64%;
+        top: -173%;
+      }
+    }
+  }
 }
