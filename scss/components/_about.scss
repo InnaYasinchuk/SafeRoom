@@ -8,7 +8,6 @@
   @include lg-tablet {
     padding-top: 0px;
   }
-  
 
   @include mobile {
     padding: 0px 15px;
@@ -18,19 +17,18 @@
     object-fit: cover;
 
     @include laptop {
-    max-width: 450px;
-  }
-  @include lg-tablet {
-    max-width: 390px;
-  }
+      max-width: 450px;
+    }
+    @include lg-tablet {
+      max-width: 390px;
+    }
 
-  @include tablet {
-    max-width: 290px;
-  }
+    @include tablet {
+      max-width: 290px;
+    }
 
     @include lg-mobile {
       max-width: 162px;
-      
     }
   }
 }
@@ -75,17 +73,16 @@
     margin-bottom: 20px;
 
     @include lg-mobile {
-            margin-bottom: 10px;
-      
-      }
+      margin-bottom: 10px;
     }
-    
-    & p span {
-        display: inline;
-
-        @include tablet {
-    display: none;
   }
+
+  & p span {
+    display: inline;
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 
@@ -105,10 +102,10 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
-@include lg-tablet {
-   width: 280px;
-  height: 55px;
-  font-size: 24px;
+  @include lg-tablet {
+    width: 280px;
+    height: 55px;
+    font-size: 24px;
     margin: 20px auto 10px;
   }
 
@@ -127,12 +124,11 @@
   @include star(1%, 70%, $white-color, 1);
 
   @include lg-tablet {
-  transform: scale(0.5);
+    transform: scale(0.5);
   }
 
-   @include lg-mobile {
+  @include lg-mobile {
     display: none;
-   
   }
 }
 
@@ -141,24 +137,23 @@
   @include starAnimation(4s);
 
   @include lg-tablet {
-   left: 10%;
-   top: 78%;
-   transform: scale(0.5);
-   @include starAnimationMobile;
+    left: 10%;
+    top: 78%;
+    transform: scale(0.5);
+    @include starAnimationMobile;
   }
 
   @include lg-mobile {
     left: 5%;
-   top: 75%;
+    top: 75%;
   }
 }
 
 .little-white-star3 {
   @include star(90%, 55%, $white-color, 1);
 
-  @include lg-tablet{
+  @include lg-tablet {
     display: none;
-   
   }
 }
 
@@ -166,15 +161,15 @@
   @include star(85%, 85%, $white-color, 1);
   @include starAnimation;
 
-   @include lg-tablet {
-   left: 87%;
-   top: 70%;
-   transform: scale(0.5);
-   @include starAnimationMobile;
+  @include lg-tablet {
+    left: 87%;
+    top: 70%;
+    transform: scale(0.5);
+    @include starAnimationMobile;
   }
 
   @include lg-mobile {
-     top: 65%;
+    top: 65%;
   }
 }
 
@@ -182,12 +177,12 @@
   @include star(20%, 82%, $dark-blue-color, 1);
 
   @include lg-tablet {
-   left: 80%;
-   top: 80%;
+    left: 80%;
+    top: 80%;
     transform: scale(0.5);
   }
 
-   @include lg-mobile {
-   transform: scale(0.35);
-   }
+  @include lg-mobile {
+    transform: scale(0.35);
+  }
 }

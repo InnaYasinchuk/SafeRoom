@@ -18,9 +18,8 @@
     padding: 27px 10px 37px;
   }
 
-   @include mobile {
+  @include mobile {
     padding: 27px 0px 17px;
-       
   }
 }
 .psychologists-header {
@@ -38,20 +37,20 @@
     gap: 90px;
   }
 
-    @include tablet {
+  @include tablet {
     gap: 12px;
     justify-content: space-between;
   }
 
   @include lg-mobile {
-   margin-bottom: 20px;
-      }
+    margin-bottom: 20px;
+  }
 
-       @include mobile {
-        min-width: 102%;
-    margin-left:-4px;
-     margin-right:-4px;
-     }
+  @include mobile {
+    min-width: 102%;
+    margin-left: -4px;
+    margin-right: -4px;
+  }
 
   &::before {
     content: "";
@@ -119,16 +118,14 @@
     width: 20%;
   }
 
-   @include mobile {
-   
-     margin-bottom: -4px;
+  @include mobile {
+    margin-bottom: -4px;
     width: 19%;
   }
 
   @media (max-width: 344.98px) {
     margin-bottom: -8px;
   }
-
 }
 
 .psychologists-img1 {

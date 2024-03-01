@@ -37,7 +37,7 @@ body {
   background-color: #fbf6f6;
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
-  color: #007AFF;
+  color: #007aff;
   line-height: normal;
   max-width: 1440px;
   margin: 0 auto;
@@ -134,12 +134,12 @@ address {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #97c2f0, #FFD497);
+  background: linear-gradient(to bottom, #97c2f0, #ffd497);
   border-radius: 5px;
   border: 1px solid #97c2f0;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #3A98FF, #FBB14E);
+  background: linear-gradient(to bottom, #3a98ff, #fbb14e);
 }
 
 ::-webkit-scrollbar-button:start:decrement {
@@ -147,15 +147,15 @@ address {
   border-radius: 2px;
 }
 ::-webkit-scrollbar-button:start:decrement:hover {
-  background-color: #3A98FF;
+  background-color: #3a98ff;
 }
 
 ::-webkit-scrollbar-button:end:increment {
-  background: #FFD497 url(../../img/Scrollbar-star.svg) no-repeat center;
+  background: #ffd497 url(../../img/Scrollbar-star.svg) no-repeat center;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-button:end:increment:hover {
-  background-color: #FBB14E;
+  background-color: #fbb14e;
 }
 
 .nav {
@@ -226,7 +226,7 @@ address {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #F0BB75;
+  background-color: #f0bb75;
   border-radius: 4px;
   transition: 0.3s ease-in;
   transform-origin: center;
@@ -321,7 +321,7 @@ address {
   position: relative;
 }
 .menu-item:hover, .menu-item:active {
-  color: #F0BB75;
+  color: #f0bb75;
   outline: none;
 }
 .menu-item::before {
@@ -331,7 +331,7 @@ address {
   left: -5%;
   bottom: 0;
   position: absolute;
-  background-color: #F0BB75;
+  background-color: #f0bb75;
   transition: width 0.3s ease-in-out;
   transform-origin: left;
 }
@@ -360,7 +360,7 @@ address {
 }
 
 .button-join {
-  background-color: #F0BB75;
+  background-color: #f0bb75;
   color: #fff;
   padding: 5px 22px;
   border-radius: 14px;
@@ -407,7 +407,7 @@ address {
 
 .nav-wrapper.active .little-blue-star30 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 9%;
   top: 8%;
@@ -435,7 +435,7 @@ address {
 
 .nav-wrapper.active .little-blue-star31 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 5%;
   top: 40%;
@@ -463,7 +463,7 @@ address {
 
 .nav-wrapper.active .little-blue-star32 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 4%;
   top: 80%;
@@ -491,7 +491,7 @@ address {
 
 .nav-wrapper.active .little-blue-star33 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 61%;
   top: 42%;
@@ -519,7 +519,7 @@ address {
 
 .nav-wrapper.active .little-blue-star34 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 85%;
   top: 68%;
@@ -547,7 +547,7 @@ address {
 
 .nav-wrapper.active .little-blue-star35 {
   position: absolute;
-  fill: #F0BB75;
+  fill: #f0bb75;
   fill-opacity: 0.6;
   left: 90%;
   top: 38%;
@@ -575,7 +575,7 @@ address {
 
 .nav-wrapper.active .little-blue-star36 {
   position: absolute;
-  fill: #F0BB75;
+  fill: #f0bb75;
   fill-opacity: 0.6;
   left: 7%;
   top: 95%;
@@ -603,7 +603,7 @@ address {
 
 .nav-wrapper.active .little-blue-star37 {
   position: absolute;
-  fill: #F0BB75;
+  fill: #f0bb75;
   fill-opacity: 0.6;
   left: 39%;
   top: 87%;
@@ -631,7 +631,7 @@ address {
 
 .nav-wrapper.active .little-blue-star38 {
   position: absolute;
-  fill: #F0BB75;
+  fill: #f0bb75;
   fill-opacity: 0.6;
   left: 69%;
   top: 80%;
@@ -805,7 +805,7 @@ address {
   font-family: "Amatic SC", sans-serif;
   font-size: 128px;
   font-weight: 700;
-  color: #007AFF;
+  color: #007aff;
   line-height: 1;
   margin-top: 100px;
   margin-bottom: 20px;
@@ -855,7 +855,7 @@ address {
   display: block;
   width: 365px;
   font-size: 30px;
-  background-color: #007AFF;
+  background-color: #007aff;
   color: #fff;
   padding: 15px 21px;
   border-radius: 14px;
@@ -863,7 +863,7 @@ address {
   text-align: center;
 }
 .button-speak:hover, .button-speak:active, .button-speak:focus {
-  box-shadow: 0px 4px 4px 0px #FFD497;
+  box-shadow: 0px 4px 4px 0px #ffd497;
   outline: none;
 }
 @media (max-width: 991.98px) {
@@ -910,12 +910,12 @@ address {
   display: block;
 }
 .socials .icon {
-  fill: #F0BB75;
+  fill: #f0bb75;
   stroke: #fbf6f6;
   transition: 0.3s ease-in;
 }
 .socials .icon:hover, .socials .icon:active {
-  fill: #FBB14E;
+  fill: #fbb14e;
 }
 @media (max-width: 575.98px) {
   .socials {
@@ -930,7 +930,7 @@ address {
 
 .little-blue-star1 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 35px;
   top: -10px;
@@ -977,7 +977,7 @@ address {
 
 .little-blue-star2 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 315px;
   top: 55px;
@@ -1051,7 +1051,7 @@ address {
 
 .little-blue-star3 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 780px;
   top: -25px;
@@ -1098,7 +1098,7 @@ address {
 
 .little-blue-star4 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 715px;
   top: 240px;
@@ -1132,7 +1132,7 @@ address {
   .little-blue-star4 {
     display: block;
     position: absolute;
-    fill: #FFD497;
+    fill: #ffd497;
     fill-opacity: 1;
     left: 16%;
     top: 50%;
@@ -1168,7 +1168,7 @@ address {
 
 .little-blue-star5 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 480px;
   top: 440px;
@@ -1192,7 +1192,7 @@ address {
   .little-blue-star5 {
     display: block;
     position: absolute;
-    fill: #FFD497;
+    fill: #ffd497;
     fill-opacity: 1;
     left: 26%;
     top: 53%;
@@ -1213,7 +1213,7 @@ address {
 
 .little-blue-star6 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 530px;
   top: 590px;
@@ -1282,7 +1282,7 @@ address {
 
 .little-blue-star7 {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 830px;
   top: 605px;
@@ -1326,7 +1326,7 @@ address {
   .little-blue-star20 {
     display: block;
     position: absolute;
-    fill: #FFD497;
+    fill: #ffd497;
     fill-opacity: 1;
     left: 30%;
     top: 2%;
@@ -1373,7 +1373,7 @@ address {
   .little-blue-star21 {
     display: block;
     position: absolute;
-    fill: #FFD497;
+    fill: #ffd497;
     fill-opacity: 1;
     left: 99%;
     top: 84%;
@@ -1413,7 +1413,7 @@ address {
 
 .big-blue-star {
   position: absolute;
-  fill: #007AFF;
+  fill: #007aff;
   fill-opacity: 0.6;
   left: 92%;
   top: 80%;
@@ -1559,7 +1559,7 @@ address {
   font-family: "Amatic SC", sans-serif;
   font-size: 96px;
   font-weight: 700;
-  color: #007AFF;
+  color: #007aff;
 }
 @media (max-width: 1199.98px) {
   .about-title {
@@ -1581,8 +1581,8 @@ address {
   position: relative;
   padding: 51px 40px 6px;
   border-radius: 14px;
-  background: #3A98FF;
-  box-shadow: 0px 4px 9.3px 0px #007AFF;
+  background: #3a98ff;
+  box-shadow: 0px 4px 9.3px 0px #007aff;
 }
 @media (max-width: 991.98px) {
   .about-content {
@@ -1804,7 +1804,7 @@ address {
 
 .middle-blue-star1 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 20%;
   top: 82%;
@@ -1830,7 +1830,7 @@ address {
   font-family: "Amatic SC", sans-serif;
   font-size: 64px;
   font-weight: 700;
-  color: #F0BB75;
+  color: #f0bb75;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1981,7 +1981,7 @@ address {
 
 .middle-blue-star2 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 5%;
   top: 5%;
@@ -2012,7 +2012,7 @@ address {
 
 .middle-blue-star3 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 93%;
   top: 80%;
@@ -2108,7 +2108,7 @@ address {
   content: "";
   width: 856px;
   height: 2px;
-  background-color: #007AFF;
+  background-color: #007aff;
   position: absolute;
   bottom: 55%;
   left: 36%;
@@ -2168,7 +2168,7 @@ address {
   position: relative;
   width: 2px;
   height: 60px;
-  background-color: #007AFF;
+  background-color: #007aff;
   margin-right: 4.7%;
   margin-top: 39px;
 }
@@ -2199,7 +2199,7 @@ address {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: #007AFF;
+  background-color: #007aff;
   right: 50%;
   bottom: -1px;
   transform: translateX(50%);
@@ -2209,7 +2209,7 @@ address {
   font-family: "Amatic SC", sans-serif;
   font-size: 96px;
   font-weight: 700;
-  color: #007AFF;
+  color: #007aff;
   margin-bottom: 50px;
 }
 @media (max-width: 1199.98px) {
@@ -2235,7 +2235,7 @@ address {
 
 .middle-blue-star4 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 34%;
   top: 54px;
@@ -2275,7 +2275,7 @@ address {
   .middle-blue-star4 {
     left: 81%;
     top: 62%;
-    fill: #F0BB75;
+    fill: #f0bb75;
   }
 }
 @media (max-width: 767.98px) {
@@ -2364,7 +2364,7 @@ address {
   cursor: pointer;
 }
 .swiper-join .swiper-slide:hover {
-  background: #F0BB75;
+  background: #f0bb75;
 }
 @media (max-width: 1439.98px) {
   .swiper-join .swiper-slide {
@@ -2393,7 +2393,7 @@ address {
   position: relative;
   bottom: 20px;
   border-radius: 14px;
-  background: #F0BB75;
+  background: #f0bb75;
   box-shadow: 0px 4px 4px 0px rgba(240, 187, 117, 0.3);
   transition: background-color 1s, width 0.5s, height 0.5s;
 }
@@ -2555,7 +2555,7 @@ address {
   height: 65px;
   margin-top: 30px;
   font-size: 30px;
-  color: #007AFF;
+  color: #007aff;
   background-color: #fff;
   border-radius: 14px;
 }
@@ -2578,7 +2578,7 @@ address {
 .swiper-join .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
-  background-color: #0C6CD5;
+  background-color: #0c6cd5;
 }
 
 .swiper.swiper-join-mobile {
@@ -2623,7 +2623,7 @@ address {
   text-align: center;
   color: #fff;
   border-radius: 8px;
-  background: #F0BB75;
+  background: #f0bb75;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: relative;
   cursor: grab;
@@ -2858,7 +2858,7 @@ address {
 .swiper-join-mobile .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background-color: #0C6CD5;
+  background-color: #0c6cd5;
 }
 @media (max-width: 575.98px) {
   .swiper-join-mobile .swiper-pagination-bullet {
@@ -2939,7 +2939,7 @@ address {
 }
 .team-header .middle-blue-star10 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 485px;
   top: 10px;
@@ -2976,13 +2976,13 @@ address {
     left: 230px;
     top: -33px;
     transform: scale(0.45);
-    fill: #F4AA41;
+    fill: #f4aa41;
     animation: none;
   }
 }
 .team-header .micro-blue-star1 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 530px;
   top: 0px;
@@ -3002,12 +3002,12 @@ address {
     left: 230px;
     top: -7px;
     transform: scale(0.9);
-    fill: #F4AA41;
+    fill: #f4aa41;
   }
 }
 .team-header .micro-blue-star2 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 47%;
   top: 135%;
@@ -3042,7 +3042,7 @@ address {
   .team-header .micro-blue-star2 {
     left: 60%;
     top: 375%;
-    fill: #F4AA41;
+    fill: #f4aa41;
   }
 }
 @media (max-width: 575.98px) {
@@ -3055,7 +3055,7 @@ address {
 }
 .team-header .micro-blue-star3 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 68%;
   top: 50%;
@@ -3072,7 +3072,7 @@ address {
 @media (max-width: 767.98px) {
   .team-header .micro-blue-star3 {
     top: 315%;
-    fill: #F4AA41;
+    fill: #f4aa41;
   }
 }
 @media (max-width: 575.98px) {
@@ -3116,7 +3116,7 @@ address {
 }
 .team-header .micro-blue-star4 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 84%;
   top: 35%;
@@ -3204,7 +3204,7 @@ address {
   .team-header .micro-blue-star41 {
     display: block;
     position: absolute;
-    fill: #0C6CD5;
+    fill: #0c6cd5;
     fill-opacity: 1;
     left: 43%;
     top: 385%;
@@ -3246,7 +3246,7 @@ address {
   font-family: "Amatic SC", sans-serif;
   font-size: 96px;
   font-weight: 700;
-  color: #007AFF;
+  color: #007aff;
   max-width: 262px;
   line-height: 90px;
 }
@@ -3384,7 +3384,7 @@ address {
 @media (max-width: 767.98px) {
   .team-description1 p:nth-child(2) {
     margin-bottom: 30px;
-    color: #F0BB75;
+    color: #f0bb75;
     order: 3;
   }
 }
@@ -3687,7 +3687,7 @@ address {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: -35px -27px 0px #3A98FF;
+  box-shadow: -35px -27px 0px #3a98ff;
   margin-bottom: 75px;
 }
 @media (max-width: 991.98px) {
@@ -3697,25 +3697,25 @@ address {
 }
 @media (max-width: 767.98px) {
   .team-description2 img {
-    box-shadow: -20px -17px 0px #3A98FF;
+    box-shadow: -20px -17px 0px #3a98ff;
     margin-left: 8px;
   }
 }
 @media (max-width: 575.98px) {
   .team-description2 img {
-    box-shadow: -14px -10px 0px #3A98FF;
+    box-shadow: -14px -10px 0px #3a98ff;
     margin-bottom: 19px;
   }
 }
 @media (max-width: 389.98px) {
   .team-description2 img {
-    box-shadow: -8px -5px 0px #3A98FF;
+    box-shadow: -8px -5px 0px #3a98ff;
   }
 }
 
 .text-border {
   margin: 20px -120px 40px 15px;
-  border: 1px solid #007AFF;
+  border: 1px solid #007aff;
   border-radius: 20px;
   padding: 10px 80px 10px 20px;
 }
@@ -3792,7 +3792,7 @@ address {
 @media (max-width: 575.98px) {
   .micro-blue-star42 {
     position: absolute;
-    fill: #0C6CD5;
+    fill: #0c6cd5;
     fill-opacity: 1;
     left: 0%;
     top: 95%;
@@ -3811,7 +3811,7 @@ address {
 @media (max-width: 575.98px) {
   .micro-blue-star43 {
     position: absolute;
-    fill: #0C6CD5;
+    fill: #0c6cd5;
     fill-opacity: 1;
     left: 15%;
     top: 105%;
@@ -3845,7 +3845,7 @@ address {
 @media (max-width: 575.98px) {
   .micro-blue-star44 {
     position: absolute;
-    fill: #F0BB75;
+    fill: #f0bb75;
     fill-opacity: 1;
     left: 58%;
     top: 102%;
@@ -3884,7 +3884,7 @@ address {
 @media (max-width: 575.98px) {
   .micro-blue-star45 {
     position: absolute;
-    fill: #0C6CD5;
+    fill: #0c6cd5;
     fill-opacity: 1;
     left: 80%;
     top: 100%;
@@ -3903,7 +3903,7 @@ address {
 @media (max-width: 389.98px) {
   .micro-blue-star46 {
     position: absolute;
-    fill: #F0BB75;
+    fill: #f0bb75;
     fill-opacity: 1;
     left: 79%;
     top: 82%;
@@ -3937,7 +3937,7 @@ address {
 @media (max-width: 382.98px) {
   .micro-blue-star47 {
     position: absolute;
-    fill: #F0BB75;
+    fill: #f0bb75;
     fill-opacity: 1;
     left: 90%;
     top: 72%;
@@ -3953,7 +3953,7 @@ address {
 .psychologists {
   padding-top: 55px;
   padding-bottom: 37px;
-  background-color: #3A98FF;
+  background-color: #3a98ff;
   background-image: url(../../img/psychologists/psychologists-bgr.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -4293,8 +4293,8 @@ address {
 
 .faq-title-wrapper {
   position: relative;
-  border-top: 1px solid #007AFF;
-  border-bottom: 1px solid #007AFF;
+  border-top: 1px solid #007aff;
+  border-bottom: 1px solid #007aff;
   text-align: center;
 }
 @media (max-width: 575.98px) {
@@ -4313,7 +4313,7 @@ address {
   font-family: "Amatic SC", sans-serif;
   font-size: 96px;
   font-weight: 700;
-  color: #F0BB75;
+  color: #f0bb75;
 }
 @media (max-width: 1199.98px) {
   .faq-title {
@@ -4333,7 +4333,7 @@ address {
 
 .middle-blue-star11 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 28%;
   top: 32%;
@@ -4388,7 +4388,7 @@ address {
 }
 @media (max-width: 575.98px) {
   .middle-blue-star11 {
-    fill: #F0BB75;
+    fill: #f0bb75;
     animation: none;
     transform: scale(0.45);
     top: 27%;
@@ -4398,7 +4398,7 @@ address {
 
 .middle-blue-star12 {
   position: absolute;
-  fill: #0C6CD5;
+  fill: #0c6cd5;
   fill-opacity: 1;
   left: 68%;
   top: 32%;
@@ -4454,7 +4454,7 @@ address {
 }
 @media (max-width: 575.98px) {
   .middle-blue-star12 {
-    fill: #F0BB75;
+    fill: #f0bb75;
     animation: none;
     transform: scale(0.3);
     top: 28%;
@@ -4469,7 +4469,7 @@ address {
   .micro-blue-star48 {
     display: block;
     position: absolute;
-    fill: #F0BB75;
+    fill: #f0bb75;
     fill-opacity: 1;
     left: 222px;
     top: 45%;
@@ -4531,7 +4531,7 @@ address {
 
 .accordion-item {
   padding: 20px 50px;
-  border-bottom: 1px solid #007AFF;
+  border-bottom: 1px solid #007aff;
   position: relative;
 }
 @media (max-width: 991.98px) {
@@ -4551,7 +4551,7 @@ address {
 }
 
 .faq-close {
-  fill: #007AFF;
+  fill: #007aff;
   position: absolute;
   top: 20px;
   right: 50px;
@@ -4613,10 +4613,10 @@ address {
   }
 }
 .accordion-item-title:hover, .accordion-item-title:active {
-  color: #F0BB75;
+  color: #f0bb75;
 }
 .accordion-item-title span .faq-close:hover {
-  fill: #F0BB75 !important;
+  fill: #f0bb75 !important;
 }
 
 .accordion-item-content {
@@ -4670,7 +4670,7 @@ address {
   width: 1px;
   height: 1px;
   border-radius: 50%;
-  background-color: #FDA11F;
+  background-color: #fda11f;
 }
 @media (max-width: 767.98px) {
   .reviews::before, .reviews::after {
@@ -4678,25 +4678,25 @@ address {
   }
 }
 .reviews::before {
-  box-shadow: 0 0 110px 46px #FDA11F;
+  box-shadow: 0 0 110px 46px #fda11f;
   top: 19%;
   left: -2%;
 }
 @media (max-width: 575.98px) {
   .reviews::before {
-    box-shadow: 0 0 81px 36px #FDA11F;
+    box-shadow: 0 0 81px 36px #fda11f;
     top: 23%;
     left: -5%;
   }
 }
 .reviews::after {
-  box-shadow: 0 0 110px 46px #FDA11F;
+  box-shadow: 0 0 110px 46px #fda11f;
   bottom: -2%;
   right: 2%;
 }
 @media (max-width: 575.98px) {
   .reviews::after {
-    box-shadow: 0 0 81px 36px #FDA11F;
+    box-shadow: 0 0 81px 36px #fda11f;
     bottom: 6%;
     right: 2%;
   }
@@ -4706,7 +4706,7 @@ address {
   font-family: "Amatic SC", sans-serif;
   font-size: 96px;
   font-weight: 700;
-  color: #007AFF;
+  color: #007aff;
   margin-left: 90px;
 }
 @media (max-width: 1199.98px) {
@@ -4832,7 +4832,7 @@ address {
 .swiper-slide .reviews-slide4,
 .swiper-slide .reviews-slide5 {
   padding: 20px 9px;
-  background-color: #3A98FF;
+  background-color: #3a98ff;
   border-radius: 20px;
   position: relative;
   cursor: grab;
@@ -4852,6 +4852,30 @@ address {
 .swiper-slide .reviews-slide5 {
     padding: 10px 3px;
     border-radius: 8px;
+  }
+}
+
+.swiper-reviews .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background-color: #0c6cd5;
+}
+@media (max-width: 767.98px) {
+  .swiper-reviews .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .swiper-reviews .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+}
+@media (max-width: 389.98px) {
+  .swiper-reviews .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
   }
 }
 
@@ -5217,7 +5241,7 @@ address {
   .superMicroStar5 {
     left: 96%;
     top: 8%;
-    fill: #FBB14E;
+    fill: #fbb14e;
     transform-origin: center;
     animation-name: scaleAndRotateMobile;
     animation-duration: 6s;
@@ -5279,7 +5303,7 @@ address {
   .superMicroStar6 {
     left: 95%;
     top: 27%;
-    fill: #FBB14E;
+    fill: #fbb14e;
     transform-origin: center;
     animation-name: scaleAndRotateMobile;
     animation-duration: 6s;
@@ -5368,7 +5392,7 @@ address {
   .superMicroStar7 {
     left: 94%;
     top: 43%;
-    fill: #FBB14E;
+    fill: #fbb14e;
     transform-origin: center;
     animation-name: scaleAndRotateMobile;
     animation-duration: 8s;
@@ -5412,7 +5436,7 @@ address {
   .superMicroStar47 {
     display: block;
     position: absolute;
-    fill: #FBB14E;
+    fill: #fbb14e;
     fill-opacity: 1;
     left: 89%;
     top: 37%;
@@ -5475,7 +5499,7 @@ address {
 }
 @media (max-width: 575.98px) {
   .middle-blue-star13 {
-    fill: #FBB14E;
+    fill: #fbb14e;
     transform: scale(0.45);
     left: 74%;
     top: 61%;
@@ -5505,7 +5529,7 @@ address {
 }
 @media (max-width: 575.98px) {
   .little-white-star5 {
-    fill: #FBB14E;
+    fill: #fbb14e;
     transform: scale(0.45);
     left: 72%;
     top: 71%;
@@ -6037,7 +6061,7 @@ body {
   background-color: #fbf6f6;
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
-  color: #007AFF;
+  color: #007aff;
   line-height: normal;
   max-width: 1440px;
   margin: 0 auto;
@@ -6134,12 +6158,12 @@ address {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #97c2f0, #FFD497);
+  background: linear-gradient(to bottom, #97c2f0, #ffd497);
   border-radius: 5px;
   border: 1px solid #97c2f0;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #3A98FF, #FBB14E);
+  background: linear-gradient(to bottom, #3a98ff, #fbb14e);
 }
 
 ::-webkit-scrollbar-button:start:decrement {
@@ -6147,15 +6171,15 @@ address {
   border-radius: 2px;
 }
 ::-webkit-scrollbar-button:start:decrement:hover {
-  background-color: #3A98FF;
+  background-color: #3a98ff;
 }
 
 ::-webkit-scrollbar-button:end:increment {
-  background: #FFD497 url(../../img/Scrollbar-star.svg) no-repeat center;
+  background: #ffd497 url(../../img/Scrollbar-star.svg) no-repeat center;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-button:end:increment:hover {
-  background-color: #FBB14E;
+  background-color: #fbb14e;
 }
 
 .footer {
@@ -6164,13 +6188,13 @@ address {
   align-items: center;
   gap: 9%;
   align-items: start;
-  background-color: #007AFF;
+  background-color: #007aff;
   padding: 60px 105px 100px 140px;
   margin: 0px auto 50px;
   font-family: "Amatic SC", sans-serif;
   color: #fff;
   font-weight: 700;
-  border-radius: 8px 8px 4px 4px;
+  border-radius: 14px;
   position: relative;
   overflow: hidden;
 }
@@ -6188,6 +6212,8 @@ address {
 @media (max-width: 767.98px) {
   .footer {
     justify-content: space-around;
+    margin-bottom: 0px;
+    border-radius: 8px 8px 0px 0px;
   }
 }
 @media (max-width: 575.98px) {
@@ -6205,7 +6231,7 @@ address {
 }
 .footer::before {
   content: "";
-  background: url(../../img/footer-img.png) no-repeat;
+  background: url(../../img/footer/footer-img.webp) no-repeat;
   bottom: -12px;
   right: -20px;
   width: 538px;
@@ -6241,29 +6267,34 @@ address {
   }
 }
 
-.logo-footer, .logo-footer-mobile {
+.logo-footer,
+.logo-footer-mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 13px;
   margin-right: 37px;
 }
-.logo-footer img, .logo-footer-mobile img {
+.logo-footer img,
+.logo-footer-mobile img {
   transition: 0.3s ease-in;
 }
 @media (max-width: 767.98px) {
-  .logo-footer img, .logo-footer-mobile img {
+  .logo-footer img,
+.logo-footer-mobile img {
     width: 50px;
     height: 50px;
   }
 }
 @media (max-width: 575.98px) {
-  .logo-footer img, .logo-footer-mobile img {
+  .logo-footer img,
+.logo-footer-mobile img {
     width: 35px;
     height: 35px;
   }
 }
-.logo-footer img:hover, .logo-footer-mobile img:hover {
+.logo-footer img:hover,
+.logo-footer-mobile img:hover {
   transform: scale(1.1);
 }
 
@@ -6359,7 +6390,7 @@ footer .icon {
   margin-top: 22px;
   margin-right: 20px;
   fill: #fff;
-  stroke: #3A98FF;
+  stroke: #3a98ff;
   transition: 0.3s ease-in;
 }
 @media (max-width: 575.98px) {
@@ -6370,7 +6401,7 @@ footer .icon {
   }
 }
 footer .icon:hover, footer .icon:active {
-  fill: #FBB14E;
+  fill: #fbb14e;
 }
 
 .footer-button-wrapper {
@@ -6410,7 +6441,7 @@ footer .button-footer {
 
 .footer-star1 {
   position: absolute;
-  fill: #F0BB75;
+  fill: #f0bb75;
   fill-opacity: 1;
   left: 85px;
   top: 75px;
@@ -6528,7 +6559,7 @@ footer .button-footer {
 
 .footer-star3 {
   position: absolute;
-  fill: #F0BB75;
+  fill: #f0bb75;
   fill-opacity: 1;
   left: 69%;
   top: 30%;
@@ -6590,7 +6621,7 @@ footer .button-footer {
 
 .footer-star4 {
   position: absolute;
-  fill: #F0BB75;
+  fill: #f0bb75;
   fill-opacity: 1;
   left: 90%;
   top: 62%;

@@ -1,19 +1,19 @@
 @import "../base/vars";
 
-@mixin flex ($gap: 0) {
+@mixin flex($gap: 0) {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: $gap;
 }
 
-@mixin section-title($color: $main-blue-color, $fsize: 96px){
-font-family: 'Amatic SC', sans-serif;
-font-size: $fsize;
-font-weight: 700;
-color: $color;
+@mixin section-title($color: $main-blue-color, $fsize: 96px) {
+  font-family: "Amatic SC", sans-serif;
+  font-size: $fsize;
+  font-weight: 700;
+  color: $color;
 
- @include laptop {
+  @include laptop {
     font-size: 76px;
   }
 
@@ -21,65 +21,63 @@ color: $color;
     font-size: 56px;
   }
 
-   @include lg-mobile {
+  @include lg-mobile {
     font-size: 30px;
   }
 }
 
-@mixin star ($left, $top, $fill: $main-blue-color, $fill-opasity: .6){
+@mixin star($left, $top, $fill: $main-blue-color, $fill-opasity: 0.6) {
   position: absolute;
   fill: $fill;
   fill-opacity: $fill-opasity;
   left: $left;
   top: $top;
   transition: transform 1s ease-in-out;
-  
-  &:hover{
+
+  &:hover {
     transform: scale(1.4) rotate(360deg);
   }
 }
 
-
-@mixin starAnimation($time: 6s){
+@mixin starAnimation($time: 6s) {
   transform-origin: center;
-  animation-name: scaleAndRotate; 
+  animation-name: scaleAndRotate;
   animation-duration: $time;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  
+
   @keyframes scaleAndRotate {
     0% {
       transform: scale(1) rotate(0deg);
     }
     50% {
-      transform: scale(1.4) rotate(180deg); 
+      transform: scale(1.4) rotate(180deg);
     }
     100% {
-      transform: scale(1) rotate(360deg);  
+      transform: scale(1) rotate(360deg);
     }
   }
 }
 
-@mixin starAnimationMobile($time: 6s){
+@mixin starAnimationMobile($time: 6s) {
   transform-origin: center;
-  animation-name: scaleAndRotateMobile; 
+  animation-name: scaleAndRotateMobile;
   animation-duration: $time;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  
+
   @keyframes scaleAndRotateMobile {
     0% {
       transform: scale(0.7) rotate(0deg);
     }
     50% {
-      transform: scale(0.5) rotate(180deg); 
+      transform: scale(0.5) rotate(180deg);
     }
     100% {
-      transform: scale(0.7) rotate(360deg);  
+      transform: scale(0.7) rotate(360deg);
     }
   }
 }
-
 
 @mixin desktop() {
   @media (max-width: 1439.98px) {
@@ -116,29 +114,3 @@ color: $color;
     @content;
   }
 }
-
-
-@include desktop {
-   
-  }
-
-  @include laptop {
-    
-  }
-
-  @include lg-tablet {
-    
-  }
-
-  @include tablet {
-   
-  }
-
-  @include lg-mobile {
-    
-  }
-
-  @include mobile {
-   
-  }
-

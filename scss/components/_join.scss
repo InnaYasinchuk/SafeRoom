@@ -453,10 +453,10 @@
   @include lg-mobile {
     height: 220px;
     padding: 10px 0;
-    }
+  }
 
-    @media (max-width: 423.98px) {
-   padding: 20px 0;
+  @media (max-width: 423.98px) {
+    padding: 20px 0;
   }
 
   @include mobile {
@@ -470,17 +470,15 @@
   font-weight: 500;
 
   @include lg-tablet {
-     font-size: 22px;
+    font-size: 22px;
   }
   @include tablet {
-   
     font-size: 20px;
   }
 
   @include lg-mobile {
-     margin-bottom: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
-    
   }
 
   @media (max-width: 460.98px) {
@@ -504,9 +502,9 @@
   @include tablet {
     font-size: 14px;
   }
-  
+
   @include mobile {
-   font-size: 13px;
+    font-size: 13px;
   }
 }
 
@@ -544,30 +542,30 @@
   }
 }
 
-.slide1-img-wrapper{
+.slide1-img-wrapper {
   width: 227px;
   height: 55px;
   position: relative;
- align-self: flex-end;
- bottom: -10%;
+  align-self: flex-end;
+  bottom: -10%;
 
   @media (max-width: 844.98px) {
-   bottom: -2%;
+    bottom: -2%;
   }
 
   @include tablet {
-   bottom: -9%;
+    bottom: -9%;
   }
 
-   @media (max-width: 636.98px) {
+  @media (max-width: 636.98px) {
     bottom: 0%;
   }
 
-   @include lg-mobile {
+  @include lg-mobile {
     bottom: -5%;
   }
 
-    @media (max-width: 423.98px) {
+  @media (max-width: 423.98px) {
     bottom: -11%;
   }
 
@@ -575,53 +573,45 @@
     bottom: -2%;
   }
 
-  
   @media (max-width: 399.98px) {
     bottom: -11%;
   }
 
-   @include mobile {
+  @include mobile {
     bottom: -1%;
-    
   }
-
 }
 
 .join-mobile-slide1 img {
   width: 100%;
- }
-
-
+}
 
 .join-mobile-slide3 img {
   margin: 24px auto -21px;
 
   @media (max-width: 804.98px) {
-   margin: 3px auto -23px;
+    margin: 3px auto -23px;
   }
 
   @include tablet {
-  margin: 23px auto -28px;
+    margin: 23px auto -28px;
   }
 
-     @media (max-width: 720.98px) {
-   margin: 8px auto -25px;
+  @media (max-width: 720.98px) {
+    margin: 8px auto -25px;
   }
 
-   @include lg-mobile {
-     margin: 37px auto -21px;
+  @include lg-mobile {
+    margin: 37px auto -21px;
   }
 
-   @media (max-width: 423.98px) {
-   margin: 20px auto -20px;
+  @media (max-width: 423.98px) {
+    margin: 20px auto -20px;
   }
 
-   @include mobile {
+  @include mobile {
     margin: 3px auto -20px;
-    
   }
-
-
 }
 
 .heart {

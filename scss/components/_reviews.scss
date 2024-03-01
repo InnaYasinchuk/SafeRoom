@@ -6,8 +6,8 @@
   position: relative;
   margin-bottom: 150px;
 
-   @include tablet {
-   margin-bottom: 120px;
+  @include tablet {
+    margin-bottom: 120px;
   }
 
   @include lg-mobile {
@@ -23,34 +23,32 @@
     height: 1px;
     border-radius: 50%;
     background-color: $blur-color;
-   
+
     @include tablet {
       display: block;
     }
   }
   &::before {
-    box-shadow: 0 0 110px 46px #FDA11F;
+    box-shadow: 0 0 110px 46px #fda11f;
     top: 19%;
     left: -2%;
 
     @include lg-mobile {
-   box-shadow: 0 0 81px 36px #FDA11F;
-    top: 23%;
-    left: -5%;
-  }
+      box-shadow: 0 0 81px 36px #fda11f;
+      top: 23%;
+      left: -5%;
+    }
   }
   &::after {
-     box-shadow: 0 0 110px 46px #FDA11F;
+    box-shadow: 0 0 110px 46px #fda11f;
     bottom: -2%;
     right: 2%;
 
-    
-  @include lg-mobile {
-    box-shadow: 0 0 81px 36px #FDA11F;
-     bottom: 6%;
-    right: 2%;
-  }
-
+    @include lg-mobile {
+      box-shadow: 0 0 81px 36px #fda11f;
+      bottom: 6%;
+      right: 2%;
+    }
   }
 }
 
@@ -163,6 +161,27 @@
   @include lg-mobile {
     padding: 10px 3px;
     border-radius: 8px;
+  }
+}
+
+.swiper-reviews .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background-color: $dark-blue-color;
+
+  @include tablet {
+    width: 10px;
+    height: 10px;
+  }
+
+  @include lg-mobile {
+    width: 8px;
+    height: 8px;
+  }
+
+  @include mobile {
+    width: 7px;
+    height: 7px;
   }
 }
 

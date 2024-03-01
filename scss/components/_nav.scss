@@ -140,7 +140,7 @@
 .menu {
   list-style: none;
   @include flex(70px);
-  
+
   @include lg-tablet {
     flex-direction: column;
     gap: 25px;
@@ -222,9 +222,8 @@
     outline: none;
   }
 
-  
   @include lg-mobile {
-     border-radius: $border-radius-mobile;
+    border-radius: $border-radius-mobile;
   }
 }
 

@@ -16,7 +16,6 @@
     padding: 0 0 100px;
     flex-direction: column;
   }
-  
 
   &::before,
   &::after {
@@ -119,14 +118,14 @@
 
   @include mobile {
     max-width: 285px;
-   align-self: flex-start;
+    align-self: flex-start;
   }
 
   & p {
     margin-bottom: 50px;
 
     @include lg-mobile {
-     margin-bottom: 15px;
+      margin-bottom: 15px;
     }
   }
 }
@@ -419,9 +418,9 @@
   }
 
   @include tablet {
-     left: 99%;
+    left: 99%;
     top: 52%;
-   }
+  }
 
   @include lg-mobile {
     left: 95%;

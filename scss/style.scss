@@ -4,6 +4,8 @@
 
 @import "./base/vars";
 @import "./base/mixin";
+
+
 // Components
 
 @import "./components/nav";
@@ -16,36 +18,3 @@
 @import "./components/faq";
 @import "./components/reviews";
 @import "./components/footer";
-
-
-
-
-
-@include desktop {
-   
-  }
-
-  @include laptop {
-    
-  }
-
-  @include lg-tablet {
-    
-  }
-
-  @include tablet {
-  
-  }
-
-  @include lg-mobile {
-    
-  }
-
-  @include mobile {
-   
-    
-  }
-
-   @media (max-width: 1054.98px) {
-   
-  }

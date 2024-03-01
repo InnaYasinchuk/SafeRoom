@@ -22,7 +22,7 @@ html {
   scroll-padding-top: 50px;
 
   @include laptop {
-   scroll-padding-top: 30px;
+    scroll-padding-top: 30px;
   }
 
   @include lg-mobile {
@@ -67,7 +67,7 @@ footer {
   margin: 0 auto;
   max-width: 1440px;
   overflow-x: hidden;
-  }
+}
 
 header {
   padding: 0px 50px;
@@ -85,7 +85,6 @@ section {
   margin: 0 auto;
   margin-top: 100px;
   padding: 0px 90px;
- 
 
   @include lg-tablet {
     margin-top: 70px;
