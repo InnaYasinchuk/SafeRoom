@@ -4667,24 +4667,39 @@ address {
   display: none;
   content: "";
   position: absolute;
-  width: 117px;
-  height: 102px;
+  width: 1px;
+  height: 1px;
   border-radius: 50%;
   background-color: #FDA11F;
-  filter: blur(55px);
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .reviews::before, .reviews::after {
     display: block;
   }
 }
 .reviews::before {
-  top: 9%;
-  left: -3%;
+  box-shadow: 0 0 110px 46px #FDA11F;
+  top: 19%;
+  left: -2%;
+}
+@media (max-width: 575.98px) {
+  .reviews::before {
+    box-shadow: 0 0 81px 36px #FDA11F;
+    top: 23%;
+    left: -5%;
+  }
 }
 .reviews::after {
-  bottom: -16%;
-  right: -7%;
+  box-shadow: 0 0 110px 46px #FDA11F;
+  bottom: -2%;
+  right: 2%;
+}
+@media (max-width: 575.98px) {
+  .reviews::after {
+    box-shadow: 0 0 81px 36px #FDA11F;
+    bottom: 6%;
+    right: 2%;
+  }
 }
 
 .reviews-title {
@@ -6155,7 +6170,7 @@ address {
   font-family: "Amatic SC", sans-serif;
   color: #fff;
   font-weight: 700;
-  border-radius: 14px;
+  border-radius: 8px 8px 4px 4px;
   position: relative;
   overflow: hidden;
 }

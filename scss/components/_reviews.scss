@@ -19,23 +19,38 @@
     display: none;
     content: "";
     position: absolute;
-    width: 117px;
-    height: 102px;
+    width: 1px;
+    height: 1px;
     border-radius: 50%;
     background-color: $blur-color;
-    filter: blur(55px);
-
-    @include lg-mobile {
+   
+    @include tablet {
       display: block;
     }
   }
   &::before {
-    top: 9%;
-    left: -3%;
+    box-shadow: 0 0 110px 46px #FDA11F;
+    top: 19%;
+    left: -2%;
+
+    @include lg-mobile {
+   box-shadow: 0 0 81px 36px #FDA11F;
+    top: 23%;
+    left: -5%;
+  }
   }
   &::after {
-    bottom: -16%;
-    right: -7%;
+     box-shadow: 0 0 110px 46px #FDA11F;
+    bottom: -2%;
+    right: 2%;
+
+    
+  @include lg-mobile {
+    box-shadow: 0 0 81px 36px #FDA11F;
+     bottom: 6%;
+    right: 2%;
+  }
+
   }
 }
 
