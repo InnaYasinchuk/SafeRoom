@@ -130,7 +130,7 @@
 
 .footer-titles {
   font-size: 36px;
-  margin-top: 12px;
+ 
 
   @include lg-mobile {
     font-size: 30px;
@@ -149,6 +149,7 @@ address ul {
 
 address .footer-titles {
   margin-bottom: 13px;
+   margin-top: 12px;
 
   @include lg-mobile {
     margin-bottom: 20px;
@@ -166,6 +167,14 @@ address .footer-titles {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.foolow{
+  margin-top: -15px;
+
+   @media (max-width: 1384.98px) {
+     margin-top: 0px;
+   }
 }
 
 .footer-socials svg {

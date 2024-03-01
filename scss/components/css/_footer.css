@@ -312,7 +312,6 @@ address {
 
 .footer-titles {
   font-size: 36px;
-  margin-top: 12px;
 }
 @media (max-width: 575.98px) {
   .footer-titles {
@@ -332,6 +331,7 @@ address ul {
 
 address .footer-titles {
   margin-bottom: 13px;
+  margin-top: 12px;
 }
 @media (max-width: 575.98px) {
   address .footer-titles {
@@ -351,6 +351,15 @@ address .footer-titles {
 }
 .address-link:hover {
   text-decoration: underline;
+}
+
+.foolow {
+  margin-top: -15px;
+}
+@media (max-width: 1384.98px) {
+  .foolow {
+    margin-top: 0px;
+  }
 }
 
 .footer-socials svg {
