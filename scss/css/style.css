@@ -4624,7 +4624,7 @@ address {
   margin-top: 0px;
   max-height: 0px;
   overflow: hidden;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 @media (max-width: 767.98px) {
   .accordion-item-content {
@@ -5802,7 +5802,7 @@ address {
 
 .star-text-reviews {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   right: 8%;
 }
 @media (max-width: 575.98px) {
